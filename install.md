@@ -27,17 +27,13 @@ This document explains how to install a script using Softaculous API.
 | dbprefix  | dbpref_  | 	(Optional) Table Prefix to be used for the tables created by application   |
 | noemail  | 1   | (Optional) – Use this only if you do not want to send an email to the user  |
 | overwrite_existing  | 1   | 	(Optional) – Use this only if you do not want Softaculous to check for existing files in installation path. If any file(s) exists they will be overwritten.  |
-| softproto  | 1 – http:// 2 – http://www.  3 – https://  4 – https://www.  |(Optional) – Protocol to be used for the installation   |
-| softsubmit  | 1   | This will trigger the install   |
-| softsubmit  | 1   | This will trigger the install   |
-| softsubmit  | 1   | This will trigger the install   |
-| softsubmit  | 1   | This will trigger the install   |
-| softsubmit  | 1   | This will trigger the install   |
-| softsubmit  | 1   | This will trigger the install   |
-| softsubmit  | 1   | This will trigger the install   |
-| softsubmit  | 1   | This will trigger the install   |
-| softsubmit  | 1   | This will trigger the install   |
-
+| softproto  | 1 – http:// <br> 2 – http://www.  <br>3 – https://  <br>4 – https://www.  |(Optional) – Protocol to be used for the installation   |
+| eu_auto_upgrade  | 1   | 	(Optional) – Pass 1 to enable auto upgrade. Auto upgrade will be enabled only if the script supports auto upgrade.   |
+| auto_upgrade_plugins  | 1   | 	(Optional) – Pass 1 to enable auto upgrade plugins. If script supports auto upgrade for plugin then it will be enabled.  |
+| auto_upgrade_themes  | 1   | (Optional) – Pass 1 to enable auto upgrade themes. If script supports auto upgrade for theme then it will be enabled.   |
+| auto_backup  | daily – Once a day <br> weekly – Once a week <br> monthly – Once a month   | (Optional) – Enable auto backups   |
+| auto_backup_rotation  | 0 – Unlimited backup rotation <br> 1 – backup rotation after 1 backup <br> 4 – backup rotation after 1 backup  |(Optional) – Possible values (0-10). Use this to set the value for auto backup rotation.   |
+| sets_name[]  | 	set-name   | (Optional) This is used when you want the user to install sets, here set-name is the name of the set created.   |
 
 ## via CuRL
 curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" -d "softdb=wpdb" -d "admin_username=admin" -d "admin_pass=adminpassword" -d "admin_email=admin@example.com" -d "language=en" -d "site_name=Wordpress Site" -d "site_desc=My Blog" -d "dbprefix=dbpref_" -d "sets_name[]=set-name" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=software&soft=26&api=json"
@@ -101,7 +97,7 @@ if(!empty($res['done'])){
 }
 ?>
 ```
-### expected output of $resp
+### Expected output of $resp
 ```php
 Array
 (
@@ -245,113 +241,7 @@ Array
                             [tag] => 
                             [head] => AI, Assistant, Onboarding
                         )
-
-                    [cookieadmin] => Array
-                        (
-                            [tag] => 
-                            [head] => Cookie Consent Banner
-                        )
-
-                    [backuply] => Array
-                        (
-                            [tag] => 
-                            [head] => Backups
-                        )
-
-                    [speedycache] => Array
-                        (
-                            [tag] => 
-                            [head] => Improve Page Speed
-                        )
-
-                    [siteseo] => Array
-                        (
-                            [tag] => 
-                            [head] => Improve Website Ranking
-                        )
-
-                    [loginizer] => Array
-                        (
-                            [tag] => 
-                            [head] => Limit Login Attempts
-                        )
-
-                    [pagelayer] => Array
-                        (
-                            [tag] => 
-                            [head] => Drag and Drop website builder
-                        )
-
-                    [gosmtp] => Array
-                        (
-                            [tag] => 
-                            [head] => Email with SMTP
-                        )
-
-                    [fileorganizer] => Array
-                        (
-                            [tag] => 
-                            [head] => File Manager
-                        )
-
                 )
-
-            [Extended Settings] => Array
-                (
-                    [language] => Array
-                        (
-                            [tag] => English
-                            [head] => Select Language
-                            [exp] => 
-                            [handle] => 
-                            [optional] => 
-                            [quick_install] => 
-                            [minlen] => 
-                            [orig_val] => Array
-                                (
-                                    [0] => en
-                                    [1] => ar
-                                    [2] => sq
-                                    [3] => bg_BG
-                                    [4] => ca
-                                    [5] => zh_CN
-                                    [6] => zh_TW
-                                    [7] => hr
-                                    [8] => cs_CZ
-                                    [9] => da_DK
-                                    [10] => nl_NL
-                                    [11] => fi
-                                    [12] => fr_FR
-                                    [13] => de_DE
-                                    [14] => el
-                                    [15] => he_IL
-                                    [16] => hu_HU
-                                    [17] => id_ID
-                                    [18] => it_IT
-                                    [19] => ja
-                                    [20] => ko_KR
-                                    [21] => nb_NO
-                                    [22] => fa_IR
-                                    [23] => pl_PL
-                                    [24] => pt_PT
-                                    [25] => pt_BR
-                                    [26] => ro_RO
-                                    [27] => ru_RU
-                                    [28] => sl_SI
-                                    [29] => sk_SK
-                                    [30] => es_ES
-                                    [31] => sv_SE
-                                    [32] => th
-                                    [33] => tr_TR
-                                    [34] => uk
-                                    [35] => vi
-                                    [36] => zh_HK
-                                )
-
-                        )
-
-                )
-
         )
 
     [dbtype] => mysql
