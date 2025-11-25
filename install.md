@@ -10,9 +10,33 @@ This document explains how to install a script using Softaculous API.
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
 | act    | software, js, perl   | The value should be “software” to install PHP script, “js” to install a JavaScript and “perl” to install a PERL script for softaculous to perform the action of installing a software.   |
 | soft    | 26 (26 is the Script ID of WordPress)   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s here   |
-| POST    |    |    |
-| Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
-| Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
+| **POST**    |
+| softsubmit  | 1   | This will trigger the install   |
+| softdomain | domain.com   | 	This is the domain on which you wish to install the script  |
+| softdirectory  | wp   | This is the sub-directory to install the script in. Leave it blank to install in root of the domain   |
+| softdb  | wp123   | This is the database name for the script. If the script does not require database you can leave this blank   |
+| dbusername  | wp123   | This is the database user(Only for Softaculous Remote)   |
+| dbuserpass  | w1XRF28mq8   | This is the database password. You can generate a random password(Only for Softaculous Remote)   |
+| hostname  | localhost   | This is the hostname of your MySQL server. You can enter your MySQL server IP if you have MySQL on a remote server(Only for Softaculous Remote)   |
+| admin_username  | admin   | This is the admin account username for the installation  |
+| admin_pass  | pass   | This is the admin account password for the installation  |
+| admin_email  | 	admin@domain.com   | This is the admin account email address for the installation   |
+| language  | en   | Language for the installation. You can get the language codes from the respective install.xml   |
+| site_name  | My Blog   | 	Site Name for the installation   |
+| site_desc  | My WordPress Blog   | 	Site Description for the installation   |
+| dbprefix  | dbpref_  | 	(Optional) Table Prefix to be used for the tables created by application   |
+| noemail  | 1   | (Optional) – Use this only if you do not want to send an email to the user  |
+| overwrite_existing  | 1   | 	(Optional) – Use this only if you do not want Softaculous to check for existing files in installation path. If any file(s) exists they will be overwritten.  |
+| softproto  | 1 – http:// 2 – http://www.  3 – https://  4 – https://www.  |(Optional) – Protocol to be used for the installation   |
+| softsubmit  | 1   | This will trigger the install   |
+| softsubmit  | 1   | This will trigger the install   |
+| softsubmit  | 1   | This will trigger the install   |
+| softsubmit  | 1   | This will trigger the install   |
+| softsubmit  | 1   | This will trigger the install   |
+| softsubmit  | 1   | This will trigger the install   |
+| softsubmit  | 1   | This will trigger the install   |
+| softsubmit  | 1   | This will trigger the install   |
+| softsubmit  | 1   | This will trigger the install   |
 
 
 ## via CuRL
