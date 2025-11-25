@@ -1,33 +1,41 @@
-# Softaculous Install Script Guide
+# Install Script via API
 
-This document explains how to create a basic Softaculous-style installation handler.
+This document explains how to install a script using Softaculous API.
 
----
 
 ## Required Parameters
 
-| Parameter | Description |
-|----------|-------------|
-| `domain` | Domain name where installation will occur |
-| `admin`  | Admin username |
-| `pass`   | Admin password |
-
-Example request: https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?&act=home&api=serialize
+domain → Domain name where installation will occur  
+admin  → Admin username  
+pass   → Admin password
 
 
----
-## CuRL
-curl "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=home&api=json"
+## via CuRL
+curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" -d "softdb=wpdb" -d "admin_username=admin" -d "admin_pass=adminpassword" -d "admin_email=admin@example.com" -d "language=en" -d "site_name=Wordpress Site" -d "site_desc=My Blog" -d "dbprefix=dbpref_" -d "sets_name[]=set-name" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=software&soft=26&api=json"
 
-## PHP Installation Script(via API)
-
-Below is the full code you can use inside `install.php` on your server:
+## via PHP script
 
 ```php
 <?php
 
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&act=home&api=serialize';
+			'&api=serialize'.
+			'&act=software'.
+                        '&soft=26';
+
+$post = array('softsubmit' => '1',
+              'softdomain' => 'example.com', // Must be a valid Domain
+              'softdirectory' => 'wp', // Keep empty to install in Web Root
+              'softdb' => 'wpdb',
+              'admin_username' => 'admin',
+              'admin_pass' => 'adminpassword',
+              'admin_email' => 'admin@example.com',
+              'language' => 'en',
+              'site_name' => 'WordPress Site',
+              'site_desc' => 'My Blog',
+              'dbprefix' => 'dbpref_',
+              'sets_name[]' => 'set-name'
+);
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -38,14 +46,27 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 // Turn off the server and peer verification (TrustManager Concept).
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+
+if(!empty($post)){
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+}
  
 // Get response from the server.
 $resp = curl_exec($ch);
-
-// Unserialize data
+ 
+// The response will hold a string as per the API response method. In this case its PHP Serialize
 $res = unserialize($resp);
+ 
+// Done ?
+if(!empty($res['done'])){
 
-// The Installed scripts list is in the array key 'iscripts'
-print_r($res['iscripts']);
+	print_r($res);
 
+// Error
+}else{
 
+	echo 'Some error occured';
+	print_r($res['error']);
+
+}
