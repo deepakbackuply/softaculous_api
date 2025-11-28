@@ -8,5 +8,5 @@ This repository contains a simple example of how to create an install script for
 - Returns success status in JSON format
 
 ## Usage
-Upload `install.php` on your server and call via:
+Upload `install.md` on your server and call via CuRL
 
