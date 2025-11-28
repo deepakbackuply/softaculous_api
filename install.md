@@ -3,40 +3,10 @@
 This document explains how to install a script using Softaculous API.
 
 
-## Required Parameters
-
-| Key | Value | Description |
-|----------|----------|----------|
-| Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
-| act    | software, js, perl   | The value should be “software” to install PHP script, “js” to install a JavaScript and “perl” to install a PERL script for softaculous to perform the action of installing a software.   |
-| soft    | 26 (26 is the Script ID of WordPress)   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s here   |
-| **POST**    |
-| softsubmit  | 1   | This will trigger the install   |
-| softdomain | domain.com   | 	This is the domain on which you wish to install the script  |
-| softdirectory  | wp   | This is the sub-directory to install the script in. Leave it blank to install in root of the domain   |
-| softdb  | wp123   | This is the database name for the script. If the script does not require database you can leave this blank   |
-| dbusername  | wp123   | This is the database user(Only for Softaculous Remote)   |
-| dbuserpass  | w1XRF28mq8   | This is the database password. You can generate a random password(Only for Softaculous Remote)   |
-| hostname  | localhost   | This is the hostname of your MySQL server. You can enter your MySQL server IP if you have MySQL on a remote server(Only for Softaculous Remote)   |
-| admin_username  | admin   | This is the admin account username for the installation  |
-| admin_pass  | pass   | This is the admin account password for the installation  |
-| admin_email  | 	admin@domain.com   | This is the admin account email address for the installation   |
-| language  | en   | Language for the installation. You can get the language codes from the respective install.xml   |
-| site_name  | My Blog   | 	Site Name for the installation   |
-| site_desc  | My WordPress Blog   | 	Site Description for the installation   |
-| dbprefix  | dbpref_  | 	(Optional) Table Prefix to be used for the tables created by application   |
-| noemail  | 1   | (Optional) – Use this only if you do not want to send an email to the user  |
-| overwrite_existing  | 1   | 	(Optional) – Use this only if you do not want Softaculous to check for existing files in installation path. If any file(s) exists they will be overwritten.  |
-| softproto  | 1 – http:// <br> 2 – http://www.  <br>3 – https://  <br>4 – https://www.  |(Optional) – Protocol to be used for the installation   |
-| eu_auto_upgrade  | 1   | 	(Optional) – Pass 1 to enable auto upgrade. Auto upgrade will be enabled only if the script supports auto upgrade.   |
-| auto_upgrade_plugins  | 1   | 	(Optional) – Pass 1 to enable auto upgrade plugins. If script supports auto upgrade for plugin then it will be enabled.  |
-| auto_upgrade_themes  | 1   | (Optional) – Pass 1 to enable auto upgrade themes. If script supports auto upgrade for theme then it will be enabled.   |
-| auto_backup  | daily – Once a day <br> weekly – Once a week <br> monthly – Once a month   | (Optional) – Enable auto backups   |
-| auto_backup_rotation  | 0 – Unlimited backup rotation <br> 1 – backup rotation after 1 backup <br> 4 – backup rotation after 1 backup  |(Optional) – Possible values (0-10). Use this to set the value for auto backup rotation.   |
-| sets_name[]  | 	set-name   | (Optional) This is used when you want the user to install sets, here set-name is the name of the set created.   |
-
 ## via CuRL
+```php
 curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" -d "softdb=wpdb" -d "admin_username=admin" -d "admin_pass=adminpassword" -d "admin_email=admin@example.com" -d "language=en" -d "site_name=Wordpress Site" -d "site_desc=My Blog" -d "dbprefix=dbpref_" -d "sets_name[]=set-name" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=software&soft=26&api=json"
+```
 
 ## via PHP script
 
@@ -134,233 +104,39 @@ Array
                         )
 
                 )
+.........
 
-            [Site Settings] => Array
-                (
-                    [site_name] => Array
-                        (
-                            [tag] => My Blog
-                            [head] => Site Name
-                            [exp] => 
-                            [handle] => 
-                            [optional] => 
-                            [quick_install] => 
-                            [minlen] => 
-                            [orig_val] => My Blog
-                        )
+```
 
-                    [site_desc] => Array
-                        (
-                            [tag] => My WordPress Blog
-                            [head] => Site Description
-                            [exp] => 
-                            [handle] => 
-                            [optional] => 1
-                            [quick_install] => 
-                            [minlen] => 
-                            [orig_val] => My WordPress Blog
-                        )
+## Required Parameters
 
-                    [multisite] => Array
-                        (
-                            [tag] => 
-                            [head] => Enable Multisite (WPMU)
-                            [exp] => This feature will Enable Multisite option for your WordPress blog.
-                            [handle] => 
-                            [optional] => 
-                            [quick_install] => 
-                            [minlen] => 
-                            [admintag] => 1
-                            [enabled] => 1
-                            [editable] => 1
-                        )
+| Key | Value | Description |
+|----------|----------|----------|
+| Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
+| act    | software, js, perl   | The value should be “software” to install PHP script, “js” to install a JavaScript and “perl” to install a PERL script for softaculous to perform the action of installing a software.   |
+| soft    | 26 (26 is the Script ID of WordPress)   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s here   |
+| **POST**    |
+| softsubmit  | 1   | This will trigger the install   |
+| softdomain | domain.com   | 	This is the domain on which you wish to install the script  |
+| softdirectory  | wp   | This is the sub-directory to install the script in. Leave it blank to install in root of the domain   |
+| softdb  | wp123   | This is the database name for the script. If the script does not require database you can leave this blank   |
+| dbusername  | wp123   | This is the database user(Only for Softaculous Remote)   |
+| dbuserpass  | w1XRF28mq8   | This is the database password. You can generate a random password(Only for Softaculous Remote)   |
+| hostname  | localhost   | This is the hostname of your MySQL server. You can enter your MySQL server IP if you have MySQL on a remote server(Only for Softaculous Remote)   |
+| admin_username  | admin   | This is the admin account username for the installation  |
+| admin_pass  | pass   | This is the admin account password for the installation  |
+| admin_email  | 	admin@domain.com   | This is the admin account email address for the installation   |
+| language  | en   | Language for the installation. You can get the language codes from the respective install.xml   |
+| site_name  | My Blog   | 	Site Name for the installation   |
+| site_desc  | My WordPress Blog   | 	Site Description for the installation   |
+| dbprefix  | dbpref_  | 	(Optional) Table Prefix to be used for the tables created by application   |
+| noemail  | 1   | (Optional) – Use this only if you do not want to send an email to the user  |
+| overwrite_existing  | 1   | 	(Optional) – Use this only if you do not want Softaculous to check for existing files in installation path. If any file(s) exists they will be overwritten.  |
+| softproto  | 1 – http:// <br> 2 – http://www.  <br>3 – https://  <br>4 – https://www.  |(Optional) – Protocol to be used for the installation   |
+| eu_auto_upgrade  | 1   | 	(Optional) – Pass 1 to enable auto upgrade. Auto upgrade will be enabled only if the script supports auto upgrade.   |
+| auto_upgrade_plugins  | 1   | 	(Optional) – Pass 1 to enable auto upgrade plugins. If script supports auto upgrade for plugin then it will be enabled.  |
+| auto_upgrade_themes  | 1   | (Optional) – Pass 1 to enable auto upgrade themes. If script supports auto upgrade for theme then it will be enabled.   |
+| auto_backup  | daily – Once a day <br> weekly – Once a week <br> monthly – Once a month   | (Optional) – Enable auto backups   |
+| auto_backup_rotation  | 0 – Unlimited backup rotation <br> 1 – backup rotation after 1 backup <br> 4 – backup rotation after 1 backup  |(Optional) – Possible values (0-10). Use this to set the value for auto backup rotation.   |
+| sets_name[]  | 	set-name   | (Optional) This is used when you want the user to install sets, here set-name is the name of the set created.   |
 
-                    [disable_wp_cron] => Array
-                        (
-                            [save] => 1
-                            [tag] => 
-                            [head] => Disable WordPress Cron
-                            [exp] => If selected, WordPress cron will be disabled and a cron job will be added in your control panel to be executed twice an hour.
-                            [handle] => 
-                            [optional] => 
-                            [quick_install] => 
-                            [minlen] => 
-                            [admintag] => 1
-                            [enabled] => 1
-                            [editable] => 1
-                        )
-
-                )
-
-            [Admin Account] => Array
-                (
-                    [admin_username] => Array
-                        (
-                            [save] => 1
-                            [tag] => admin
-                            [head] => Admin Username
-                            [exp] => 
-                            [handle] => __admin_username
-                            [optional] => 
-                            [quick_install] => 1
-                            [minlen] => 
-                            [orig_val] => admin
-                        )
-
-                    [admin_pass] => Array
-                        (
-                            [tag] => pass
-                            [head] => Admin Password
-                            [exp] => 
-                            [handle] => __ad_pass
-                            [optional] => 
-                            [quick_install] => 1
-                            [minlen] => 
-                            [orig_val] => pass
-                        )
-
-                    [admin_email] => Array
-                        (
-                            [save] => 1
-                            [tag] => admin
-                            [head] => Admin Email
-                            [exp] => 
-                            [handle] => __email_address
-                            [optional] => 
-                            [quick_install] => 1
-                            [minlen] => 
-                            [orig_val] => admin
-                        )
-
-                )
-
-            [Select Plugins] => Array
-                (
-                    [softaculous-pro] => Array
-                        (
-                            [tag] => 
-                            [head] => AI, Assistant, Onboarding
-                        )
-                )
-        )
-
-    [dbtype] => mysql
-    [__settings] => Array
-        (
-            [adminurl] => wp-admin/
-            [softdomain] => yourdomain.com
-            [softdirectory] => wpapi4
-            [softpath] => /home/user/public_html/wp
-            [softurl] => http://yourdomain.com/wp
-            [softdb] => wpdb4
-            [softdbuser] => wpdb4
-            [softdbhost] => localhost
-            [softdbpass] => **********
-            [dbprefix] => dbpref_
-            [site_name] => WordPress Site
-            [site_desc] => My Blog
-            [multisite] => 
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_pass] => **********
-            [admin_email] => admin@example.com
-            [softaculous-pro] => 
-            [cookieadmin] => 
-            [backuply] => 
-            [speedycache] => 
-            [siteseo] => 
-            [loginizer] => 
-            [pagelayer] => 
-            [gosmtp] => 
-            [fileorganizer] => 
-            [language] => 
-            [fileindex] => Array
-                (
-                    [index.php] => index.php
-                    [license.txt] => license.txt
-                    [readme.html] => readme.html
-                    [wp-activate.php] => wp-activate.php
-                    [wp-admin] => wp-admin
-                    [wp-blog-header.php] => wp-blog-header.php
-                    [wp-comments-post.php] => wp-comments-post.php
-                    [wp-config-sample.php] => wp-config-sample.php
-                    [wp-content] => wp-content
-                    [wp-cron.php] => wp-cron.php
-                    [wp-includes] => wp-includes
-                    [wp-links-opml.php] => wp-links-opml.php
-                    [wp-load.php] => wp-load.php
-                    [wp-login.php] => wp-login.php
-                    [wp-mail.php] => wp-mail.php
-                    [wp-settings.php] => wp-settings.php
-                    [wp-signup.php] => wp-signup.php
-                    [wp-trackback.php] => wp-trackback.php
-                    [xmlrpc.php] => xmlrpc.php
-                    [wp-config.php] => wp-config.php
-                    [.htaccess] => .htaccess
-                )
-
-            [punycode_softurl] => http://yourdomain.com/wp
-            [timestamp] => 1764062056
-            [regtime] => 2025-11-25 14:44:16
-            [relativeurl] => /wp
-            [domhost] => yourdomain.com
-            [gmt_offset] => 5.5
-            [random_seed] => nlgirjmrsmh5msgvohhrff7npwoo2gb9
-            [secret] => wkjnsvokgcwyoyist73rbu8bkl1vzxq52dhjhgkz6rj7xkg9fpavnixupjhd95pigwhg
-            [auth_salt] => 28dyyn6nymya
-            [logged_in_salt] => ns4drkkbfusv
-            [date_gmt] => 2025-11-25 09:14:16
-            [date] => 2025-11-25 14:44:16
-            [user_len] => 5
-            [site_admins] => s:5:"admin";
-            [wpver] => 6.8.3
-            [_transient_doing_cron] => 1764062056.2620229721069335937500
-            [timestamp_nextday] => 1764148456
-            [admin_email_lifespan] => 1779614056
-            [admin_pass_plain] => password
-            [utf8] => utf8mb4
-            [collate] => utf8mb4_unicode_520_ci
-            [WPLANG] => en_US
-            [active_plugins] => a:0:{}
-            [permalink_structure] => /%year%/%monthnum%/%day%/%postname%/
-        )
-
-    [software] => Array
-        (
-            [name] => WordPress
-            [softname] => wp
-            [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
-            [ins] => 1
-            [cat] => blogs
-            [type] => php
-            [ver] => 6.8.3
-            [pre_down] => 1
-            [path] => /var/softaculous/wp
-            [has_theme] => WordPress
-            [update_plugins] => 1
-            [update_themes] => 1
-            [verify_dom] => 0
-            [has_minor] => 1
-            [idn_dir] => 1
-            [spacereq] => 75173921
-            [adminurl] => wp-admin/
-        )
-
-    [notes] => 
-    [cron] => 
-    [datadir] => 
-    [overwrite_option] => 
-    [protocols] => Array
-        (
-            [1] => http://
-            [2] => http://www.
-            [3] => https://
-            [4] => https://www.
-        )
-
-    [nopackage] => 0
-    [theme_package] => 
-    [insid] => 26_50414
-    [timenow] => 1764062058
-    [time_taken] => 8.527
-)
