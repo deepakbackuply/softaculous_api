@@ -13,58 +13,95 @@ curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" -d "sof
 ```php
 <?php
 
-$url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=software'.
-			'&soft=26';
+$hostname = '';
+$username = '';
+$password = '';
+$domain = '';
+$da_url = 'https://'.$hostname.':2222';
 
-$post = array('softsubmit' => '1',
-              'softdomain' => 'example.com', // Must be a valid Domain
-              'softdirectory' => 'wp', // Keep empty to install in Web Root
-              'softdb' => 'wpdb',
-              'admin_username' => 'admin',
-              'admin_pass' => 'adminpassword',
-              'admin_email' => 'admin@example.com',
-              'language' => 'en',
-              'site_name' => 'WordPress Site',
-              'site_desc' => 'My Blog',
-              'dbprefix' => 'dbpref_',
-              'sets_name[]' => 'set-name'
-);
-
-// Set the curl parameters.
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $da_url.'/CMD_LOGIN');
+curl_setopt($ch, CURLOPT_VERBOSE, 1);
+
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+
+$post = array('username' => $username,
+		'password' => $password,
+		'referer' => '/');
+
+curl_setopt($ch, CURLOPT_POST, 1);
+$nvpreq = http_build_query($post);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $nvpreq);
+
+curl_setopt($ch, CURLOPT_HEADER, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1); 
+
+$resp = curl_exec($ch);
+
+if($resp === false){
+	die('Could not login to the remote server. cURL Error : '.curl_error($ch));
+	return false;
+}
+
+curl_close($ch);
+
+$resp = explode("\n", $resp);
+
+foreach($resp as $k => $v){
+	if(preg_match('/^'.preg_quote('set-cookie:', '/').'(.*?)$/is', $v, $mat)){
+		$newcookie= trim($mat[1]);
+	}
+}
+
+$newlogin = $da_url.'/CMD_PLUGINS/softaculous/index.raw?api=json&act=software&soft=26';
+
+$resp = $ch = '';
+
+// Login and get the cookies
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $newlogin);
+curl_setopt($ch, CURLOPT_VERBOSE, 1);
 
 // Turn off the server and peer verification (TrustManager Concept).
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
 
-if(!empty($post)){
-	curl_setopt($ch, CURLOPT_POST, 1);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+$post = array('softsubmit' => '1',
+              'softdomain' => $domain, // Must be a valid Domain
+              'softdirectory' => 'wpapi', // Keep empty to install in Web Root
+              'softdb' => 'wpapi',
+              'admin_username' => 'admin',
+              'admin_pass' => 'password',
+              'admin_email' => 'admin@example.com',
+              'language' => 'en',
+              'site_name' => 'WordPress Site',
+              'site_desc' => 'My Blog',
+              'dbprefix' => 'wpapi_'
+);
+
+curl_setopt($ch, CURLOPT_POST, 1);
+$nvpreq = http_build_query($post);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $nvpreq);
+
+if(!empty($newcookie)){
+	curl_setopt($ch, CURLOPT_COOKIESESSION, true);
+	curl_setopt($ch, CURLOPT_COOKIE, $newcookie);
 }
- 
-// Get response from the server.
+
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_REFERER, $da_url); // This is required as Directadmin checks for Referer
+
 $resp = curl_exec($ch);
- 
-// The response will hold a string as per the API response method. In this case its PHP Serialize
-$res = unserialize($resp);
- 
-// Done ?
-if(!empty($res['done'])){
+echo $resp;
 
-	print_r($res);
-
-// Error
-}else{
-
-	echo 'Some error occured';
-	print_r($res['error']);
-
+if($resp === false){
+	die('Could not login to the remote server. cURL Error : '.curl_error($ch));
+	return false;
 }
+
+curl_close($ch);
+
 ?>
 ```
 ### Expected output of $resp
