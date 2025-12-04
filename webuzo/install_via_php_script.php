@@ -1,6 +1,3 @@
-## via PHP script
-
-```php
 <?php
 
 $url = 'https://user:password@domain.com:2003/softaculous/index.php?'.
@@ -56,4 +53,3 @@ if(!empty($res['done'])){
 
 }
 ?>
-```
