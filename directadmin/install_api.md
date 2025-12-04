@@ -40,7 +40,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 $resp = curl_exec($ch);
 
 if($resp === false){
-	die('Could not login to the remote server. cURL Error : '.curl_error($ch));
+	die('Could not login to the server. cURL Error : '.curl_error($ch));
 	return false;
 }
 
@@ -96,7 +96,7 @@ $resp = curl_exec($ch);
 echo $resp;
 
 if($resp === false){
-	die('Could not login to the remote server. cURL Error : '.curl_error($ch));
+	die('Could not login to the server. cURL Error : '.curl_error($ch));
 	return false;
 }
 
