@@ -73,15 +73,7 @@ curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
 $post = array('softsubmit' => '1',
 		'softdomain' => 'plesk18.nuftp.com',
-		'softdirectory' => 'wp14300',
-		'softdb' => 'wpapi',
-		'admin_username' => 'admin',
-		'admin_pass' => 'password',
-		'admin_email' => 'admin@example.com',
-		'language' => 'en',
-		'site_name' => 'WordPress Site',
-		'site_desc' => 'My Blog',
-		'dbprefix' => 'wpapi_'); // Keep empty to install in Web Root);
+		'softdirectory' => 'wp14300',); // Keep empty to install in Web Root);
 
 curl_setopt($ch, CURLOPT_POST, 1);
 $nvpreq = http_build_query($post);
