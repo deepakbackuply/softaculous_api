@@ -23,7 +23,6 @@ $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $plesk_url.'/login_up.php');
 curl_setopt($ch, CURLOPT_VERBOSE, 1);
 
-// Turn off the server and peer verification (TrustManager Concept).
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
 
