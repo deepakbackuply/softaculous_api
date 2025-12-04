@@ -1,9 +1,6 @@
 <?php
 
-$url = 'https://user:password@domain.com:2443/siteworx/softaculous?'.
-			'&api=serialize'.
-			'&act=software'.
-			'&soft=26';
+$url = 'https://user:password@domain.com:2443/siteworx/softaculous?api=serialize&act=software&soft=26';
 
 $post = array('softsubmit' => '1',
               'softdomain' => 'example.com', // Must be a valid Domain
