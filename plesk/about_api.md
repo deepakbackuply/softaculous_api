@@ -72,8 +72,8 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
 curl_setopt($ch, CURLOPT_HEADER, FALSE);
 
 $post = array('softsubmit' => '1',
-		'softdomain' => 'plesk18.nuftp.com',
-		'softdirectory' => 'wp14300',); // Keep empty to install in Web Root);
+		'softdomain' => 'domain.com',
+		'softdirectory' => 'wp',); // Keep empty to install in Web Root);
 
 curl_setopt($ch, CURLOPT_POST, 1);
 $nvpreq = http_build_query($post);
