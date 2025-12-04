@@ -1,3 +1,6 @@
+## via PHP script
+
+```php
 <?php
 
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
