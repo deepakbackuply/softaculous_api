@@ -13,59 +13,109 @@ curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" -d "sof
 ```php
 <?php
 
-$url = 'https://user:password@domain.com:8443/modules/softaculous/index.php?'.
-			'&api=serialize'.
-			'&act=software'.
-			'&soft=26';
+$server_ip = '';
+$hostname = '';
+$username = '';
+$password = '';
+$plesk_url='https://'.$server_ip.':8443';
 
-$post = array('softsubmit' => '1',
-              'softdomain' => 'example.com', // Must be a valid Domain
-              'softdirectory' => 'wp', // Keep empty to install in Web Root
-              'softdb' => 'wpdb',
-              'admin_username' => 'admin',
-              'admin_pass' => 'adminpassword',
-              'admin_email' => 'admin@example.com',
-              'language' => 'en',
-              'site_name' => 'WordPress Site',
-              'site_desc' => 'My Blog',
-              'dbprefix' => 'dbpref_',
-              'sets_name[]' => 'set-name'
-);
-
-// Set the curl parameters.
 $ch = curl_init();
-curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_URL, $plesk_url.'/login_up.php');
+curl_setopt($ch, CURLOPT_VERBOSE, 1);
 
 // Turn off the server and peer verification (TrustManager Concept).
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
 curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
 
-if(!empty($post)){
-	curl_setopt($ch, CURLOPT_POST, 1);
-	curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
-}
- 
+$post = array('login_name' => $username,
+		'passwd' => $password);
+
+curl_setopt($ch, CURLOPT_POST, 1);
+$nvpreq = http_build_query($post);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $nvpreq);
+
+// Check the Header
+curl_setopt($ch, CURLOPT_HEADER, 1);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
 // Get response from the server.
 $resp = curl_exec($ch);
- 
-// The response will hold a string as per the API response method. In this case its PHP Serialize
-$res = unserialize($resp);
- 
-// Done ?
-if(!empty($res['done'])){
 
-	print_r($res);
+curl_close($ch);
 
-// Error
-}else{
+$resp = explode("\n", $resp);
 
-	echo 'Some error occured';
-	print_r($res['error']);
-
+// Find the cookies
+foreach($resp as $k => $v){
+	if(preg_match('/^'.preg_quote('set-cookie:', '/').'(.*?)$/is', $v, $mat)){
+		$cookie = $mat[1];
+	}
 }
+
+if(empty($cookie)){
+	echo "Unble to fetch cookie";
+	return;
+}
+
+
+$new_login = $plesk_url.'/modules/softaculous/index.php?api=serialize&act=software&soft=26';
+
+$resp = $ch = '';
+
+// Set the curl parameters.
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $new_login);
+
+// Turn off the server and peer verification (TrustManager Concept).
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+curl_setopt($ch, CURLOPT_HEADER, FALSE);
+
+$post = array('softsubmit' => '1',
+		'softdomain' => 'plesk18.nuftp.com',
+		'softdirectory' => 'wp14300',
+		'softdb' => 'wpapi',
+		'admin_username' => 'admin',
+		'admin_pass' => 'password',
+		'admin_email' => 'admin@example.com',
+		'language' => 'en',
+		'site_name' => 'WordPress Site',
+		'site_desc' => 'My Blog',
+		'dbprefix' => 'wpapi_'); // Keep empty to install in Web Root);
+
+curl_setopt($ch, CURLOPT_POST, 1);
+$nvpreq = http_build_query($post);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $nvpreq);
+
+// Is there a Cookie
+if(!empty($cookie)){
+	curl_setopt($ch, CURLOPT_COOKIESESSION, true);
+	curl_setopt($ch, CURLOPT_COOKIE, $cookie);
+}
+
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 1);
+
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+// Get response from the server.
+$resp = curl_exec($ch);
+
+// Did we reach out to that place ?
+if($resp === false){
+	echo 'Installation not completed. cURL Error : '.curl_error($ch);
+}
+
+curl_close($ch);
+
+// Was there any error ?
+if($resp != 'installed') {
+	echo 'Script not installed';
+}
+		
+print_r($resp);
+
 ?>
+
 ```
 ### Expected output of $resp
 ```php
