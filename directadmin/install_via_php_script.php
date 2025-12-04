@@ -1,6 +1,3 @@
-## via PHP script
-
-```php
 <?php
 
 $hostname = '';
@@ -93,4 +90,3 @@ if($resp === false){
 curl_close($ch);
 
 ?>
-```
