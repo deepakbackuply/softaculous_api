@@ -11,23 +11,21 @@ curl -d "backupins=1" -d "backup_dir=1" -d "backup_datadir=1" -d "backup_db=1" -
 ## via PHP script
 
 ```php
+
 <?php
 
-$url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?api=serialize&act=software&soft=26';
+// The URL
+$url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
+			'&api=serialize'.
+			'&act=backup'.
+			'&insid=26_4545';
 
-$post = array('softsubmit' => '1',
-              'softdomain' => 'example.com', // Must be a valid Domain
-              'softdirectory' => 'wp', // Keep empty to install in Web Root
-              'softdb' => 'wpdb',
-              'admin_username' => 'admin',
-              'admin_pass' => 'adminpassword',
-              'admin_email' => 'admin@example.com',
-              'language' => 'en',
-              'site_name' => 'WordPress Site',
-              'site_desc' => 'My Blog',
-              'dbprefix' => 'dbpref_',
-              'sets_name[]' => 'set-name'
-);
+$post = array('backupins' => '1',
+              'backup_dir' => '1', // Pass this if you want to backup the directory
+              'backup_datadir' => '1', // Pass this if you want to backup the data directory
+              'backup_db' => '1', // Pass this if you want to backup the database
+              'backup_location' => '2' //Pass this if you want the current backup to be stored at a different location.
+		);
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -46,23 +44,6 @@ if(!empty($post)){
  
 // Get response from the server.
 $resp = curl_exec($ch);
- 
-// The response will hold a string as per the API response method. In this case its PHP Serialize
-$res = unserialize($resp);
- 
-// Done ?
-if(!empty($res['done'])){
-
-	print_r($res);
-
-// Error
-}else{
-
-	echo 'Some error occured';
-	print_r($res['error']);
-
-}
-?>
 ```
 ### Expected output of $resp
 ```php
