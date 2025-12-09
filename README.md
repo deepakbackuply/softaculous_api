@@ -1,4 +1,4 @@
-# Softaculous Install Script Example
+## Install Script through Softaculous API
 
 This repository provides a working example of how to install scripts using the Softaculous API.
 
