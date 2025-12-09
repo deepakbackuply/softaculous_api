@@ -83,54 +83,8 @@ Your installation URL : https://domain.com
                     [0] => index.php
                     [1] => license.txt
                     [2] => readme.html
-                    [3] => wp-activate.php
-                    [4] => wp-admin
-                    [5] => wp-blog-header.php
-                    [6] => wp-comments-post.php
-                    [7] => wp-config-sample.php
-                    [8] => wp-content
-                    [9] => wp-cron.php
-                    [10] => wp-includes
-                    [11] => wp-links-opml.php
-                    [12] => wp-load.php
-                    [13] => wp-login.php
-                    [14] => wp-mail.php
-                    [15] => wp-settings.php
-                    [16] => wp-signup.php
-                    [17] => wp-trackback.php
-                    [18] => xmlrpc.php
-                    [19] => wp-config.php
-                    [20] => .htaccess
-                )
 
-            [site_name] => My Blog
-            [softaculous_pro_license] => 
-            [insid] => 26_14545
-            [display_softdbpass] => 
-            [script_name] => WordPress
-            [backup_location] => 2
-        )
-
-    [backupfile] => 
-    [insid] => 26_14545
-    [software] => Array
-        (
-            [name] => WordPress
-            [softname] => wp
-            [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
-            [ins] => 1
-            [cat] => blogs
-            [type] => php
-            [ver] => 6.9
-            [pre_down] => 1
-            [path] => /var/softaculous/wp
-        )
-
-    [soft] => 26
-    [error] => 
-    [timenow] => 1765272289
-    [time_taken] => 0.072
-)
+	.................continue        
 
 ```
 
