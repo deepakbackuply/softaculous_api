@@ -1,4 +1,4 @@
-# Softaculous API Install Guide
+# Install Script via API
 
 This document explains how to install a script using Softaculous API.
 
@@ -13,7 +13,10 @@ curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" -d "sof
 ```php
 <?php
 
-$url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?api=serialize&act=software&soft=26';
+$url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
+			'&api=serialize'.
+			'&act=software'.
+        	'&soft=26';
 
 $post = array('softsubmit' => '1',
               'softdomain' => 'example.com', // Must be a valid Domain
@@ -111,7 +114,7 @@ Array
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
 | act    | software, js, perl   | The value should be “software” to install PHP script, “js” to install a JavaScript and “perl” to install a PERL script for softaculous to perform the action of installing a software.   |
-| soft    | 26 (26 is the Script ID of WordPress)   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s here   |
+| soft    | 26 (26 is the Script ID of WordPress)   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s [here](https://api.softaculous.com/scripts.php?in=serialize)   |
 | **POST**    |
 | softsubmit  | 1   | This will trigger the install   |
 | softdomain | domain.com   | 	This is the domain on which you wish to install the script  |
