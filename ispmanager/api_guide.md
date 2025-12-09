@@ -13,7 +13,10 @@ curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" -d "sof
 ```php
 <?php
 
-$url = 'https://user:password@domain.com:1500/softaculous/index.php?api=serialize&act=software&soft=26';
+$url = 'https://user:password@domain.com:1500/softaculous/index.php?'.
+			'&api=serialize'.
+			'&act=software'.
+        	'&soft=26';
 
 $post = array('softsubmit' => '1',
               'softdomain' => 'example.com', // Must be a valid Domain
