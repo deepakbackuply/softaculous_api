@@ -8,5 +8,5 @@ This repository provides a working example of how to install scripts using the S
 - Returns success status in JSON format
 
 ## Usage
-Upload `install.md` on your server and install via CuRL
+Upload `install_via_php_script.php` on your server and install via Softaculous API
 
