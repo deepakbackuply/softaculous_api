@@ -45,7 +45,10 @@ if(empty($cookie)){
 }
 
 
-$new_login = $plesk_url.'/modules/softaculous/index.php?api=serialize&act=software&soft=26';
+$new_login = $plesk_url.'/modules/softaculous/index.php?'.
+			'&api=serialize'.
+			'&act=software'.
+        	'&soft=26';
 
 $resp = $ch = '';
 
