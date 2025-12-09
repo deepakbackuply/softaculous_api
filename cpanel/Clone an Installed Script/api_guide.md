@@ -5,7 +5,7 @@ This document explains how to clone an installation using Softaculous API.
 
 ## via CuRL
 ```php
-curl -d "backupins=1" -d "backup_dir=1" -d "backup_datadir=1" -d "backup_db=1" -d "backup_location=2" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=backup&insid=26_4545&api=json"
+curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" -d "softdb=wpdb" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=sclone&insid=26_12345&api=json"
 ```
 
 ## via PHP script
@@ -17,15 +17,14 @@ curl -d "backupins=1" -d "backup_dir=1" -d "backup_datadir=1" -d "backup_db=1" -
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
 			'&api=serialize'.
-			'&act=backup'.
-			'&insid=26_4545';
+			'&act=sclone'.
+			'&insid=26_12345';
 
-$post = array('backupins' => '1',
-              'backup_dir' => '1', // Pass this if you want to backup the directory
-              'backup_datadir' => '1', // Pass this if you want to backup the data directory
-              'backup_db' => '1', // Pass this if you want to backup the database
-              'backup_location' => '2' //Pass this if you want the current backup to be stored at a different location.
-		);
+$post = array('softsubmit' => '1',
+              'softdomain' => 'example.com', // Must be a valid Domain
+              'softdirectory' => 'wp', // Keep empty to install in Web Root
+              'softdb' => 'wpdb'
+);
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -44,11 +43,25 @@ if(!empty($post)){
  
 // Get response from the server.
 $resp = curl_exec($ch);
+ 
+// The response will hold a string as per the API response method. In this case its PHP Serialize
 $res = unserialize($resp);
+ 
+// Done ?
+if(!empty($res['done'])){
 
-echo '<pre>';
+	echo 'Cloned successfully. URL to Installation cloned installation : '.$res['__settings']['softurl'];
+
+// Error
+}else{
+
+	echo 'Some error occured';
+	print_r($res['error']);
+
+}
+
+// Print the entire output just incase !
 print_r($res);
-echo '</pre>';
 
 ?>
 ```
