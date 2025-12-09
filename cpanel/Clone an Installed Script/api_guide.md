@@ -98,7 +98,7 @@ Array
                     [2] => readme.html
                     [3] => wp-activate.php
                        
-	...................
+	...................continue
 
           
         
