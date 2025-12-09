@@ -70,14 +70,14 @@ print_r($res);
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
+    [done_msg] => Clone has been pushed in background
+    [insid] => 
+    [done] => mOxKdQYhl9XiYwsQHDltNBcuYVzq
     [userins] => Array
         (
             [sid] => 26
             [ver] => 6.9
-            [itime] => 1765257816
+            [itime] => 1765277380
             [softpath] => /home/user/public_html
             [softurl] => https://domain.com
             [adminurl] => wp-admin/
@@ -85,11 +85,11 @@ Your installation URL : https://domain.com
             [admin_username] => admin
             [admin_email] => admin@domain.com
             [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
+            [softdb] => wp586
+            [softdbuser] => wp586
             [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
+            [softdbpass] => **********
+            [dbprefix] => wp9b_
             [dbcreated] => 1
             [fileindex] => Array
                 (
@@ -118,31 +118,120 @@ Your installation URL : https://domain.com
 
             [site_name] => My Blog
             [softaculous_pro_license] => 
-            [insid] => 26_14545
-            [display_softdbpass] => 
+            [insid] => 26_12345
+            [display_softdbpass] => ********
             [script_name] => WordPress
-            [backup_location] => 2
         )
 
-    [backupfile] => 
-    [insid] => 26_14545
-    [software] => Array
+    [dbtype] => mysql
+    [__settings] => Array
         (
-            [name] => WordPress
-            [softname] => wp
-            [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
-            [ins] => 1
-            [cat] => blogs
-            [type] => php
+            [php_path] => php
+            [no_search_engine] => 
+            [site_name] => 
             [ver] => 6.9
-            [pre_down] => 1
-            [path] => /var/softaculous/wp
+            [softdomain] => domain.com
+            [softdirectory] => wpclone
+            [softpath] => /home/user/public_html
+            [softurl] => http://domain.com/wpclone
+            [softdb] => wpdb
+            [softdbuser] => wpdb
+            [softdbhost] => localhost
+            [softdbpass] => *********
+            [fileindex] => Array
+                (
+                    [0] => index.php
+                    [1] => license.txt
+                    [2] => readme.html
+                    [3] => wp-activate.php
+                    [4] => wp-admin
+                    [5] => wp-blog-header.php
+                    [6] => wp-comments-post.php
+                    [7] => wp-config-sample.php
+                    [8] => wp-content
+                    [9] => wp-cron.php
+                    [10] => wp-includes
+                    [11] => wp-links-opml.php
+                    [12] => wp-load.php
+                    [13] => wp-login.php
+                    [14] => wp-mail.php
+                    [15] => wp-settings.php
+                    [16] => wp-signup.php
+                    [17] => wp-trackback.php
+                    [18] => xmlrpc.php
+                    [19] => wp-config.php
+                    [20] => .htaccess
+                )
+
+            [src_is_root] => 
         )
 
-    [soft] => 26
-    [error] => 
-    [timenow] => 1765272289
-    [time_taken] => 0.072
+    [notes] => 
+    [cron] => 
+    [datadir] => 
+    [overwrite_option] => 
+    [protocols] => Array
+        (
+            [1] => http://
+            [2] => http://www.
+            [3] => https://
+            [4] => https://www.
+        )
+
+    [nopackage] => 
+    [setupcontinue] => 
+    [data] => Array
+        (
+            [sid] => 26
+            [ver] => 6.9
+            [itime] => 1765277380
+            [softpath] => /home/user/public_html
+            [softurl] => https://domain.com
+            [adminurl] => wp-admin/
+            [disable_wp_cron] => 
+            [admin_username] => admin
+            [admin_email] => admin@domain.com
+            [softdomain] => domain.com
+            [softdb] => wp586
+            [softdbuser] => wp586
+            [softdbhost] => localhost
+            [softdbpass] => *********
+            [dbprefix] => wp9b_
+            [dbcreated] => 1
+            [fileindex] => Array
+                (
+                    [0] => index.php
+                    [1] => license.txt
+                    [2] => readme.html
+                    [3] => wp-activate.php
+                    [4] => wp-admin
+                    [5] => wp-blog-header.php
+                    [6] => wp-comments-post.php
+                    [7] => wp-config-sample.php
+                    [8] => wp-content
+                    [9] => wp-cron.php
+                    [10] => wp-includes
+                    [11] => wp-links-opml.php
+                    [12] => wp-load.php
+                    [13] => wp-login.php
+                    [14] => wp-mail.php
+                    [15] => wp-settings.php
+                    [16] => wp-signup.php
+                    [17] => wp-trackback.php
+                    [18] => xmlrpc.php
+                    [19] => wp-config.php
+                    [20] => .htaccess
+                )
+
+            [site_name] => My Blog
+            [softaculous_pro_license] => 
+            [insid] => 26_12345
+            [display_softdbpass] => ********
+            [script_name] => WordPress
+        )
+
+    [timenow] => 1765281506
+    [time_taken] => 8.203
 )
 
 ```
@@ -152,12 +241,10 @@ Your installation URL : https://domain.com
 | Key | Value | Description |
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
-| act    | backup   | The value should be “backup” to perform the action of taking the backup of the installation. |
-| insid    | 26_4545 (Installation ID)   | Installation ID of the installed script. It can be fetched from List Installed Script   |
+| act    | sclone   | The value should be “sclone” for Softaculous to perform the action of cloning an installation. |
+| insid    | 26_12345 (Installation ID)   | Installation ID of the installed script. It can be fetched from List Installed Script   |
 | **POST**    |
-| backupins  | 1   | This will trigger the backup function.   |
-| backup_dir | 1   | 	This is to backup the directory  |
-| backup_datadir  | 1   | This is to backup the data directory   |
-| backup_db  | 1   | 	This is to backup the database   |
-| backup_location  | 2 (Location ID)   | (Optional) – Location id of the backup location where you want to store your current backup. Default value will be the one saved in the installation’s settings. You can find the location id from List Backup Locations   |
-| noemail  | 1   | (Optional) – Use this only if you do not want to send an email to the user   |
+| softsubmit  | 1   | This will trigger the upgrade   |
+| softdomain | domain.com	| 	This is the domain on which you wish to clone the installation  |
+| softdirectory  | wp   | This is the sub-directory to clone the installation in. Leave it blank to clone in root of the domain   |
+| softdb  | wp123   | 	This is the database name for the cloned installation. If the script does not require database you can leave this blank.   |
