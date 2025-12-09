@@ -44,7 +44,8 @@ if(!empty($post)){
  
 // Get response from the server.
 $resp = curl_exec($ch);
-$res = unserialize($resp)
+$res = unserialize($resp);
+
 echo '<pre>';
 print_r($res);
 echo '</pre>';
