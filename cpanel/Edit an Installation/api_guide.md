@@ -73,35 +73,52 @@ print_r($res);
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Clone has been pushed in background
-    [insid] => 
-    [done] => mOxKdQYhl9XiYwsQHDltNBcuYVzq
-    [userins] => Array
+    [done] => 1
+    [settings] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765277380
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => wp586
-            [softdbuser] => wp586
-            [softdbhost] => localhost
-            [softdbpass] => **********
-            [dbprefix] => wp9b_
-            [dbcreated] => 1
-            [fileindex] => Array
+            [Admin Account] => Array
                 (
-                    [0] => index.php
-                    [1] => license.txt
-                    [2] => readme.html
-                    [3] => wp-activate.php
+                    [admin_username] => Array
+                        (
+                            [tag] => admin
+                            [head] => Admin Username
+                            [exp] => The username/email for which you want to change the password. Leave blank if you do not want to reset the password
+                            [handle] => 
+                            [optional] => 1
+                            [quick_install] => 1
+                            [minlen] => 
+                        )
+
+                    [admin_pass] => Array
+                        (
+                            [tag] => password123
+                            [head] => Admin Password
+                            [exp] => New password. Leave blank if you do not want to reset the password
+                            [handle] => 
+                            [optional] => 1
+                            [quick_install] => 1
+                            [minlen] => 
+                        )
+
+                    [signon_username] => Array
+                        (
+                            [save] => 1
+                            [tag] => 
+                            [head] => Sign on Username
+                            [exp] => If set then this user will be used for sign on
+                            [handle] => 
+                            [optional] => 1
+                            [quick_install] => 
+                            [minlen] => 
+                        )
+
+                )
+
+        )
+   
+)
                        
-	...................continue
+...................continue
 
           
         
