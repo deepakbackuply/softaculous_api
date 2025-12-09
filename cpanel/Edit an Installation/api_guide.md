@@ -16,7 +16,7 @@ curl -d "editins=1" -d "edit_dir=/path/to/installation/" -d "edit_url=http://exa
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
 			'&api=serialize'.
 			'&act=editdetail'.
-                        '&insid=26_12345';
+			'&insid=26_12345';
 
 $post = array('editins' => '1',
               'edit_dir' => '/path/to/installation/', // Must be the path to installation
