@@ -1,4 +1,4 @@
-# Softaculous API Backup Guide
+## Softaculous API Backup Guide
 
 This document explains how to install a script using Softaculous API.
 
