@@ -17,7 +17,7 @@ curl -d "removeins=1" -d "remove_dir=1" -d "remove_datadir=1" -d "remove_db=1" -
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
 			'&api=serialize'.
 			'&act=remove'.
-      '&insid=26_12345';
+			'&insid=26_12345';
 
 $post = array('removeins' => '1',
               'remove_dir' => '1', // Pass this if you want the directory to be removed
