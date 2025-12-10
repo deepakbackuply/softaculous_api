@@ -1,9 +1,9 @@
-# List all installations via Softaculous API
+## List all installations via Softaculous API
 
 This document explains how to install a script using Softaculous API.
 
 
-## via CuRL
+## via cURL
 ```php
 curl "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=installations&api=json"
 ```
