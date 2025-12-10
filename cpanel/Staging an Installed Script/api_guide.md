@@ -67,29 +67,29 @@ print_r($res);
 ```
 ### Expected output of $resp
 ```php
+Staging was successfully created. URL to Installation Staging installation : http://domain.com/wpstaging
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done] => 1
-    [insid] => 26_12345
-    [user_ins] => Array
+    [done_msg] => Staging has been pushed in background
+    [insid] => 
+    [done] => ARkhCrgmhkJi3vKtJMMfVGUwmpXG
+    [userins] => Array
         (
             [sid] => 26
             [ver] => 6.9
-            [itime] => 1765349331
+            [itime] => 1765348869
             [softpath] => /home/user/public_html
             [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
+            [admin_folder] => wp-admin/
+            [site_name] => My Blog
             [softdomain] => domain.com
-            [softdb] => wp139
-            [softdbuser] => wp139
+            [softdb] => wp248
+            [softdbuser] => wp248
             [softdbhost] => localhost
-            [softdbpass] => *******
-            [dbprefix] => wpey_
+            [softdbpass] => *********
             [dbcreated] => 1
+            [dbprefix] => wpod_
             [fileindex] => Array
                 (
                     [0] => index.php
@@ -98,48 +98,8 @@ Array
                     [3] => wp-activate.php
                     [4] => wp-admin
                     [5] => wp-blog-header.php
-                    [6] => wp-comments-post.php
-                    [7] => wp-config-sample.php
-                    [8] => wp-content
-                    [9] => wp-cron.php
-                    [10] => wp-includes
-                    [11] => wp-links-opml.php
-                    [12] => wp-load.php
-                    [13] => wp-login.php
-                    [14] => wp-mail.php
-                    [15] => wp-settings.php
-                    [16] => wp-signup.php
-                    [17] => wp-trackback.php
-                    [18] => xmlrpc.php
-                    [19] => wp-config.php
-                    [20] => .htaccess
-                )
 
-            [site_name] => My Blog
-            [insid] => 26_12345
-            [display_softdbpass] => ******
-            [script_name] => WordPress
-        )
-
-    [software] => Array
-        (
-            [name] => WordPress
-            [softname] => wp
-            [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
-            [ins] => 1
-            [cat] => blogs
-            [type] => php
-            [ver] => 6.9
-            [pre_down] => 1
-            [path] => /var/softaculous/wp
-        )
-
-    [soft] => 26
-    [timenow] => 1765351406
-    [time_taken] => 1.188
-)
-
-.........
+	.........
 
 ```
 
