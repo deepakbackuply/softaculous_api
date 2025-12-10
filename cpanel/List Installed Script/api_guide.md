@@ -58,39 +58,57 @@ if(!empty($res['error'])){
 ```php
 Array
 (
-    [title] => Softaculous 
-    [done] => 1
-    [info] => Array
+    [26] => Array
         (
-            [overview] => WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
-            [install] => 
-            [features] => WordPress powers more than 23% of the web - a figure that rises every day. Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.
-            [demo] => http://www.softaculous.com/demos/WordPress
-            [ratings] => http://www.softaculous.com/softwares/blogs/WordPress
-            [support] => http://www.wordpress.org/
-            [release_date] => 30-09-2025
-            [mod] => 254
-            [mod_files] => 
-            [import] => 1
-        )
-
-    [settings] => Array
-        (
-            [Database Settings] => Array
+            [26_12345] => Array
                 (
-                    [dbprefix] => Array
+                    [sid] => 26
+                    [ver] => 6.9
+                    [itime] => 1761230450
+                    [softpath] => /home/user/public_html
+                    [softurl] => https://domain.com
+                    [adminurl] => wp-admin/
+                    [disable_wp_cron] => 
+                    [admin_username] => admin
+                    [admin_email] => admin@domain.com
+                    [softdomain] => domain.com
+                    [softdb] => wp45
+                    [softdbuser] => wp45
+                    [softdbhost] => localhost
+                    [softdbpass] => *********
+                    [dbprefix] => wp3a_
+                    [dbcreated] => 1
+                    [fileindex] => Array
                         (
-                            [tag] => wp_
-                            [head] => Table Prefix
-                            [exp] => 
-                            [handle] => 
-                            [optional] => 1
-                            [quick_install] => 
-                            [minlen] => 
-                            [orig_val] => wp_
+                            [0] => index.php
+                            [1] => license.txt
+                            [2] => readme.html
+                            [3] => wp-activate.php
+                            [4] => wp-admin
+                            [5] => wp-blog-header.php
+                            [6] => wp-comments-post.php
+                            [7] => wp-config-sample.php
+                            [8] => wp-content
+                            [9] => wp-cron.php
+                            [10] => wp-includes
+                            [11] => wp-links-opml.php
+                            [12] => wp-load.php
+                            [13] => wp-login.php
+                            [14] => wp-mail.php
+                            [15] => wp-settings.php
+                            [16] => wp-signup.php
+                            [17] => wp-trackback.php
+                            [18] => xmlrpc.php
+                            [19] => wp-config.php
+                            [20] => .htaccess
                         )
 
+                    [site_name] => My Blog
+                    [insid] => 26_12345
+                    [script_name] => WordPress
+                    [display_softdbpass] => ******
                 )
+
 .........
 
 ```
