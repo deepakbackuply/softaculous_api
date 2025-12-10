@@ -1,1 +1,0 @@
-## install using php script
