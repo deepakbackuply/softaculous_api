@@ -1,4 +1,1 @@
-## Remove installation via cURL
-```php
 curl -d "removeins=1" -d "remove_dir=1" -d "remove_datadir=1" -d "remove_db=1" -d "remove_dbuser=1" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=remove&insid=26_12345&api=json"
-```
