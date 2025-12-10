@@ -44,6 +44,9 @@ if(!empty($post)){
 // Get response from the server.
 $resp = curl_exec($ch);
 
+$res = unserialize($resp);
+print_r($res);
+
 ?>
 
 ```
