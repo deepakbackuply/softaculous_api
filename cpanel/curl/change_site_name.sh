@@ -1,0 +1,1 @@
+curl -d "insid=26_31793" -d "softurl=https://example.com/test" -d "site_name=My Blog Test" -d "save_info=1" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=wordpress&api=json"
