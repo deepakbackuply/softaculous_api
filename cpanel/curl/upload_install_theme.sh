@@ -1,0 +1,1 @@
+curl -i -X POST -H "Content-Type: multipart/form-data" -F "custom_file=@/path/to/twentytwenty.1.8.zip" -F "insid=26_31793" -F "type=themes" -F "activate=1" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=wordpress&api=json&upload=1"
