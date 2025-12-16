@@ -1,0 +1,1 @@
+curl -d "addbackuploc=1" -d "location_name=Backuploc1" -d "server_host=example.com" -d "protocol=ftp" -d "port=21" -d "ftp_user=ftpusername" -d "ftp_pass=ftppassword" -d "backup_loc=/backups" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=addbackuploc&api=json"
