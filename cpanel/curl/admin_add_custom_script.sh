@@ -1,0 +1,1 @@
+curl -d "csname=Custom Script" -d "softname=custom" -d "desc=My Custom Script" -d "ver=1.0" -d "cat=blogs" -d "add_submit=1" "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=customscripts&sact=add&api=json"
