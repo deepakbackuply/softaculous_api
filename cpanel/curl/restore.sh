@@ -1,0 +1,1 @@
+curl -d "restore_ins=1" -d "restore_dir=1" -d "restore_datadir=1" -d "restore_db=1" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=restore&restore=backup_time_insid.tar.gz&api=json"
