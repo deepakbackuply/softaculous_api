@@ -1,0 +1,1 @@
+curl -d "listinstallations=1" -d "only_realversion=1" -d "list[]=username-26_68351" -d "list[]=username-26_68352" "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=installations&api=json"
