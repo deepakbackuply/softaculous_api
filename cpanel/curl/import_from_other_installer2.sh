@@ -1,0 +1,1 @@
+curl -d "softsubmit=1" -d "approved[]=cbpny97zd5kcsk4coo8gws084" -d "approved[]=dxw755lmeb4s4cw40o8o8kk44" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=sync&api=json"
