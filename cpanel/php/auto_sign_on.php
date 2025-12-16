@@ -20,5 +20,6 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
  
 // Get response from the server.
 $resp = curl_exec($ch);
+$op = unserialize($resp);
 
 ?>
