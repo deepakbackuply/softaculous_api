@@ -1,0 +1,1 @@
+curl -d "updatesoft=Update Settings" -d "soft_26=1" -d "soft_18=1" -d "soft_543=1" -d "soft_11=1" -d "soft_3=1" -d "soft_34=1" -d "soft_14=1" -d "soft_470=1" "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=softwares&api=json"
