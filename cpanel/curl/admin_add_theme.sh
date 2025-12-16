@@ -1,0 +1,1 @@
+curl -d "add_plugins_themes_data_slugs[]=popularfx" -d "add_plugins_themes_data_names[]=PopularFx" "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=manage_sets&sets_name=SET-NAME_admin&themes=1&add_plugins_themes_data=1&api=json"
