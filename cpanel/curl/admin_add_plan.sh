@@ -1,0 +1,1 @@
+curl -d "saveplan=1" -d "planname=1" -d "cpplan_CPPlanName" -d "resellers_abc=1" -d "users_xyz=1" -d "scripts_26=1" -d "scripts_413=1" "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=addplans&api=json"
