@@ -1,0 +1,1 @@
+curl -d "softproto=1" -d "softdomain=domain.com" -d "softdirectory=wptemplate" -d "softdb=wp123" -d "site_name=myblog" -d "softsubmit=1" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=restore_template&restore=my-template.tar.gz&autoid=abcdefghijklmnopqrstuvwxyz0123456789&api=json"
