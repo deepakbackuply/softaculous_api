@@ -1,0 +1,1 @@
+curl -d "insid=26_31793" -d "admin_username=admin" -d "admin_password=new_password" -d "save_admin_info=1" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=wordpress&api=json"
