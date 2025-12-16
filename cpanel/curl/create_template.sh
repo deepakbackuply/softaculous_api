@@ -1,0 +1,1 @@
+curl -d "template_name=MyTemplate" -d "template_type=1" -d "disallow_plugins=on" -d "createtemplate=1" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=create_template&insid=26_12345&autoid=abcdefghijklmnopqrstuvwxyz0123456789&api=json"
