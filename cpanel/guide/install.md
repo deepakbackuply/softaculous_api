@@ -67,7 +67,7 @@ if(!empty($res['done'])){
 }
 ?>
 ```
-### Expected output of $resp
+### Expected response
 ```php
 Array
 (
