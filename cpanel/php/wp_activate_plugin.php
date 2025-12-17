@@ -2,14 +2,14 @@
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-                        '&act=wordpress';
+			  '&api=serialize'.
+              '&act=wordpress';
 
 $post = array('insid' => '26_31793',
               'type' => 'plugins',
               'slug' => 'akismet/akismet.php',
               'activate' => '1'
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
