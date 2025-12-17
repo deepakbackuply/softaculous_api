@@ -89,22 +89,7 @@ Array
 
     [settings] => Array
         (
-            [Database Settings] => Array
-                (
-                    [dbprefix] => Array
-                        (
-                            [tag] => wp_
-                            [head] => Table Prefix
-                            [exp] => 
-                            [handle] => 
-                            [optional] => 1
-                            [quick_install] => 
-                            [minlen] => 
-                            [orig_val] => wp_
-                        )
-
-                )
-.........
+            [Database Settings] => Array ...........
 
 ```
 
