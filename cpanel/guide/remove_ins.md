@@ -1,4 +1,4 @@
-## Remove installation via Softaculous API guide
+## Remove installation using Softaculous API guide
 
 This document explains how to remove an installation using Softaculous API.
 
