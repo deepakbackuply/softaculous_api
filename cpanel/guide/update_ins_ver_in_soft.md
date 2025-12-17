@@ -1,4 +1,4 @@
-# Install Script via API
+## Update installation version in Softaculous record
 
 This document explains how to update the installation version in Softaculous records using Softaculous API.
 
