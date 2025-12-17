@@ -2,8 +2,8 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
- '&api=serialize'.
- '&act=sync';
+             '&api=serialize'.
+             '&act=sync';
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -23,6 +23,7 @@ if(!empty($post)){
 // Get response from the server.
 $resp = curl_exec($ch);
 $res = unserialize($resp);
+
 print_r($res);
 
 ?>
