@@ -10,7 +10,7 @@ $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
 
 $post = array('add_plugins_themes_data_slugs' => array('loginizer'), //Slug name
               'add_plugins_themes_data_names' => array('Loginizer') //Plugin name
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
