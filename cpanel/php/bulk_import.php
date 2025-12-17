@@ -2,8 +2,8 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-         '&api=serialize'.
-         '&act=sync';
+                  '&api=serialize'.
+                  '&act=sync';
 
 $post = array('import_all' => 1);
 
