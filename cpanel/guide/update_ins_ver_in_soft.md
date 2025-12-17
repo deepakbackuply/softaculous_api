@@ -1,4 +1,4 @@
-## Update installation version in Softaculous record
+## Update installation version in Softaculous record via Softaculous API guide
 
 This document explains how to update the installation version in Softaculous records using Softaculous API.
 
