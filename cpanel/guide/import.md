@@ -1,0 +1,86 @@
+## Import an installation using Softaculous API guide
+
+This document explains how to import an installation using Softaculous API.
+
+
+### via cURL
+```php
+curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=import&soft=26&api=json"
+```
+
+### via PHP script
+
+```php
+<?php
+
+// The URL
+$url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
+         '&api=serialize'.
+         '&act=import'.
+         '&soft=26';
+
+$post = array('softsubmit' => 1,
+             'softdomain' => 'example.com',
+             'softdirectory' => 'wp');
+
+// Set the curl parameters.
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+// Turn off the server and peer verification (TrustManager Concept).
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+
+if(!empty($post)){
+ curl_setopt($ch, CURLOPT_POST, 1);
+ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+}
+ 
+// Get response from the server.
+$resp = curl_exec($ch);
+
+?>
+
+```
+### Expected output of $resp
+```php
+Staging was successfully created. URL to Installation Staging installation : http://domain.com/wpstaging
+Array
+(
+    [title] => Softaculous - Powered by Softaculous
+    [done_msg] => Staging has been pushed in background
+    [insid] => 
+    [done] => ARkhCrgmhkJi3vKtJMMfVGUwmpXG
+    [userins] => Array
+        (
+            [sid] => 26
+            [ver] => 6.9
+            [itime] => 1765348869
+            [softpath] => /home/user/public_html
+            [softurl] => https://domain.com
+            [admin_folder] => wp-admin/
+            [site_name] => My Blog
+            [softdomain] => domain.com
+            [softdb] => wp248
+            [softdbuser] => wp248
+            [softdbhost] => localhost
+            [softdbpass] => *********
+            [dbcreated] => 1
+            [dbprefix] => wpod_
+            [fileindex] => Array ............
+
+```
+
+### Required Parameters
+
+| Key | Value | Description |
+|----------|----------|----------|
+| Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
+| act    | import   | The value should be “import” for softaculous to perform the action of staging an installation.   |
+| soft    | 26 (26 is the Script ID of WordPress)   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s [here](https://api.softaculous.com/scripts.php?in=serialize)  |
+| **Post** |
+| softdomain    | domain.com   | 	This will be the domain where your script is installed. Domain should be without http:// or https:// |
+| softdirectory    | wp   | 	(OPTIONAL) This will be the directory under the domain where your script is installed. Leave this blank if the script is installed in the root of domain.  |
+| softsubmit    | 1  | This will trigger the import function.  |
