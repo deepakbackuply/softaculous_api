@@ -2,9 +2,9 @@
 
 // URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
-			'&api=serialize'.
-			'&act=customscripts'.
-                         '&sact=add';
+				'&api=serialize'.
+				'&act=customscripts'.
+            	'&sact=add';
 
 $post = array('csname' => 'CUSTOM SCRIPT', //Name of your custom script
               'softname' => 'custom', //Name of the custom script folder
