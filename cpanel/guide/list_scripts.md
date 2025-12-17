@@ -3,12 +3,12 @@
 This document explains how to fetch the script list using Softaculous API.
 
 
-## via cURL
+### via cURL
 ```php
 curl "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=home&api=json"
 ```
 
-## via PHP script
+### via PHP script
 
 ```php
 <?php
@@ -79,7 +79,7 @@ Array
 
 ```
 
-## Required Parameters
+### Required Parameters
 
 | Key | Value | Description |
 |----------|----------|----------|
