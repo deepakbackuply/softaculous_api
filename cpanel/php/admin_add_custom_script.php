@@ -12,7 +12,7 @@ $post = array('csname' => 'CUSTOM SCRIPT', //Name of your custom script
               'ver' => '1.0', //Version of custom script
               'cat' => 'blogs', //Category
               'add_submit' => '1'
- );
+ 			);
 
 // Set the curl parameters.
 $ch = curl_init();
