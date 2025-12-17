@@ -2,7 +2,7 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&act=home&api=serialize';
+				'&act=home&api=serialize';
 
 // Set the curl parameters.
 $ch = curl_init();
