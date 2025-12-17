@@ -101,5 +101,5 @@ Array
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
 | act    |editdetail   | The value should be “editdetail” for softaculous to perform the action of editing an installation.   |
-| soft    | 26_12345   | The installation ID that you want to edit.   |
+| insid    | 26_12345   | The installation ID that you want to edit.   |
 | updateversion    | 1   | The value should be 1 so it will invoke the method to determine and update the Softaculous records with the correct version of the installation   |
