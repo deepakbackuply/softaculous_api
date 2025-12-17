@@ -2,9 +2,9 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=backups'.
-			'&download=backup_time_insid.tar.gz';
+				'&api=serialize'.
+				'&act=backups'.
+				'&download=backup_time_insid.tar.gz';
 
 
 // Set the curl parameters.
