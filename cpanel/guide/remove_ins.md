@@ -106,25 +106,7 @@ Array
             [script_name] => WordPress
         )
 
-    [software] => Array
-        (
-            [name] => WordPress
-            [softname] => wp
-            [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
-            [ins] => 1
-            [cat] => blogs
-            [type] => php
-            [ver] => 6.9
-            [pre_down] => 1
-            [path] => /var/softaculous/wp
-        )
-
-    [soft] => 26
-    [timenow] => 1765351406
-    [time_taken] => 1.188
-)
-
-.........
+    [software] => Array ...........
 
 ```
 
