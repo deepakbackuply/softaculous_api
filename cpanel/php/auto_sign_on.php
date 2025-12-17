@@ -2,10 +2,10 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=sign_on'.
-			'&insid=26_12345'.
-			'&autoid=abcdefghijklmnopqrstuvwxyz0123456789';
+				'&api=serialize'.
+				'&act=sign_on'.
+				'&insid=26_12345'.
+				'&autoid=abcdefghijklmnopqrstuvwxyz0123456789';
 
 
 // Set the curl parameters.
