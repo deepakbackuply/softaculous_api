@@ -68,7 +68,7 @@ if(!empty($res['done'])){
 // Print the entire output just incase !
 print_r($res);
 ```
-### Expected output of $resp
+### Expected response
 ```php
 
 Upgraded successfully. URL to Installation : https://domain.com
