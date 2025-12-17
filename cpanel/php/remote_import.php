@@ -2,9 +2,9 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=import'.
-			'&soft=26';
+			  '&api=serialize'.
+			  '&act=import'.
+			  '&soft=26';
 
 $post = array('remote_submit' => '1',
               'domain' => 'source.example.com', // Source installation domain
@@ -18,7 +18,7 @@ $post = array('remote_submit' => '1',
               'softdomain' => 'destination.example.com', // Destination domain
               'dest_directory' => 'wp_dest', // Optional Directory
               'softdb' => 'dbname' // Database name (Option for scripts that do not have database name)
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
