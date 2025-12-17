@@ -2,10 +2,10 @@
 
 //The URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
-			'&api=serialize'.
-                        '&set_name=SET-NAME_admin'.
-                        '&default_value=1'.
-			'&act=manage_sets';
+				'&api=serialize'.
+                '&set_name=SET-NAME_admin'.
+                '&default_value=1'.
+				'&act=manage_sets';
 
 // Set the curl parameters.
 $ch = curl_init();
