@@ -83,8 +83,7 @@ Your installation URL : https://domain.com
                     [0] => index.php
                     [1] => license.txt
                     [2] => readme.html
-
-	.................continue        
+				).................
 
 ```
 
