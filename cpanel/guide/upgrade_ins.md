@@ -70,42 +70,32 @@ print_r($res);
 ```
 ### Expected output of $resp
 ```php
+
+Upgraded successfully. URL to Installation : https://domain.com
 Array
 (
-    [title] => Softaculous 
+    [title] => Softaculous - Powered by Softaculous
     [done] => 1
-    [info] => Array
+    [software] => Array
         (
-            [overview] => WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
-            [install] => 
-            [features] => WordPress powers more than 23% of the web - a figure that rises every day. Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.
-            [demo] => http://www.softaculous.com/demos/WordPress
-            [ratings] => http://www.softaculous.com/softwares/blogs/WordPress
-            [support] => http://www.wordpress.org/
-            [release_date] => 30-09-2025
-            [mod] => 254
-            [mod_files] => 
-            [import] => 1
+            [name] => WordPress
+            [softname] => wp
+            [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
+            [ins] => 1
+            [cat] => blogs
+            [type] => php
+            [ver] => 6.9
+            [pre_down] => 1
+            [path] => /var/softaculous/wp
+            [spacereq] => 77628622
+            [adminurl] => wp-admin/
+            [update_plugins] => 1
+            [update_themes] => 1
         )
 
-    [settings] => Array
-        (
-            [Database Settings] => Array
-                (
-                    [dbprefix] => Array
-                        (
-                            [tag] => wp_
-                            [head] => Table Prefix
-                            [exp] => 
-                            [handle] => 
-                            [optional] => 1
-                            [quick_install] => 
-                            [minlen] => 
-                            [orig_val] => wp_
-                        )
+    [soft] => 26
+    [info] => Array (.........
 
-                )
-.........
 
 ```
 
@@ -115,6 +105,6 @@ Array
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
 | act    | upgrade   | The value should be “upgrade” for softaculous to perform the action of upgrading an installation.   |
-| insid    | 26_12345   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s [here](https://api.softaculous.com/scripts.php?in=serialize)   |
+| insid    | 26_12345   | The installation ID that you want to upgrade.  |
 | **POST**    |
 | softsubmit  | 1   | This will trigger the upgrade   |
