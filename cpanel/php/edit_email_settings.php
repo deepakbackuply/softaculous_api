@@ -2,12 +2,13 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=email';
+			  '&api=serialize'.
+			  '&act=email';
 
 $post = array('editemailsettings' => 1,
-		'email' => 'admin@example.com',
-		'ins_email' => '1');
+			  'email' => 'admin@example.com',
+			  'ins_email' => '1'
+			 );
 
 // Set the curl parameters.
 $ch = curl_init();
