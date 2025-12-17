@@ -1,4 +1,4 @@
-## Install Script through Softaculous API
+## Install script through Softaculous API
 
 This repository provides a working example of how to install scripts using the Softaculous API.
 
@@ -8,5 +8,5 @@ This repository provides a working example of how to install scripts using the S
 - Returns success status in JSON format
 
 ## Usage
-Upload `install_via_php_script.php` on your server and install via Softaculous API
+Upload the required file to your server and execute or run that file to install, clone, upgrade, backup, etc.
 
