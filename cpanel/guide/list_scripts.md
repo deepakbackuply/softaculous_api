@@ -38,7 +38,7 @@ print_r($res['iscripts']);
 
 ?>
 ```
-### Expected output of $resp
+### Expected response
 ```php
 Array
 (
