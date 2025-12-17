@@ -1,9 +1,9 @@
 <?php
 
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=software'.
-        	'&soft=26';
+			  '&api=serialize'.
+			  '&act=software'.
+        	  '&soft=26';
 
 $post = array('softsubmit' => '1',
               'softdomain' => 'example.com', // Must be a valid Domain
@@ -17,7 +17,7 @@ $post = array('softsubmit' => '1',
               'site_desc' => 'My Blog',
               'dbprefix' => 'dbpref_',
               'sets_name[]' => 'set-name'
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
