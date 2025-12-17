@@ -40,6 +40,9 @@ if(!empty($post)){
  
 // Get response from the server.
 $resp = curl_exec($ch);
+$res = unserialize($resp);
+
+print_r($res);
 
 ?>
 
@@ -49,15 +52,12 @@ $resp = curl_exec($ch);
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [error] => Array
-        (
-            [softdomain] => The path of the domain nuftp.com could not be found.
-        )
-
     [done_msg] => Import has been pushed in background
     [insid] => 
-    [done] => KlK9gsb1ESTidL7kAmWcPnI8zWKb
-    [info] => Array...............  
+    [done] => cMEBlvDzEN2zPjowzZT6fzeLWm1
+    [info] => Array
+         (
+            [overview] => ...............  
 
 ```
 
