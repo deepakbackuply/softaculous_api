@@ -62,9 +62,6 @@ Array
 | Key | Value | Description |
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
-| act    | import   | The value should be “import” for softaculous to perform the action of staging an installation.   |
-| soft    | 26 (26 is the Script ID of WordPress)   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s [here](https://api.softaculous.com/scripts.php?in=serialize)  |
+| act    | sync   | The value should be “sync” to perform the action of importing all installations.   |
 | **Post** |
-| softdomain    | domain.com   | 	This will be the domain where your script is installed. Domain should be without http:// or https:// |
-| softdirectory    | wp   | 	(OPTIONAL) This will be the directory under the domain where your script is installed. Leave this blank if the script is installed in the root of domain.  |
-| softsubmit    | 1  | This will trigger the import function.  |
+| import_all   | 1   | This will trigger the import function to import all manual installations. |
