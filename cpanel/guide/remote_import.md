@@ -86,7 +86,7 @@ Array
 | ftp_pass | ftp_pass  | Password for User to connect to the FTP server.  |
 | ftp_path | /public_html | Path to the directory relative to home directory of user for installations.  |
 | Installed_path | wp  | (OPTIONAL) This will be the directory under the domain where your script is installed. Leave this blank if the script is installed in the root of domain.  |
-| softproto | 1 – http:// 2 – http://www. 3 – https:// 4 – https://www.  | (Optional) – Protocol to be used for the destination installation.  |
+| softproto | 1 – http:// <br> 2 – http://www. <br> 3 – https:// <br> 4 – https://www.  | (Optional) – Protocol to be used for the destination installation.  |
 | softdomain    | destination.example.com  | This is the destination domain on which you wish to import the script.  |
 | dest_directory | wp_dest  | (OPTIONAL) This will be the directory under the domain where you want the installation to be imported. Leave this blank if you want to import the installation to the root of your domain. |
 | softdb | dbname | (OPTIONAL) This is the database name for the script. If the script does not require database you can leave this blank  |
