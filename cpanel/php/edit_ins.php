@@ -1,9 +1,9 @@
 <?php
 
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=editdetail'.
-			'&insid=26_12345';
+			  '&api=serialize'.
+			  '&act=editdetail'.
+			  '&insid=26_12345';
 
 $post = array('editins' => '1',
               'edit_dir' => '/path/to/installation/', // Must be the path to installation
@@ -14,7 +14,7 @@ $post = array('editins' => '1',
               'edit_dbhost' => 'dbhost',
               'admin_username' => 'adminusername', //Provide this only if script provides as well as password needs to be reset
               'admin_pass' => 'adminpassword' //Provide this only if script provides
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
