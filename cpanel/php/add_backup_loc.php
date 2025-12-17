@@ -13,7 +13,7 @@ $post = array('addbackuploc' => '1',
 	      	  'ftp_user' => 'ftpusername',
 	      	  'ftp_pass' => 'ftppassword',
 	      	  'backup_loc' => '/backups',
-	      );
+	      	);
 
 // Set the curl parameters.
 $ch = curl_init();
