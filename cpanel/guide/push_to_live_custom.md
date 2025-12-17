@@ -3,12 +3,12 @@
 This guide explains how to push the site to its live site using Softaculous API.
 
 
-## via cURL
+### via cURL
 ```php
 curl -d "softsubmit=1" -d "custom_push=1" -d "overwrite_files=1" -d "push_db=1" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=pushtolive&insid=26_12345&api=json"
 ```
 
-## via PHP script
+### via PHP script
 
 ```php
 <?php
@@ -92,7 +92,7 @@ Array
 
 ```
 
-## Required Parameters
+### Required Parameters
 
 | Key | Value | Description |
 |----------|----------|----------|
