@@ -2,16 +2,15 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=pushtolive'.
-            '&insid=26_12345';
+			  '&api=serialize'.
+			  '&act=pushtolive'.
+              '&insid=26_12345';
 
 $post = array('softsubmit' => '1',
               'custom_push' => '1', 
               'overwrite_files' => '1', //This will push the files
               'push_db' => '1', //Push full database
-              
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
