@@ -1,4 +1,4 @@
-## Upgrade installation using Softaculous API
+## Upgrade installation using Softaculous API guide
 
 This document explains how to upgrade an installation using Softaculous API.
 
