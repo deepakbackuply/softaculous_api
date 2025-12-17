@@ -2,8 +2,8 @@
 
 // URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
-			'&api=serialize'.
-			'&act=installations';
+			  '&api=serialize'.
+			  '&act=installations';
 
 $post = array('listinstallations' => 1,
               //'users' => 'root;user1;', // Pass this if you want the installation list of specific users
