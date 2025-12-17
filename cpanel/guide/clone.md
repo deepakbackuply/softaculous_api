@@ -1,4 +1,4 @@
-## Installation clone via Softaculous API Guide
+## Installation clone using Softaculous API Guide
 
 This document explains how to clone an installation using Softaculous API.
 
