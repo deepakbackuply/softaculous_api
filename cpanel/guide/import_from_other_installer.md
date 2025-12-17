@@ -81,7 +81,48 @@ Array
 )
 
 ```
+#### You will need to pass the all list installations keys that you want to import as you can see in response you will get the list array in which you will find the installations keys for particular scripts key, here we shown example of wordpress(26).
 
+### via cURL
+```php
+curl -d "softsubmit=1" -d "approved[]=cbpny97zd5kcsk4coo8gws084" -d "approved[]=dxw755lmeb4s4cw40o8o8kk44" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=sync&api=json"
+```
+
+### via PHP script
+
+```php
+<?php
+
+//The URL
+$url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
+   '&api=serialize'.
+   '&act=sync';
+$post = array( 'softsubmit' => 1, 
+               'approved' => array('cbpny97zd5kcsk4coo8gws084','dxw755lmeb4s4cw40o8o8kk44'));
+
+// Set the curl parameters.
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+// Turn off the server and peer verification (TrustManager Concept).
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+
+if(!empty($post)){
+ curl_setopt($ch, CURLOPT_POST, 1);
+ curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+}
+
+// Get response from the server.
+$resp = curl_exec($ch);
+$res = unserialize($resp);
+
+print_r($res);  
+
+?>
+```
 ### Required Parameters
 
 | Key | Value | Description |
