@@ -2,9 +2,9 @@
 
 //The URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
-			'&api=serialize'.
-                        '&remove_sets=1'.
-			'&act=manage_sets';
+			  '&api=serialize'.
+              '&remove_sets=1'.
+			  '&act=manage_sets';
 
 $post = array('sets' => array('SET-NAME_admin'), //Set name
 
