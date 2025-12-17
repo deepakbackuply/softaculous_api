@@ -6,7 +6,6 @@ $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index
 			'&act=eu_tasklist'.
 			'&ssk=abcdefghijklmnopqrstuvwxyz0123456789';
 
-
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
@@ -19,5 +18,8 @@ curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
  
 // Get response from the server.
 $resp = curl_exec($ch);
+$res = unserialize($resp);
+
+print_r($res);
 
 ?>
