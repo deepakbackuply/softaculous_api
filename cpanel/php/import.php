@@ -2,9 +2,9 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
- '&api=serialize'.
- '&act=import'.
- '&soft=26';
+           '&api=serialize'.
+           '&act=import'.
+           '&soft=26';
 
 $post = array('softsubmit' => 1,
  'softdomain' => 'example.com',
@@ -27,5 +27,8 @@ if(!empty($post)){
  
 // Get response from the server.
 $resp = curl_exec($ch);
+$res = unserialize($resp);
+
+print_r($res);
 
 ?>
