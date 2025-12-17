@@ -90,16 +90,7 @@ Array
             [softdbpass] => *********
             [dbcreated] => 1
             [dbprefix] => wpod_
-            [fileindex] => Array
-                (
-                    [0] => index.php
-                    [1] => license.txt
-                    [2] => readme.html
-                    [3] => wp-activate.php
-                    [4] => wp-admin
-                    [5] => wp-blog-header.php
-
-	.........
+            [fileindex] => Array ............
 
 ```
 
