@@ -91,18 +91,7 @@ Array
             [softdbpass] => **********
             [dbprefix] => wp9b_
             [dbcreated] => 1
-            [fileindex] => Array
-                (
-                    [0] => index.php
-                    [1] => license.txt
-                    [2] => readme.html
-                    [3] => wp-activate.php
-                       
-	...................continue
-
-          
-        
-
+            [fileindex] => Array ..................      
 
 ```
 
