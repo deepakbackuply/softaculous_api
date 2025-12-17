@@ -1,6 +1,6 @@
 # Install Script via API
 
-This document explains how to ppdate installation version in Softaculous records using Softaculous API.
+This document explains how to update the installation version in Softaculous records using Softaculous API.
 
 
 ## via cURL
@@ -64,40 +64,34 @@ print_r($res);
 ```php
 Array
 (
-    [title] => Softaculous 
-    [done] => 1
-    [info] => Array
-        (
-            [overview] => WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
-            [install] => 
-            [features] => WordPress powers more than 23% of the web - a figure that rises every day. Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.
-            [demo] => http://www.softaculous.com/demos/WordPress
-            [ratings] => http://www.softaculous.com/softwares/blogs/WordPress
-            [support] => http://www.wordpress.org/
-            [release_date] => 30-09-2025
-            [mod] => 254
-            [mod_files] => 
-            [import] => 1
-        )
-
+    [title] => Softaculous - Powered by Softaculous
     [settings] => Array
         (
-            [Database Settings] => Array
+            [Admin Account] => Array
                 (
-                    [dbprefix] => Array
+                    [admin_username] => Array
                         (
-                            [tag] => wp_
-                            [head] => Table Prefix
-                            [exp] => 
+                            [tag] => 
+                            [head] => Admin Username
+                            [exp] => The username/email for which you want to change the password. Leave blank if you do not want to reset the password
                             [handle] => 
                             [optional] => 1
-                            [quick_install] => 
+                            [quick_install] => 1
                             [minlen] => 
-                            [orig_val] => wp_
                         )
 
-                )
-.........
+                    [admin_pass] => Array
+                        (
+                            [tag] => 
+                            [head] => Admin Password
+                            [exp] => New password. Leave blank if you do not want to reset the password
+                            [handle] => 
+                            [optional] => 1
+                            [quick_install] => 1
+                            [minlen] => 
+                        )
+
+                    [signon_username] => Array ............
 
 ```
 
