@@ -1,4 +1,4 @@
-## Staging an installation via Softaculous API guide
+## Staging an installation using Softaculous API guide
 
 This document explains how to create staging installation of the installed script using Softaculous API.
 
