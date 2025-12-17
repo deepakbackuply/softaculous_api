@@ -58,27 +58,29 @@ print_r($res);
 ```
 ### Expected output of $resp
 ```php
+The Staging installation has been pushed successfully to live installation : https://domain.com
 Array
 (
-    [title] => Softaculous 
-    [done] => 1
-    [info] => Array
+    [title] => Softaculous - Powered by Softaculous
+    [done_msg] => Pushing to live has started in background
+    [done] => GDjFLxMwpkp6GmA0C4JOYdNyffmS
+    [userins] => Array
         (
-            [overview] => WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
-            [install] => 
-            [features] => WordPress powers more than 23% of the web - a figure that rises every day. Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.
-            [demo] => http://www.softaculous.com/demos/WordPress
-            [ratings] => http://www.softaculous.com/softwares/blogs/WordPress
-            [support] => http://www.wordpress.org/
-            [release_date] => 30-09-2025
-            [mod] => 254
-            [mod_files] => 
-            [import] => 1
-        )
-
-    [settings] => Array
-        (
-            [Database Settings] => Array ...........
+            [sid] => 26
+            [ver] => 6.9
+            [itime] => 1765972693
+            [softpath] => /home/user/public_html
+            [softurl] => https://domain.com
+            [admin_folder] => wp-admin/
+            [site_name] => My Blog
+            [softdomain] => domain.com
+            [softdb] => wp582
+            [softdbuser] => wp582
+            [softdbhost] => localhost
+            [softdbpass] => ********
+            [dbcreated] => 1
+            [dbprefix] => wpjg_
+            [fileindex] => Array...............
 
 ```
 
