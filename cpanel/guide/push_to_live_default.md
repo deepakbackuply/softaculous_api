@@ -15,7 +15,7 @@ curl -d "softsubmit=1" "https://user:password@domain.com:2083/frontend/jupiter/s
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
 			'&api=serialize'.
 			'&act=pushtolive'.
-      '&insid=26_12345';
+      		'&insid=26_12345';
 
 $post = array('softsubmit' => '1');
 
