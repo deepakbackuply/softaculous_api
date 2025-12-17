@@ -46,30 +46,18 @@ $resp = curl_exec($ch);
 ```
 ### Expected output of $resp
 ```php
-Staging was successfully created. URL to Installation Staging installation : http://domain.com/wpstaging
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Staging has been pushed in background
-    [insid] => 
-    [done] => ARkhCrgmhkJi3vKtJMMfVGUwmpXG
-    [userins] => Array
+    [error] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765348869
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [admin_folder] => wp-admin/
-            [site_name] => My Blog
-            [softdomain] => domain.com
-            [softdb] => wp248
-            [softdbuser] => wp248
-            [softdbhost] => localhost
-            [softdbpass] => *********
-            [dbcreated] => 1
-            [dbprefix] => wpod_
-            [fileindex] => Array ............
+            [softdomain] => The path of the domain nuftp.com could not be found.
+        )
+
+    [done_msg] => Import has been pushed in background
+    [insid] => 
+    [done] => KlK9gsb1ESTidL7kAmWcPnI8zWKb
+    [info] => Array...............  
 
 ```
 
