@@ -2,16 +2,16 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=create_template'.
-			'&insid=26_12345'.
-			'&autoid=abcdefghijklmnopqrstuvwxyz0123456789';
+			  '&api=serialize'.
+			  '&act=create_template'.
+			  '&insid=26_12345'.
+			  '&autoid=abcdefghijklmnopqrstuvwxyz0123456789';
 
 $post = array('template_name' => 'My Template',
               'template_type' => 1,
               'createtemplate' => 1,
               'disallow_plugins' => 'on',
-	      );
+	     	 );
 
 // Set the curl parameters.
 $ch = curl_init();
