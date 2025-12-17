@@ -64,7 +64,7 @@ print_r($res);
 
 ?>
 ```
-### Expected output of $resp
+### Expected response
 ```php
 The Staging installation has been pushed successfully to live installation : https://domain.com
 Array
