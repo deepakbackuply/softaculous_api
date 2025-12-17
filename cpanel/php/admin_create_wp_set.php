@@ -7,7 +7,7 @@ $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
 
 $post = array('set_input' => 'SET-NAME', //Name of your set
               'add_sets' => '1'
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
