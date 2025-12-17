@@ -1,4 +1,4 @@
-## Scripts list via Softaculous API
+## Scripts list via Softaculous API guide
 
 This document explains how to fetch the script list using Softaculous API.
 
