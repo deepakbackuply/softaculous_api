@@ -2,10 +2,13 @@
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-       '&api=serialize'.
-       '&act=sync';
+               '&api=serialize'.
+               '&act=sync';
+
 $post = array( 'softsubmit' => 1, 
-               'approved' =>     array('cbpny97zd5kcsk4coo8gws084','dxw755lmeb4s4cw40o8o8kk44')); 
+               'approved' => array('cbpny97zd5kcsk4coo8gws084','dxw755lmeb4s4cw40o8o8kk44')
+             ); 
+
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
@@ -21,6 +24,7 @@ if(!empty($post)){
 // Get response from the server.
 $resp = curl_exec($ch);
 $res = unserialize($resp);
+
 print_r($res);  
 
 ?>
