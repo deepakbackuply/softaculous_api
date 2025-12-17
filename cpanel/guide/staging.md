@@ -65,7 +65,7 @@ print_r($res);
 ?>
 
 ```
-### Expected output of $resp
+### Expected response
 ```php
 Staging was successfully created. URL to Installation Staging installation : http://domain.com/wpstaging
 Array
