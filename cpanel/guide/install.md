@@ -1,4 +1,4 @@
-# Install Script via API
+## Install Script via API
 
 This document explains how to install a script using Softaculous API.
 
