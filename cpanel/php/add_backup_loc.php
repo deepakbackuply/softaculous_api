@@ -2,17 +2,17 @@
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-	      		'&api=serialize'.
-	      		'&act=addbackuploc';
+	      	  '&api=serialize'.
+	      	  '&act=addbackuploc';
 			
 $post = array('addbackuploc' => '1',
-             	'location_name' => 'Backuploc1',
-             	'server_host' => 'example.com', // Pass the server host where you want to store the backup			  
-             	'protocol' => 'ftp', // Pass the protocol with which you want to connect to server host. Default is FTP.
-	      		'port' => '21', // Pass the port to connect with server host. Default FTP port is 21.
-	      		'ftp_user' => 'ftpusername',
-	      		'ftp_pass' => 'ftppassword',
-	      		'backup_loc' => '/backups',
+              'location_name' => 'Backuploc1',
+              'server_host' => 'example.com', // Pass the server host where you want to store the backup			  
+              'protocol' => 'ftp', // Pass the protocol with which you want to connect to server host. Default is FTP.
+	      	  'port' => '21', // Pass the port to connect with server host. Default FTP port is 21.
+	      	  'ftp_user' => 'ftpusername',
+	      	  'ftp_pass' => 'ftppassword',
+	      	  'backup_loc' => '/backups',
 	      );
 
 // Set the curl parameters.
