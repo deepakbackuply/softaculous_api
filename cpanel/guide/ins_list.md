@@ -54,7 +54,7 @@ if(!empty($res['error'])){
 
 ?>
 ```
-### Expected output of $resp
+### Expected response
 ```php
 Array
 (
