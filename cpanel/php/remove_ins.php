@@ -2,16 +2,16 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=remove'.
-			'&insid=26_12345';
+			  '&api=serialize'.
+			  '&act=remove'.
+			  '&insid=26_12345';
 
 $post = array('removeins' => '1',
               'remove_dir' => '1', // Pass this if you want the directory to be removed
               'remove_datadir' => '1', // Pass this if you want the data directory to be removed
               'remove_db' => '1', // Pass this if you want the database to be removed
               'remove_dbuser' => '1' // Pass this if you want the database user to be removed
-		);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
