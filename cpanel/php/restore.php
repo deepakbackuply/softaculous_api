@@ -2,15 +2,15 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=restore'.
-			'&restore=backup_time_insid.tar.gz';
+			  '&api=serialize'.
+			  '&act=restore'.
+			  '&restore=backup_time_insid.tar.gz';
 
 $post = array('restore_ins' => '1',
               'restore_dir' => '1', // Pass this if you want to restore the directory
               'restore_datadir' => '1', // Pass this if you want to restore the data directory
               'restore_db' => '1', // Pass this if you want to restore the database
-		);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -29,5 +29,8 @@ if(!empty($post)){
  
 // Get response from the server.
 $resp = curl_exec($ch);
+$res = unserialize($resp);
+
+print_r($res);
 
 ?>
