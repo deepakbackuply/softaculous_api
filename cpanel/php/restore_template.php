@@ -2,10 +2,10 @@
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-			'&act=restore_template'.
-			'&restore=my-template.tar.gz'.
-			'&autoid=abcdefghijklmnopqrstuvwxyz0123456789';
+			  '&api=serialize'.
+			  '&act=restore_template'.
+			  '&restore=my-template.tar.gz'.
+			  '&autoid=abcdefghijklmnopqrstuvwxyz0123456789';
 
 $post = array('softproto' => 1,
               'softsubmit' => 1,
@@ -13,7 +13,7 @@ $post = array('softproto' => 1,
               'softdb' => 'wp123',
               'site_name' => 'myblog',
               'softdirectory' => 'restoredsite',
-	      );
+	     	 );
 
 // Set the curl parameters.
 $ch = curl_init();
