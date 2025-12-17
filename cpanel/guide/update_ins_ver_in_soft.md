@@ -3,12 +3,12 @@
 This document explains how to update the installation version in Softaculous records using Softaculous API.
 
 
-## via cURL
+### via cURL
 ```php
 curl "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=editdetail&insid=26_12345&updateversion=1&api=json"
 ```
 
-## via PHP script
+### via PHP script
 
 ```php
 <?php
@@ -95,7 +95,7 @@ Array
 
 ```
 
-## Required Parameters
+### Required Parameters
 
 | Key | Value | Description |
 |----------|----------|----------|
