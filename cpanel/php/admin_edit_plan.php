@@ -13,7 +13,7 @@ $post = array('saveplan' => '1',
         	  'cpplan_CPPlanName' => '1',
 			  'scripts_543' => '1', // Add Drupal
 			  'scripts_72' => '1' // Add PrestaShop
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
