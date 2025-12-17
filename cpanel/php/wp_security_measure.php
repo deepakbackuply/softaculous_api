@@ -2,26 +2,26 @@
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-                        '&act=wordpress';
+			  '&api=serialize'.
+              '&act=wordpress';
 
 $post = array('insids' => array('26_31793'),
               'secure_options'=> array(
-			'change_admin_username' => 1 ,
-			'no_file_dir_access' => 1 ,
-			'disable_xml_rpc' => 1 ,
-			'block_htaccess' => 1 ,
-			'disable_pingbacks' => 1 ,
-			'no_file_editing' => 1 ,
-			'block_author_scan' => 1 ,
-			'block_dir_browsing' => 1 ,
-			'no_php_exec_wpinc' => 1 ,
-			'no_php_exec_wpuploads' => 1 ,
-			'no_script_concat' => 1 ,
-			'block_sensitive_files' => 1 ,
-			'enable_bot_protection' => 1 ),
-              'save_security_measures' => '1'
-);
+			  'change_admin_username' => 1 ,
+			  'no_file_dir_access' => 1 ,
+			  'disable_xml_rpc' => 1 ,
+			  'block_htaccess' => 1 ,
+			  'disable_pingbacks' => 1 ,
+			  'no_file_editing' => 1 ,
+			  'block_author_scan' => 1 ,
+			  'block_dir_browsing' => 1 ,
+			  'no_php_exec_wpinc' => 1 ,
+			  'no_php_exec_wpuploads' => 1 ,
+			  'no_script_concat' => 1 ,
+			  'block_sensitive_files' => 1 ,
+			  'enable_bot_protection' => 1 ),
+			  'save_security_measures' => '1'
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
