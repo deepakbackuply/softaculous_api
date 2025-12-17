@@ -75,7 +75,7 @@ Array
     [userins] => Array
         (
             [sid] => 26
-            [ver] => 6.10
+            [ver] => 6.9
             [itime] => 1765972693
             [softpath] => /home/user/public_html
             [softurl] => https://domain.com
