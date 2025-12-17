@@ -6,12 +6,12 @@ $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
 			'&act=addplans';
 
 $post = array('saveplan' => '1',
-	'planname' => 'plan1',
-	'resellers_abc' => '1',
-	'users_xyz' => '1',
-        'cpplan_CPPlanName' => '1',
-	'scripts_26' => '1', // Add WordPress
-	'scripts_413' => '1' // Add Joomla
+				'planname' => 'plan1',
+				'resellers_abc' => '1',
+				'users_xyz' => '1',
+        		'cpplan_CPPlanName' => '1',
+				'scripts_26' => '1', // Add WordPress
+				'scripts_413' => '1' // Add Joomla
 );
 
 // Set the curl parameters.
