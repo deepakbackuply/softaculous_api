@@ -1,4 +1,4 @@
-# Install Script via API
+## Upgrade installation using Softaculous API
 
 This document explains how to upgrade an installation using Softaculous API.
 
