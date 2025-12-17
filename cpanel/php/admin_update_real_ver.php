@@ -2,8 +2,8 @@
 
 // URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
-			'&api=serialize'.
-			'&act=installations';
+			  '&api=serialize'.
+			  '&act=installations';
 
 $post = array('listinstallations' => 1, 'only_realversion' => 1, 'list' => array('username-26_68351', 'username-26_68352'));
 
