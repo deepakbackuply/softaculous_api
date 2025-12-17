@@ -78,12 +78,7 @@ Your installation URL : https://domain.com
             [softdbpass] => pp@683p8S.
             [dbprefix] => wpom_
             [dbcreated] => 1
-            [fileindex] => Array
-                (
-                    [0] => index.php
-                    [1] => license.txt
-                    [2] => readme.html
-				).................
+            [fileindex] => Array .................
 
 ```
 
