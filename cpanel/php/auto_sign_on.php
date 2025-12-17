@@ -23,8 +23,9 @@ $resp = curl_exec($ch);
 $op = unserialize($resp);
 
 print_r($res);
-// On using this API, you will get the sign_on_url, upon accessing which the user will be logged in to the admin panel of the script. You can use the same URL to redirect the user to the WordPress dashboard.
+// On using this API, you will get the sign_on_url, upon accessing which the user will be logged in to the admin panel of the script. 
+//You can use the same URL to redirect the user to the WordPress dashboard. Uncomment the below line to redirect to the WordPress admin dashboard.
 
-header('Location: '.$res['sign_on_url']);
+//header('Location: '.$res['sign_on_url']);
 
 ?>
