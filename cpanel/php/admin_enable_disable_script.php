@@ -2,19 +2,19 @@
 
 // URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
-			'&api=serialize'.
-			'&act=softwares';
+			  '&api=serialize'.
+			  '&act=softwares';
 
 $post = array('updatesoft' => 'Update Settings',
-	'soft_26' => 1, // WordPress
-	'soft_18' => 1, // Joomla 2.5
-	'soft_543' => 1, // Drupal 8
-	'soft_11' => 1, // Open Blog
-	'soft_3' => 1, // Serendipity
-	'soft_34' => 1, // Dotclear
-	'soft_14' => 1, // b2evolution
-	'soft_470' => 1 // Ghost
-);
+			  'soft_26' => 1, // WordPress
+			  'soft_18' => 1, // Joomla 2.5
+			  'soft_543' => 1, // Drupal 8
+			  'soft_11' => 1, // Open Blog
+			  'soft_3' => 1, // Serendipity
+			  'soft_34' => 1, // Dotclear
+			  'soft_14' => 1, // b2evolution
+			  'soft_470' => 1 // Ghost
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
