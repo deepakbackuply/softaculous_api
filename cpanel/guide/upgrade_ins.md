@@ -94,8 +94,7 @@ Array
         )
 
     [soft] => 26
-    [info] => Array (.........
-
+    [info] => Array ...........
 
 ```
 
