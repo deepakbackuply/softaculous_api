@@ -2,15 +2,15 @@
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-                        '&sets_name=SET-NAME'.
-                        '&plugins=1'.
-                        '&add_plugins_themes_data=1'.
-			'&act=manage_sets';
+			  '&api=serialize'.
+              '&sets_name=SET-NAME'.
+              '&plugins=1'.
+              '&add_plugins_themes_data=1'.
+			  '&act=manage_sets';
 
 $post = array('add_plugins_themes_data_slugs' => array('loginizer'), //Slug name
               'add_plugins_themes_data_names' => array('Loginizer') //Plugin name
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
