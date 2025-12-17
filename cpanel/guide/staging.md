@@ -3,12 +3,12 @@
 This document explains how to create staging installation of the installed script using Softaculous API.
 
 
-## via cURL
+### via cURL
 ```php
 curl -d "softsubmit=1" -d "softdomain=domain.com" -d "softdirectory=wp" -d "softdb=wpdb" "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?act=staging&insid=26_12345&api=json"
 ```
 
-## via PHP script
+### via PHP script
 
 ```php
 <?php
@@ -94,7 +94,7 @@ Array
 
 ```
 
-## Required Parameters
+### Required Parameters
 
 | Key | Value | Description |
 |----------|----------|----------|
