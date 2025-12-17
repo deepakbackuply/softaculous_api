@@ -68,7 +68,7 @@ print_r($res);
 
 ?>
 ```
-### Expected output of $resp
+### Expected response
 ```php
 Array
 (
