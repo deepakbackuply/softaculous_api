@@ -12,7 +12,7 @@ $post = array('saveplan' => '1',
         	  'cpplan_CPPlanName' => '1',
 			  'scripts_26' => '1', // Add WordPress
 			  'scripts_413' => '1' // Add Joomla
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
