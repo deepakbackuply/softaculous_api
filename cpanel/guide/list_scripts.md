@@ -1,4 +1,4 @@
-# Install Script via API
+## Scripts list via Softaculous API
 
 This document explains how to fetch the script list using Softaculous API.
 
