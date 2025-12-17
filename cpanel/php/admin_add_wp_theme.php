@@ -10,7 +10,7 @@ $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
 
 $post = array('add_plugins_themes_data_slugs' => array('popularfx'), //Slug name
               'add_plugins_themes_data_names' => array('Popularfx') //Theme name
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
