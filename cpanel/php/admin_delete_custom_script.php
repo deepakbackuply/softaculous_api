@@ -4,7 +4,7 @@
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
 			'&api=serialize'.
 			'&act=customscripts'.
-                         '&remid=10001';
+            '&remid=10001';
 
 // Set the curl parameters.
 $ch = curl_init();
