@@ -3,8 +3,8 @@
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
 			'&api=serialize'.
-                        '&softinstall_set=SET-NAME'.
-                        '&softwebsites=26_35180'.
+            '&softinstall_set=SET-NAME'.
+            '&softwebsites=26_35180'.
 			'&act=manage_sets';
 
 // Set the curl parameters.
