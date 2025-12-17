@@ -17,7 +17,7 @@ curl -d "softsubmit=1" -d "custom_push=1" -d "overwrite_files=1" -d "push_db=1" 
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
 			      '&api=serialize'.
 			      '&act=pushtolive'.
-            '&insid=26_12345';
+  				  '&insid=26_12345';
 
 $post = array('softsubmit' => '1',
               'custom_push' => '1', 
@@ -71,11 +71,11 @@ Array
 (
     [title] => Softaculous - Powered by Softaculous
     [done_msg] => Pushing to live has started in background
-    [done] => GDjFLxMwpkp6GmA0C4JOYdNyffmS
+    [done] => abc5wB4xNJJenDy1QjdK1QnrwcfYd
     [userins] => Array
         (
             [sid] => 26
-            [ver] => 6.9
+            [ver] => 6.10
             [itime] => 1765972693
             [softpath] => /home/user/public_html
             [softurl] => https://domain.com
@@ -85,7 +85,7 @@ Array
             [softdb] => wp582
             [softdbuser] => wp582
             [softdbhost] => localhost
-            [softdbpass] => ********
+            [softdbpass] => *********
             [dbcreated] => 1
             [dbprefix] => wpjg_
             [fileindex] => Array...............
