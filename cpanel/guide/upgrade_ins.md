@@ -117,4 +117,4 @@ Array
 | act    | upgrade   | The value should be “upgrade” for softaculous to perform the action of upgrading an installation.   |
 | insid    | 26_12345   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s [here](https://api.softaculous.com/scripts.php?in=serialize)   |
 | **POST**    |
-| softsubmit  | 1   | This will trigger the install   |
+| softsubmit  | 1   | This will trigger the upgrade   |
