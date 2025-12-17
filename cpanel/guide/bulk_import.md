@@ -48,12 +48,26 @@ print_r($res);
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Import has been pushed in background
-    [insid] => 
-    [done] => cMEBlvDzEN2zPjowzZT6fzeLWm1
-    [info] => Array
-         (
-            [overview] => ...............  
+    [done] => 1
+    [info] => 
+    [notes] => 
+    [list] => Array
+        (
+            [26] => Array
+                (
+                    [26_12345] => Array
+                        (
+                            [url] => https://domain.com/wpst
+                            [synced] => 1
+                        )
+
+                )
+
+        )
+
+    [timenow] => 1765977462
+    [time_taken] => 0.143
+)
 
 ```
 
