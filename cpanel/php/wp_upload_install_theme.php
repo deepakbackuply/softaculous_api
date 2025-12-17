@@ -2,9 +2,9 @@
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			'&api=serialize'.
-                        '&act=wordpress'.
-                        '&upload=1';
+				'&api=serialize'.
+                '&act=wordpress'.
+                '&upload=1';
 
 // Theme zip file
 $file_name_with_full_path = 'twentytwenty.1.8.zip';
