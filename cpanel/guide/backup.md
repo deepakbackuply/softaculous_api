@@ -46,9 +46,7 @@ if(!empty($post)){
 $resp = curl_exec($ch);
 $res = unserialize($resp);
 
-echo '<pre>';
 print_r($res);
-echo '</pre>';
 
 ?>
 ```
