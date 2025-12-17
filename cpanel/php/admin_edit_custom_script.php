@@ -14,7 +14,7 @@ $post = array('csname' => 'CUSTOM SCRIPT', //Name of your custom script
               'cat' => 'blogs', //Category
               'parent' => '10002', //Parent sid
               'edit_submit' => '1'
- );
+ 			);
 
 // Set the curl parameters.
 $ch = curl_init();
