@@ -2,11 +2,11 @@
 
 //The URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
-			'&api=serialize'.
-                        '&set_name=SET-NAME_admin'.
-                        '&plugins=1'.
-                        '&plugins_themes_to_remove=loginizer'.
-                        '&act=manage_sets';
+				'&api=serialize'.
+                '&set_name=SET-NAME_admin'.
+                '&plugins=1'.
+                '&plugins_themes_to_remove=loginizer'.
+                '&act=manage_sets';
 
 // Set the curl parameters.
 $ch = curl_init();
