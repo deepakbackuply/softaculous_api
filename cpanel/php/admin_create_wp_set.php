@@ -2,8 +2,8 @@
 
 // URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
-			'&api=serialize'.
-			'&act=manage_sets';
+			  '&api=serialize'.
+			  '&act=manage_sets';
 
 $post = array('set_input' => 'SET-NAME', //Name of your set
               'add_sets' => '1'
