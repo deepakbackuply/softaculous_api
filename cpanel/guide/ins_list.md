@@ -1,4 +1,4 @@
-## List all installations via Softaculous API
+## List all installations using Softaculous API
 
 This document explains how to install a script using Softaculous API.
 
