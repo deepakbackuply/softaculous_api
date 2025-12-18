@@ -60,6 +60,7 @@ if(!empty($res['done'])){
 	print_r($res['error']);
 
 }
+print_r($res);
 
 ?>
 ```
