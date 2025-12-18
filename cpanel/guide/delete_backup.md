@@ -1,6 +1,6 @@
 ## Delete backup using Softaculous API Guide
 
-This document explains how to delete a backup using Softaculous API.
+This guide explains how to delete a backup using Softaculous API.
 
 
 ### via cURL
