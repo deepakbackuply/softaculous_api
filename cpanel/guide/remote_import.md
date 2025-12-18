@@ -63,9 +63,9 @@ Array
     [title] => Softaculous - Powered by Softaculous
     [done_msg] => Import has been pushed in background
     [insid] => 
-    [done] => cMEBlvDzEN2zPjowzZT6fzeLWm1
+    [done] => 5O7yiTxqCcMobfz4bSBtEcI26GgD6eoy
     [info] => Array
-         (
+        (
             [overview] => ...............  
 
 ```
