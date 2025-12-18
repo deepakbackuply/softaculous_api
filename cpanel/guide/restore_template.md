@@ -32,7 +32,7 @@ $post = array('softproto' => 1,
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 if(!empty($post)){
@@ -70,31 +70,63 @@ print_r($res);
 ```
 ### Expected response
 ```php
+Template Restore process has been pushed in background
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
+    [done_msg] => Template Restore process has been pushed in background
+    [insid] => 
+    [done] => lMeIn0mZurZY3WIRB3E7TIvV
     [userins] => Array
         (
             [sid] => 26
             [ver] => 6.9
-            [itime] => 1765257816
+            [itime] => 1766039749
             [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
+            [softurl] => https://script.nuftp.com
             [adminurl] => wp-admin/
             [disable_wp_cron] => 
             [admin_username] => admin
             [admin_email] => admin@domain.com
             [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
+            [softdb] => wp123
+            [softdbuser] => wp123
             [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
+            [softdbpass] => *****
+            [dbprefix] => wphh_
             [dbcreated] => 1
-            [fileindex] => Array .................
+            [fileindex] => Array()
+        )
+
+    [dbtype] => mysql
+    [__settings] => Array
+        (
+            [php_path] => php
+            [fname] => my-template.tar.gz
+            [no_search_engine] => 
+            [site_name] => myblog
+            [ver] => 6.9
+            [softdomain] => domain.com
+            [softdirectory] => wp
+            [softpath] => /home/user/public_html/restore_temp
+            [softurl] => http://domain.com/restore_temp
+            [softdb] => wp123
+            [softdbuser] => wp123
+            [softdbhost] => localhost
+            [fileindex] => Array()
+        )
+    [protocols] => Array
+        (
+            [1] => http://
+            [2] => http://www.
+            [3] => https://
+            [4] => https://www.
+        )
+    [nopackage] => 
+    [setupcontinue] => 
+    [timenow] => 1766062061
+    [time_taken] => 76.25
+)
 
 ```
 
