@@ -1,6 +1,6 @@
 ## Installation clone using Softaculous API Guide
 
-This document explains how to clone an installation using Softaculous API.
+This guide explains how to clone an installation using Softaculous API.
 
 
 ### via cURL
