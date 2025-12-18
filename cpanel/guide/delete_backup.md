@@ -1,6 +1,6 @@
-## Remove backup using Softaculous API Guide
+## Delete backup using Softaculous API Guide
 
-This document explains how to remove backup using Softaculous API.
+This document explains how to delete a backup using Softaculous API.
 
 
 ### via cURL
@@ -48,28 +48,95 @@ print_r($res);
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
-    [userins] => Array
+    [done] => 1
+    [backups] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765257816
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
-            [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
-            [dbcreated] => 1
-            [fileindex] => Array .................
+            [26] => Array
+                (
+                    [26_17652] => Array
+                        (
+                            [0] => Array
+                                (
+                                    [name] => wp.26_12345.2025-12-17_17-48-57.tar.gz
+                                    [path] => /home/user/softaculous_backups/
+                                    [size] => 23913793
+                                    [sid] => 26
+                                    [ver] => 6.10
+                                    [itime] => 1765968147
+                                    [softpath] => /home/user/public_html
+                                    [softurl] => https://domain.com
+                                    [adminurl] => wp-admin/
+                                    [disable_wp_cron] => 
+                                    [admin_username] => admin
+                                    [admin_email] => admin@domain.com
+                                    [softdomain] => domain.com
+                                    [softdb] => wp123
+                                    [softdbuser] => wp123
+                                    [softdbhost] => localhost
+                                    [softdbpass] => ******
+                                    [dbprefix] => wpjg_
+                                    [dbcreated] => 1
+                                    [fileindex] => Array()
+                                    [site_name] => My Blog
+                                    [insid] => 26_12345
+                                    [script_name] => WordPress
+                                    [backup_db] => 1
+                                    [backup_dir] => 1
+                                    [backup_datadir] => 0
+                                    [backup_wwwdir] => 0
+                                    [backup_note] => 
+                                    [ssk] => uGIdca1aFkF3zLtGymnRHuwLLpICY
+                                    [soft_version] => 6.3.1
+                                    [btime] => 1765973937
+                                    [ext] => tar.gz
+                                )
+
+                            [1] => Array
+                                (
+                                    [name] => wp.26_12345.2025-12-17_17-29-48.tar.gz
+                                    [path] => /home/user/softaculous_backups/
+                                    [size] => 23926964
+                                    [sid] => 26
+                                    [ver] => 6.10
+                                    [itime] => 1765968147
+                                    [softpath] => /home/user/public_html
+                                    [softurl] => https://domain.com
+                                    [adminurl] => wp-admin/
+                                    [disable_wp_cron] => 
+                                    [admin_username] => admin
+                                    [admin_email] => admin@domain.com
+                                    [softdomain] => domain.com
+                                    [softdb] => wp123
+                                    [softdbuser] => wp123
+                                    [softdbhost] => localhost
+                                    [softdbpass] => ******
+                                    [dbprefix] => wpjg_
+                                    [dbcreated] => 1
+                                    [fileindex] => Array()
+                                    [site_name] => My Blog
+                                    [insid] => 26_12345
+                                    [script_name] => WordPress
+                                    [backup_db] => 1
+                                    [backup_dir] => 1
+                                    [backup_datadir] => 
+                                    [backup_wwwdir] => 
+                                    [backup_note] => 
+                                    [ssk] => P2OlmkML7rn6BYLzsOSEzaMfu
+                                    [soft_version] => 6.3.1
+                                    [btime] => 1765972788
+                                    [ext] => tar.gz
+                                )
+
+                        )
+
+                )
+
+        )
+
+    [timenow] => 1766053229
+    [time_taken] => 0.075
+)
+
 
 ```
 
