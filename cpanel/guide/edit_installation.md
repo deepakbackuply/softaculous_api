@@ -1,7 +1,5 @@
 ## Edit installation using Softaculous API Guide
-
 This guide explains how to edit an installation using Softaculous API.
-
 
 ### via cURL
 ```php
