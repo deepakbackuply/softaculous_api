@@ -1,7 +1,5 @@
 ## Push the installation to their live site(Default Options) using Softaculous API guide
-
 This guide explains how to push the site to its live site using Softaculous API.
-
 
 ### via cURL
 ```php
