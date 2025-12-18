@@ -1,6 +1,6 @@
 ## Get script info using Softaculous API Guide
 
-This document explains how to get script info using Softaculous API.
+This guide explains how to get script info using Softaculous API.
 
 
 ### via cURL
