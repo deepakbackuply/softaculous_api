@@ -1,7 +1,5 @@
 ## Installations backup using Softaculous API Guide
-
 This guide explains how to install a script using Softaculous API.
-
 
 ### via cURL
 ```php
