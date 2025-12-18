@@ -1,7 +1,5 @@
 ## Edit enduser settings using Softaculous API Guide
-
 This guide explains how to edit the enduser settings using Softaculous API.
-
 
 ### via cURL
 ```php
