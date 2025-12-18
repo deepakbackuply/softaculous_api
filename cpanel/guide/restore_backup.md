@@ -82,12 +82,11 @@ Your installation URL : https://domain.com
 | Key | Value | Description |
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
-| act    | backup   | The value should be “backup” to perform the action of taking the backup of the installation. |
-| insid    | 26_4545 (Installation ID)   | Installation ID of the installed script. It can be fetched from List Installed Script   |
+| act    | restore | The value should be “restore” to perform the action of restoring the backup of the installation. |
+| restore | backup_time_insid.tar.gz (Backup File Name)  | Name of the Backup File. |
 | **POST**    |
-| backupins  | 1   | This will trigger the backup function.   |
-| backup_dir | 1   | 	This is to backup the directory  |
-| backup_datadir  | 1   | This is to backup the data directory   |
-| backup_db  | 1   | 	This is to backup the database   |
-| backup_location  | 2 (Location ID)   | (Optional) – Location id of the backup location where you want to store your current backup. Default value will be the one saved in the installation’s settings. You can find the location id from List Backup Locations   |
-| noemail  | 1   | (Optional) – Use this only if you do not want to send an email to the user   |
+| restore_ins  | 1   | This will trigger the restore function.  |
+| restore_dir | 1   | 	This is to restore the directory  |
+| restore_datadir  | 1   | This is to restorethe data directory  |
+| restore_db  | 1   | This is to restore the database  |
+| noemail  | 1   | (Optional) – Use this only if you do not want to send an email to the user |
