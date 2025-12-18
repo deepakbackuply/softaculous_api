@@ -1,6 +1,6 @@
 ## Installations backup using Softaculous API Guide
 
-This document explains how to create a backup of the installations using Softaculous API.
+This guide explains how to create a backup of the installations using Softaculous API.
 
 
 ### via cURL
