@@ -65,31 +65,34 @@ if(!empty($res['done'])){
 ```
 ### Expected response
 ```php
+Backup location added to server
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
-    [userins] => Array
+    [done] => 1
+    [remote_backup_locs] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765257816
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
-            [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
-            [dbcreated] => 1
-            [fileindex] => Array .................
+            [1] => Array
+                (
+                    [id] => 1
+                    [name] => Backuploc1
+                    [protocol] => ftp
+                    [server_host] => ftp.domain.com
+                    [port] => 21
+                    [ftp_user] => username
+                    [ftp_pass] => password
+                    [private_key] => 
+                    [passphrase] => 
+                    [backup_loc] => /backups
+                    [full_backup_loc] => ftp://user:pass@ftp.domain.com:21/backups
+                )
+
+        )
+
+    [timenow] => 1766063755
+    [time_taken] => 0.240
+)
+
 
 ```
 
