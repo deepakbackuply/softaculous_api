@@ -1,6 +1,6 @@
 ## Import all installations to Softaculous using Softaculous API guide
 
-This document explains how to import all your installations to Softaculous. 
+This guide explains how to import all your installations to Softaculous. 
 
 ### via cURL
 ```php
