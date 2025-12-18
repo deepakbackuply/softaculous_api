@@ -64,17 +64,19 @@ print_r($res);
 ```
 ### Expected response
 ```php
+Your template is being created in background. You will be notified by email once its completed. You can track the process from the  Task List page.
+Your installation URL : https://domain.com
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
+    [done_msg] => Your template is being created in background. You will be notified by email once its completed. You can track the process from the  Task List page.
 Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
+    [done] => DOA1GnzLNibeqHaXw0KW7Zoj2
     [userins] => Array
         (
             [sid] => 26
             [ver] => 6.9
-            [itime] => 1765257816
+            [itime] => 1766039749
             [softpath] => /home/user/public_html
             [softurl] => https://domain.com
             [adminurl] => wp-admin/
@@ -82,13 +84,23 @@ Your installation URL : https://domain.com
             [admin_username] => admin
             [admin_email] => admin@domain.com
             [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
+            [softdb] => wp123
+            [softdbuser] => wp123
             [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
+            [softdbpass] => ******
+            [dbprefix] => wphh_
             [dbcreated] => 1
-            [fileindex] => Array .................
+            [fileindex] => Array()....
+        )
+
+    [templatefile] => 
+    [insid] => 26_94698
+    [software] => Array()...
+    [soft] => 26
+    [error] => 
+    [timenow] => 1766058134
+    [time_taken] => 0.080
+)
 
 ```
 
