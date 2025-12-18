@@ -1,6 +1,6 @@
 ## Edit installation using Softaculous API Guide
 
-This document explains how to edit an installation using Softaculous API.
+This guide explains how to edit an installation using Softaculous API.
 
 
 ### via cURL
