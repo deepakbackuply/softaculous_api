@@ -52,14 +52,17 @@ print_r($res);
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
-    [userins] => Array
+    [done_msg] => Your backup is being restored in background. You will be notified by email once its completed. You can track the restore process from the  Task List page.
+    [done] => lcQHre7jhFl6APp9HOxMQBZqEBAyTaFV
+    [dbexist] => softsql.sql
+    [datadir] => 
+    [wwwdir] => 
+    [soft] => 26
+    [backupinfo] => Array
         (
             [sid] => 26
             [ver] => 6.9
-            [itime] => 1765257816
+            [itime] => 1766039749
             [softpath] => /home/user/public_html
             [softurl] => https://domain.com
             [adminurl] => wp-admin/
@@ -67,13 +70,69 @@ Your installation URL : https://domain.com
             [admin_username] => admin
             [admin_email] => admin@domain.com
             [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
+            [softdb] => wp118
+            [softdbuser] => wp118
             [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
+            [softdbpass] => ********
+            [dbprefix] => wphh_
             [dbcreated] => 1
-            [fileindex] => Array .................
+            [fileindex] => Array()
+			[site_name] => My Blog
+            [insid] => 26_12345
+            [script_name] => WordPress
+            [name] => wp.26_94698.2025-12-18_13-03-10
+            [path] => /home/user/softaculous_backups
+            [backup_db] => 1
+            [backup_dir] => 1
+            [backup_datadir] => 
+            [backup_wwwdir] => 
+            [backup_note] => 
+            [ssk] => JNBUhWPrp73V3lRiUfAOjXqXcmI
+            [soft_version] => 6.3.1
+            [btime] => 1766043190
+            [ext] => tar.gz
+            [size] => 33671122
+        )
+
+    [ins] => Array
+        (
+            [sid] => 26
+            [ver] => 6.9
+            [itime] => 1766039749
+            [softpath] => /home/user/public_html
+            [softurl] => https://domain.com
+            [adminurl] => wp-admin/
+            [disable_wp_cron] => 
+            [admin_username] => admin
+            [admin_email] => admin@domain.com
+            [softdomain] => domain.com
+            [softdb] => wp118
+            [softdbuser] => wp118
+            [softdbhost] => localhost
+            [softdbpass] => *******
+            [dbprefix] => wphh_
+            [dbcreated] => 1
+            [fileindex] => Array()
+			[site_name] => My Blog
+            [insid] => 26_12345
+            [script_name] => WordPress
+            [name] => wp.26_94698.2025-12-18_13-03-10
+            [path] => /home/user/softaculous_backups
+            [backup_db] => 1
+            [backup_dir] => 1
+            [backup_datadir] => 
+            [backup_wwwdir] => 
+            [backup_note] => 
+            [ssk] => JNBUhWPrp73iUfAOwwjXqXcmI
+            [soft_version] => 6.3.1
+            [btime] => 1766043190
+            [ext] => tar.gz
+            [size] => 33671122
+        )
+
+    [timenow] => 1766044812
+    [time_taken] => 0.849
+)
 
 ```
 
