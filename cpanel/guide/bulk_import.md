@@ -1,5 +1,4 @@
 ## Import all installations to Softaculous using Softaculous API guide
-
 This guide explains how to import all your installations to Softaculous. 
 
 ### via cURL
