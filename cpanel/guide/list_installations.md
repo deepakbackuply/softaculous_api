@@ -1,7 +1,5 @@
 ## List all installations using Softaculous API Guide
-
-This document explains how to fetch all installation list using Softaculous API.
-
+This guide explains how to fetch all installation list using Softaculous API.
 
 ### via cURL
 ```php
