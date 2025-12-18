@@ -1,7 +1,5 @@
 ## Edit email settings using Softaculous API Guide
-
 This guide explains how to edit email settings using Softaculous API.
-
 
 ### via cURL
 ```php
