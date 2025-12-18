@@ -1,7 +1,5 @@
 ## Get script info using Softaculous API Guide
-
 This guide explains how to get script info using Softaculous API.
-
 
 ### via cURL
 ```php
