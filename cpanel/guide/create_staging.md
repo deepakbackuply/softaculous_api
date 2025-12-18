@@ -1,7 +1,5 @@
 ## Staging an installation using Softaculous API guide
-
 This guide explains how to create staging installation of the installed script using Softaculous API.
-
 
 ### via cURL
 ```php
