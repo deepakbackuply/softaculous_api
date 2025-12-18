@@ -1,5 +1,5 @@
 ## Edit a Remote Backup Location
-This document explains how to edit a remote backup location using Softaculous API.
+This guide explains how to edit a remote backup location using Softaculous API.
 
 ### via cURL
 ```php
@@ -66,31 +66,34 @@ if(!empty($res['done'])){
 ```
 ### Expected response
 ```php
+Backup location edited successfully
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
-    [userins] => Array
+    [done] => 1
+    [remote_backup_locs] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765257816
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
-            [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
-            [dbcreated] => 1
-            [fileindex] => Array .................
+            [1] => Array
+                (
+                    [id] => 1
+                    [name] => Backuploc3
+                    [protocol] => ftp
+                    [backup_loc] => /backups3
+                    [server_host] => ftp.domain.com
+                    [port] => 21
+                    [ftp_user] => user
+                    [ftp_pass] => pass
+                    [private_key] => 
+                    [passphrase] => 
+                    [full_backup_loc] => ftp://user:pass@ftp.domain.com:21/backups3
+                )
+
+        )
+
+    [timenow] => 1766065416
+    [time_taken] => 0.179
+)
+
 
 ```
 
