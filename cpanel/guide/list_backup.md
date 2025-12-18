@@ -23,7 +23,7 @@ $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 // Turn off the server and peer verification (TrustManager Concept).
@@ -40,19 +40,8 @@ $resp = curl_exec($ch);
  
 // The response will hold a string as per the API response method. In this case its PHP Serialize
 $res = unserialize($resp);
- 
-// Done ?
-if(!empty($res['done'])){
 
-	print_r($res['backups']);
-
-// Error
-}else{
-
-	echo 'Some error occured';
-	print_r($res['error']);
-
-}
+print_r($res['backups']);
 
 ?>
 ```
@@ -75,7 +64,7 @@ Array
                                     [sid] => 26
                                     [ver] => 6.10
                                     [itime] => 1765968147
-                                    [softpath] => /home/user/public_html/wp60
+                                    [softpath] => /home/user/public_html/wp
                                     [softurl] => https://domain.com/wp60
                                     [adminurl] => wp-admin/
                                     [disable_wp_cron] => 
@@ -111,15 +100,15 @@ Array
                                     [sid] => 26
                                     [ver] => 6.10
                                     [itime] => 1765968147
-                                    [softpath] => /home/user/public_html/wp60
-                                    [softurl] => https://domain.com/wp60
+                                    [softpath] => /home/user/public_html/moodle
+                                    [softurl] => https://domain.com/moodle
                                     [adminurl] => wp-admin/
                                     [disable_wp_cron] => 
                                     [admin_username] => admin
                                     [admin_email] => admin@domain.com
                                     [softdomain] => domain.com
-                                    [softdb] => wp60378
-                                    [softdbuser] => wp60378
+                                    [softdb] => wp456
+                                    [softdbuser] => wp456
                                     [softdbhost] => localhost
                                     [softdbpass] => *********
                                     [dbprefix] => wpjg_
