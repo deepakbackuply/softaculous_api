@@ -1,7 +1,5 @@
 ## Update installation version in Softaculous record using Softaculous API guide
-
-This document explains how to update the installation version in Softaculous records using Softaculous API.
-
+This guide explains how to update the installation version in Softaculous records using Softaculous API.
 
 ### via cURL
 ```php
