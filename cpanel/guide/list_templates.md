@@ -22,7 +22,7 @@ $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 // Turn off the server and peer verification (TrustManager Concept).
@@ -54,28 +54,96 @@ if(!empty($res['done'])){
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
-    [userins] => Array
+    [templates] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765257816
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
-            [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
-            [dbcreated] => 1
-            [fileindex] => Array .................
+            [26] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => my-template.tar.gz
+                            [path] => /home/user/softaculous_templates/
+                            [size] => 33671877
+                            [sid] => 26
+                            [ver] => 6.9
+                            [itime] => 1766039749
+                            [softpath] => /home/user/public_html
+                            [softurl] => https://domain.com
+                            [adminurl] => wp-admin/
+                            [disable_wp_cron] => 
+                            [admin_username] => admin
+                            [admin_email] => admin@domain.com
+                            [softdomain] => domain.com
+                            [softdb] => wp123
+                            [softdbuser] => wp123
+                            [softdbhost] => localhost
+                            [softdbpass] => *******
+                            [dbprefix] => wphh_
+                            [dbcreated] => 1
+                            [fileindex] => Array()...
+                            [site_name] => My Blog
+                            [insid] => 26_12345
+                            [script_name] => WordPress
+                            [backup_db] => 1
+                            [backup_dir] => 1
+                            [backup_datadir] => 0
+                            [backup_wwwdir] => 0
+                            [backup_note] => 
+                            [ssk] => DOA1GnzLNiFyHaXbw0KW7Zoj2
+                            [soft_version] => 6.3.1
+                            [btime] => 1766058135
+                            [ext] => tar.gz
+                            [template_name] => my-template
+                            [template_type] => 1
+                            [disallow_plugins] => 1
+                            [backup_location] => 0
+                        )
+
+                )
+
+            [621] => Array
+                (
+                    [0] => Array
+                        (
+                            [name] => moodle.tar.gz
+                            [path] => /home/user/softaculous_templates/
+                            [size] => 29874013
+                            [sid] => 621
+                            [ver] => 6.5.4
+                            [itime] => 1766044643
+                            [softpath] => /home/user/public_html/moodle
+                            [softurl] => http://domain.com/moodle
+                            [adminurl] => Login.php
+                            [softdomain] => domain.com
+                            [softdb] => mood981
+                            [softdbuser] => mood981
+                            [softdbhost] => localhost
+                            [softdbpass] => *******
+                            [dbcreated] => 1
+                            [fileindex] => Array()....
+                            [admin_username] => admin
+                            [insid] => 542_12345
+                            [script_name] => Moodle
+                            [backup_db] => 1
+                            [backup_dir] => 1
+                            [backup_datadir] => 0
+                            [backup_wwwdir] => 0
+                            [backup_note] => 
+                            [ssk] => J3Q3OAhp7x5ywpLQZTT5DBSjHF
+                            [soft_version] => 5.1.1
+                            [btime] => 1766059194
+                            [ext] => tar.gz
+                            [template_name] => moodle
+                            [template_type] => 1
+                            [backup_location] => 0
+                        )
+
+                )
+
+        )
+
+    [timenow] => 1766059218
+    [time_taken] => 0.113
+)
 
 ```
 
