@@ -83,5 +83,5 @@ Array
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
 | act    | software   | 	The value should be “installations” to perform the action of listing installations. |
-| soft    | 26 (26 is the Script ID of WordPress)   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s   |
+| soft    | 26 (26 is the Script ID of WordPress)   | The value should be “SID” for softaculous to perform the action of installing a software. You can find the list of sid’s [here](https://api.softaculous.com/scripts.php?in=serialize)  |
 | giveinfo  | 1   | Pass this value as 1 to get the information of the script (passed in the soft parameter)  |
