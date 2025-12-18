@@ -1,5 +1,5 @@
 ## List backup locations using Softaculous API Guide
-This document explains how to list the backup location using Softaculous API.
+This guide explains how to list the backup location using Softaculous API.
 
 ### via cURL
 ```php
