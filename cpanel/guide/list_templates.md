@@ -1,7 +1,5 @@
 ## List templates using Softaculous API Guide
-
-This document explains how to list all templates using the Softaculous API.
-
+This guide explains how to list all templates using the Softaculous API.
 
 ### via cURL
 ```php
