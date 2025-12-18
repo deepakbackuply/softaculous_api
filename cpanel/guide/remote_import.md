@@ -1,6 +1,5 @@
 ## Remote Import an installation using Softaculous API guide
-
-This document will explain how to import your installations from some other server to Softaculous on your server using remote. (For eg. If you want to import a WordPress Installation installed on any other server to Softaculous on your server.)
+This guide will explain how to import your installations from some other server to Softaculous on your server using remote. (For eg. If you want to import a WordPress Installation installed on any other server to Softaculous on your server.)
 
 ### via cURL
 ```php
