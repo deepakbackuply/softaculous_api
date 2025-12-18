@@ -1,7 +1,5 @@
 ## Installations backup using Softaculous API Guide
-
 This guide explains how to create a backup of the installations using Softaculous API.
-
 
 ### via cURL
 ```php
