@@ -23,7 +23,7 @@ $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 // Turn off the server and peer verification (TrustManager Concept).
@@ -59,29 +59,118 @@ if(!empty($res['error'])){
 ```php
 Array
 (
-    [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
-    [userins] => Array
+    [543] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765257816
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
-            [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
-            [dbcreated] => 1
-            [fileindex] => Array .................
+            [543_61223] => Array
+                (
+                    [sid] => 543
+                    [ver] => 11.2.10
+                    [itime] => 1766039576
+                    [softpath] => /home/user/public_html/moodle
+                    [softurl] => https://domain.com/moodle
+                    [adminurl] => user/login
+                    [softdomain] => domain.com
+                    [softdb] => mood530
+                    [softdbuser] => mood530
+                    [softdbhost] => localhost
+                    [softdbpass] => ********
+                    [dbprefix] => drvt_
+                    [dbcreated] => 1
+                    [cron_time] => 43,5,*,*,*
+                    [cron_command] => d2dldCAtTyAtIC1xIC10IDEgaHR0cHM6Ly9zY3JpcHQubnVmdHAuY29tL2RydXA1FdBWFZYWGhZb2tRalpGZyA+IC9kZXYvbnVsbA==
+                    [fileindex] => Array
+                        (
+                            [0] => .csslintrc
+                            [1] => .editorconfig
+                            [2] => .eslintignore
+                            [3] => .eslintrc.json
+                            [4] => .gitattributes
+                            [5] => .ht.router.php
+                            [6] => INSTALL.txt
+                            [7] => LICENSE.txt
+                            [8] => README.md
+                            [9] => autoload.php
+                            [10] => composer.json
+                            [11] => composer.lock
+                            [12] => core
+                            [13] => example.gitignore
+                            [14] => index.php
+                            [15] => modules
+                            [16] => profiles
+                            [17] => recipes
+                            [18] => sites
+                            [19] => themes
+                            [20] => update.php
+                            [21] => vendor
+                            [22] => .htaccess
+                            [23] => robots.txt
+                        )
+
+                    [admin_username] => admin
+                    [admin_email] => admin@script.nuftp.com
+                    [site_name] => My Drupal
+                    [insid] => 543_61223
+                    [display_softdbpass] => 7)V]1S8Mqp
+                    [script_name] => Drupal Core
+                )
+
+        )
+
+    [26] => Array
+        (
+            [26_94698] => Array
+                (
+                    [sid] => 26
+                    [ver] => 6.9
+                    [itime] => 1766039749
+                    [softpath] => /home/user/public_html/wp
+                    [softurl] => https://domain.com/wp
+                    [adminurl] => wp-admin/
+                    [disable_wp_cron] => 
+                    [admin_username] => admin
+                    [admin_email] => admin@domain.com
+                    [softdomain] => domain.com
+                    [softdb] => wp118
+                    [softdbuser] => wp118
+                    [softdbhost] => localhost
+                    [softdbpass] => *********
+                    [dbprefix] => wphh_
+                    [dbcreated] => 1
+                    [fileindex] => Array
+                        (
+                            [0] => index.php
+                            [1] => license.txt
+                            [2] => readme.html
+                            [3] => wp-activate.php
+                            [4] => wp-admin
+                            [5] => wp-blog-header.php
+                            [6] => wp-comments-post.php
+                            [7] => wp-config-sample.php
+                            [8] => wp-content
+                            [9] => wp-cron.php
+                            [10] => wp-includes
+                            [11] => wp-links-opml.php
+                            [12] => wp-load.php
+                            [13] => wp-login.php
+                            [14] => wp-mail.php
+                            [15] => wp-settings.php
+                            [16] => wp-signup.php
+                            [17] => wp-trackback.php
+                            [18] => xmlrpc.php
+                            [19] => wp-config.php
+                            [20] => .htaccess
+                        )
+
+                    [site_name] => My Blog
+                    [insid] => 26_12345
+                    [display_softdbpass] => *******
+                    [script_name] => WordPress
+                )
+
+        )
+
+)
+
 
 ```
 
