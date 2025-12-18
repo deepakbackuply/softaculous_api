@@ -1,7 +1,5 @@
 ## Install Script using Softaculous API guide
-
-This document explains how to install a script using Softaculous API.
-
+This guide explains how to install a script using Softaculous API.
 
 ### via cURL
 ```php
