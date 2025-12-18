@@ -1,4 +1,4 @@
-## Delete a Remote Backup Location using Softaculous API Guide
+## Delete remote backup location using Softaculous API Guide
 This document explains how to delete a remote backup location using Softaculous API.
 
 ### via cURL
@@ -41,37 +41,39 @@ $res = unserialize($resp);
 //Display list of backup locations after successfully removal of a backup location.
 print_r($res['backup_locs']);
 
-print_r($res);
-
 ?>
 ```
 ### Expected response
 ```php
 Array
 (
-    [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
-    [userins] => Array
+    [2] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765257816
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
-            [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
-            [dbcreated] => 1
-            [fileindex] => Array .................
+            [id] => 2
+            [name] => Google Backup2
+            [protocol] => gdrive
+            [gdrive_token] => ya29.a0Aa7pCA8Ya7Wgzsl2yF3DFsAaIjD6gAPeAq0dBCUetKnMY7CBgK2yqHJwyW8o2uQhYa2MiyCM2hNRgkSqCg0m5wxFxRw0206
+            [gdrive_refresh_token] => 1//03XHKTG-UZ40lCgYIARAAGAzIwxB1AfS0w-gh818hUqMgVeT2VtwWi9V37ZB3mdiY5aQKhDFTM
+            [backup_loc] => /google_backup2
+            [full_backup_loc] => gdrive://1%2F%2F03XHKTG-UZ40lCgYIARAAGAMSNwF-L9IrSaX1FNQKhDFTM/Softaculous Auto Installer/google_backup2
+        )
+
+    [3] => Array
+        (
+            [id] => 3
+            [name] => FTP Backup Location
+            [protocol] => ftp
+            [server_host] => ftp.domain.com
+            [port] => 21
+            [ftp_user] => user
+            [ftp_pass] => pass
+            [private_key] => 
+            [passphrase] => 
+            [backup_loc] => /ftp_backups
+            [full_backup_loc] => ftp://user:pass@ftp.domain.com:21/ftp_backups
+        )
+
+)
 
 ```
 
