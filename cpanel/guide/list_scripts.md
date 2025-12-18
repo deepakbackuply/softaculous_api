@@ -1,7 +1,5 @@
 ## Scripts list using Softaculous API guide
-
-This document explains how to fetch the script list using Softaculous API.
-
+This guide explains how to fetch the script list using Softaculous API.
 
 ### via cURL
 ```php
