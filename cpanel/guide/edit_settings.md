@@ -1,6 +1,6 @@
 ## Edit enduser settings using Softaculous API Guide
 
-This document explains how to edit the enduser settings using Softaculous API.
+This guide explains how to edit the enduser settings using Softaculous API.
 
 
 ### via cURL
