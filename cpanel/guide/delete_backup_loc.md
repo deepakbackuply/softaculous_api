@@ -1,5 +1,5 @@
 ## Delete remote backup location using Softaculous API Guide
-This document explains how to delete a remote backup location using Softaculous API.
+This guide explains how to delete a remote backup location using Softaculous API.
 
 ### via cURL
 ```php
