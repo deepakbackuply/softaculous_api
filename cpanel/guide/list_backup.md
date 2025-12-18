@@ -65,7 +65,7 @@ Array
                                     [ver] => 6.10
                                     [itime] => 1765968147
                                     [softpath] => /home/user/public_html/wp
-                                    [softurl] => https://domain.com/wp60
+                                    [softurl] => https://domain.com/wp
                                     [adminurl] => wp-admin/
                                     [disable_wp_cron] => 
                                     [admin_username] => admin
