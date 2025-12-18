@@ -1,7 +1,5 @@
 ## Remove installation using Softaculous API guide
-
-This document explains how to remove an installation using Softaculous API.
-
+This guide explains how to remove an installation using Softaculous API.
 
 ### via cURL
 ```php
