@@ -51,30 +51,49 @@ print_r($res);
 ```php
 Array
 (
-    [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
-    [userins] => Array
+    [title] => Softaculous - Softaculousによる提供
+    [done] => 1
+    [langs] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765257816
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
-            [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
-            [dbcreated] => 1
-            [fileindex] => Array .................
+            [bulgarian] => bulgarian
+            [chinese] => chinese
+            [czech] => czech
+            [dutch] => dutch
+            [english] => english
+            [finnish] => finnish
+            [french] => french
+            [german] => german
+            [hindi] => hindi
+            [hungarian] => hungarian
+            [italian] => italian
+            [japanese] => japanese
+            [polish] => polish
+            [portuguese] => portuguese
+            [portuguese-br] => portuguese-br
+            [russian] => russian
+            [slovak] => slovak
+            [spanish] => spanish
+            [turkish] => turkish
+        )
 
+    [timezone] => 0
+    [language] => japanese
+    [backup_locs] => 
+    [default_backup_location] => 
+    [arrange_domain] => 
+    [off_backup_au] => 
+    [disable_suggestions] => 
+    [color_theme] => Array
+        (
+            [left_panel_cathead] => #F2F2F2
+            [left_panel_scriptname] => #FFFFFF
+            [left_panel_bg] => #333333
+            [left_panel_cathead_hover] => #4096ee
+        )
+
+    [timenow] => 1766054659
+    [time_taken] => 0.086
+)
 ```
 
 ### Required Parameters
