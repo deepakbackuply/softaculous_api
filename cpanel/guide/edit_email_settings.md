@@ -1,4 +1,4 @@
-## edit email settings using Softaculous API Guide
+## Edit email settings using Softaculous API Guide
 
 This document explains how to edit email settings using Softaculous API.
 
