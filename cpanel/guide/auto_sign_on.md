@@ -1,7 +1,5 @@
 ## Auto sign-on on installation admin dashboard using Softaculous API Guide
-
 This guide explains how to automatically sign in to the installation’s admin dashboard using the Softaculous API.
-
 
 ### via cURL
 ```php
