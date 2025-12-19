@@ -15,19 +15,19 @@ curl -d "add_plugins_themes_data_slugs[]=popularfx" -d "add_plugins_themes_data_
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
 			'&api=serialize'.
-                        '&sets_name=SET-NAME'.
-                        '&themes=1'.
-                        '&add_plugins_themes_data=1'.
+			'&sets_name=SET-NAME'.
+			'&themes=1'.
+			'&add_plugins_themes_data=1'.
 			'&act=manage_sets';
 
 $post = array('add_plugins_themes_data_slugs' => array('popularfx'), //Slug name
               'add_plugins_themes_data_names' => array('PopularFx') //Theme name
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 // Turn off the server and peer verification (TrustManager Concept).
@@ -65,29 +65,28 @@ if(!empty($res['done'])){
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done_msg] => Your backup is being created in background. You will be notified by email once its completed. You can track the backup process from the  Task List page.
-Your installation URL : https://domain.com
-    [done] => TDpa5nojrXBWxcIcOBvNYF2e7X9
-    [userins] => Array
+    [done] => Plugins(s) and themes(s) added
+    [sets] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1765257816
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [disable_wp_cron] => 
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => user_wp152
-            [softdbuser] => user_wp152
-            [softdbhost] => localhost
-            [softdbpass] => pp@683p8S.
-            [dbprefix] => wpom_
-            [dbcreated] => 1
-            [fileindex] => Array .................
+            [SET-NAME] => Array
+                (
+                    [enduser_set] => 1
+                    [plugins] => Array
+                        (
+                            [loginizer] => Loginizer
+                        )
+                    [themes] => Array
+                        (
+                            [popularfx] => PopularFx
+                        )
 
+                )
+
+        )
+
+    [timenow] => 1766127685
+    [time_taken] => 0.093
+)
 ```
 
 ### Required Parameters
