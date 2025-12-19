@@ -47,17 +47,6 @@ print_r($res['backup_locs']);
 ```php
 Array
 (
-    [2] => Array
-        (
-            [id] => 2
-            [name] => Google Backup2
-            [protocol] => gdrive
-            [gdrive_token] => ya29.a0Aa7pCA8Ya7Wgzsl2yF3DFsAaIjD6gAPeAq0dBCUetKnMY7CBgK2yqHJwyW8o2uQhYa2MiyCM2hNRgkSqCg0m5wxFxRw0206
-            [gdrive_refresh_token] => 1//03XHKTG-UZ40lCgYIARAAGAzIwxB1AfS0w-gh818hUqMgVeT2VtwWi9V37ZB3mdiY5aQKhDFTM
-            [backup_loc] => /google_backup2
-            [full_backup_loc] => gdrive://1%2F%2F03XHKTG-UZ40lCgYIARAAGAMSNwF-L9IrSaX1FNQKhDFTM/Softaculous Auto Installer/google_backup2
-        )
-
     [3] => Array
         (
             [id] => 3
