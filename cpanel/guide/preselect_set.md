@@ -16,10 +16,10 @@ curl "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.l
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			      '&api=serialize'.
+			'&api=serialize'.
             '&set_name=SET-NAME'.
             '&default_value=1'.
-			      '&act=manage_sets';
+			'&act=manage_sets';
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -62,7 +62,7 @@ if(!empty($res['done'])){
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done] => Plugins(s) and themes(s) removed
+    [done] => Preference saved successfully
     [sets] => Array
         (
             [SET-NAME] => Array
@@ -70,17 +70,23 @@ Array
                     [enduser_set] => 1
                     [plugins] => Array
                         (
+                            [loginizer] => Loginizer
                         )
+
                     [themes] => Array
                         (
                             [popularfx] => PopularFX
                         )
+
+                    [default_value] => 1
                 )
+
         )
 
-    [timenow] => 1766129375
-    [time_taken] => 0.076
+    [timenow] => 1766131495
+    [time_taken] => 0.072
 )
+
 ```
 
 ### Required Parameters
