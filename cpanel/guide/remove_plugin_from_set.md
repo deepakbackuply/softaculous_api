@@ -14,11 +14,11 @@ curl "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.l
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			          '&api=serialize'.
+				'&api=serialize'.
                 '&set_name=SET-NAME'.
                 '&plugins=1'.
                 '&plugins_themes_to_remove=loginizer'.
-			          '&act=manage_sets';
+				'&act=manage_sets';
 
 // Set the curl parameters.
 $ch = curl_init();
