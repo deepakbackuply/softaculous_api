@@ -63,11 +63,12 @@ Array
 	[title] => Softaculous - Powered by Softaculous
 	[done] => Plugins(s) and themes(s) removed
 	[sets] => Array (
-			[SET-NAME] => Array (
-			[enduser_set] => 1
-			[plugins] => Array ( )
-			[themes] => Array ( )
-		)
+			[SET-NAME] => Array
+			(
+					[enduser_set] => 1
+					[plugins] => Array ( )
+					[themes] => Array ( )
+			)
 	)
 	[timenow] => 1766129878
 	[time_taken] => 0.071
