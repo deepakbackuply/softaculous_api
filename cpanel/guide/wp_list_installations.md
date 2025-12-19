@@ -48,7 +48,7 @@ if(!empty($res['error'])){
 
 }else{
      
-     print_r($res);
+     print_r($res['wordpressins']);
 
 }
 
@@ -56,27 +56,51 @@ if(!empty($res['error'])){
 ```
 ### Expected response
 ```php
-Array
-(
-    [title] => Softaculous - Powered by Softaculous
-    [done] => Plugins(s) and themes(s) removed
-    [sets] => Array
+[wordpressins] => Array
         (
-            [SET-NAME] => Array
+            
+            [26_12345] => Array
                 (
-                    [enduser_set] => 1
-                    [plugins] => Array
-                        (
-                        )
-                    [themes] => Array
-                        (
-                            [popularfx] => PopularFX
-                        )
+                    [sid] => 26
+                    [ver] => 6.9
+                    [itime] => 1766062062
+                    [softpath] => /home/user/public_html/wp
+                    [softurl] => http://domain.com/wp
+                    [admin_folder] => wp-admin/
+                    [site_name] => myblog
+                    [softdomain] => domain.com
+                    [softdb] => wp143
+                    [softdbuser] => wp143
+                    [softdbhost] => localhost
+                    [softdbpass] => ******
+                    [dbcreated] => 1
+                    [dbprefix] => wphh_
+                    [fileindex] => Array
+                    [insid] => 26_12345
+                    [script_name] => WordPress
                 )
-        )
 
-    [timenow] => 1766129375
-    [time_taken] => 0.076
+            [26_45678] => Array
+                (
+                    [sid] => 26
+                    [ver] => 6.9
+                    [itime] => 1766062062
+                    [softpath] => /home/user/public_html/wp2
+                    [softurl] => http://domain.com/wp2
+                    [admin_folder] => wp-admin/
+                    [site_name] => myblog
+                    [softdomain] => domain.com
+                    [softdb] => wp456
+                    [softdbuser] => wp456
+                    [softdbhost] => localhost
+                    [softdbpass] => ******
+                    [dbcreated] => 1
+                    [dbprefix] => wphh_
+                    [fileindex] => Array
+                    [insid] => 26_45678
+                    [script_name] => WordPress
+                )
+
 )
 ```
 
