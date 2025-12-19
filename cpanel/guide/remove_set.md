@@ -14,9 +14,9 @@ curl -d "sets[]=SET-NAME" "https://user:password@domain.com:2083/frontend/jupite
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			        '&api=serialize'.
-              '&remove_sets=1'.
-			        '&act=manage_sets';
+			'&api=serialize'.
+			'&remove_sets=1'.
+			'&act=manage_sets';
 
 $post = array('sets' => array('SET-NAME'), //Set name
 
@@ -60,29 +60,13 @@ if(!empty($res['done'])){
 ```php
 Array
 (
-    [title] => Softaculous - Powered by Softaculous
-    [done] => Plugins(s) and themes(s) added
-    [sets] => Array
-        (
-            [SET-NAME] => Array
-                (
-                    [enduser_set] => 1
-                    [plugins] => Array
-                        (
-                            [loginizer] => Loginizer
-                        )
-                    [themes] => Array
-                        (
-                            [popularfx] => PopularFx
-                        )
-
-                )
-
-        )
-
-    [timenow] => 1766127685
-    [time_taken] => 0.093
+	[title] => Softaculous - Powered by Softaculous
+	[done] => Set(s) removed successfully
+	[sets] => Array ( )
+	[timenow] => 1766128552
+	[time_taken] => 0.104
 )
+
 ```
 
 ### Required Parameters
