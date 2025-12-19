@@ -14,11 +14,11 @@ curl "https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.l
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			        '&api=serialize'.
+			  '&api=serialize'.
               '&set_name=SET-NAME'.
               '&themes=1'.
               '&plugins_themes_to_remove=popularfx'.
-			        '&act=manage_sets';
+			  '&act=manage_sets';
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -60,26 +60,19 @@ if(!empty($res['done'])){
 ```php
 Array
 (
-    [title] => Softaculous - Powered by Softaculous
-    [done] => Plugins(s) and themes(s) removed
-    [sets] => Array
-        (
-            [SET-NAME] => Array
-                (
-                    [enduser_set] => 1
-                    [plugins] => Array
-                        (
-                        )
-                    [themes] => Array
-                        (
-                            [popularfx] => PopularFX
-                        )
-                )
-        )
+	[title] => Softaculous - Powered by Softaculous
+	[done] => Plugins(s) and themes(s) removed
+	[sets] => Array (
+			[SET-NAME] => Array (
+			[enduser_set] => 1
+			[plugins] => Array ( )
+			[themes] => Array ( )
+		)
+	)
+	[timenow] => 1766129878
+	[time_taken] => 0.071
+) 
 
-    [timenow] => 1766129375
-    [time_taken] => 0.076
-)
 ```
 
 ### Required Parameters
