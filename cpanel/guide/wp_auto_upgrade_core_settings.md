@@ -15,10 +15,10 @@ curl -d "insid=26_31793" -d "auto_upgrade_core=1" -d "save=1" "https://user:pass
 //The URL
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			          '&api=serialize'.
-                '&act=wordpress';
+				'&api=serialize'.
+				'&act=wordpress';
 
-$post = array('insid' => '26_31793',
+$post = array('insid' => '26_12345',
               'auto_upgrade_core' => '1',
               'save' => '1'
             );
@@ -64,27 +64,66 @@ if(!empty($res['done'])){
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done] => Plugins(s) and themes(s) added
-    [sets] => Array
+    [done] => 1
+    [insid] => 26_12345
+    [settings] => Array
         (
-            [SET-NAME] => Array
-                (
-                    [enduser_set] => 1
-                    [plugins] => Array
-                        (
-                            [loginizer] => Loginizer
-                        )
-                    [themes] => Array
-                        (
-                            [popularfx] => PopularFx
-                        )
-
-                )
-
+            [sid] => 26
+            [ver] => 6.9
+            [itime] => 1766062062
+            [softpath] => /home/user/public_html
+            [softurl] => http://domain.com
+            [admin_folder] => wp-admin/
+            [site_name] => myblog
+            [softdomain] => domain.com
+            [softdb] => wp143
+            [softdbuser] => wp143
+            [softdbhost] => localhost
+            [softdbpass] => ******
+            [dbcreated] => 1
+            [dbprefix] => wphh_
+            [fileindex] => Array()
+            [insid] => 26_12345
+            [script_name] => WordPress
         )
 
-    [timenow] => 1766127685
-    [time_taken] => 0.093
+    [userins] => Array
+        (
+            [sid] => 26
+            [ver] => 6.9
+            [itime] => 1766062062
+            [softpath] => /home/user/public_html/wp
+            [softurl] => http://domain.com/wp
+            [admin_folder] => wp-admin/
+            [site_name] => myblog
+            [softdomain] => domain.com
+            [softdb] => wp456
+            [softdbuser] => wp456
+            [softdbhost] => localhost
+            [softdbpass] => *******
+            [dbcreated] => 1
+            [dbprefix] => wphh_
+            [fileindex] => Array()
+            [insid] => 26_45678
+            [script_name] => WordPress
+        )
+
+    [featured_plugins_list] => Array
+        (
+            
+        )
+
+    [wordpressins] => Array
+        (
+            
+        )
+
+    [scripts_admin_url] => wp-admin/
+    [notes] => 
+    [users_list] => 
+    [user_roles] => 
+    [timenow] => 1766402492
+    [time_taken] => 0.088
 )
 ```
 
