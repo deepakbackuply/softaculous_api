@@ -66,28 +66,40 @@ if(!empty($res['done'])){
 Array
 (
     [title] => Softaculous - Powered by Softaculous
-    [done] => Plugins(s) and themes(s) added
-    [sets] => Array
+    [done] => 1
+    [insid] => 26_12345
+    [settings] => Array
         (
-            [SET-NAME] => Array
-                (
-                    [enduser_set] => 1
-                    [plugins] => Array
-                        (
-                            [loginizer] => Loginizer
-                        )
-                    [themes] => Array
-                        (
-                            [popularfx] => PopularFx
-                        )
-
-                )
-
+            [sid] => 26
+            [ver] => 6.9
+            [itime] => 1767271286
+            [softpath] => /home/user/public_html
+            [softurl] => https://domain.com
+            [adminurl] => wp-admin/
+            [disable_wp_cron] => 
+            [admin_username] => admin
+            [admin_email] => admin@domain.com
+            [softdomain] => domain.com
+            [softdb] => wp598
+            [softdbuser] => wp598
+            [softdbhost] => localhost
+            [softdbpass] => ******
+            [dbprefix] => wpl3_
+            [dbcreated] => 1
+            [fileindex] => Array()
+            [site_name] => My Blog
+            [insid] => 26_12345
+            [script_name] => WordPress
         )
 
-    [timenow] => 1766127685
-    [time_taken] => 0.093
+    [scripts_admin_url] => wp-admin/
+    [notes] => 
+    [users_list] => 
+    [user_roles] => 
+    [timenow] => 1767271350
+    [time_taken] => 0.086
 )
+
 ```
 
 ### Required Parameters
