@@ -83,7 +83,7 @@ Array
             [softdb] => wp598
             [softdbuser] => wp598
             [softdbhost] => localhost
-            [softdbpass] => ******
+            [softdbpass] => *******
             [dbprefix] => wpl3_
             [dbcreated] => 1
             [fileindex] => Array()
@@ -96,8 +96,8 @@ Array
     [notes] => 
     [users_list] => 
     [user_roles] => 
-    [timenow] => 1767271350
-    [time_taken] => 0.086
+    [timenow] => 1767273289
+    [time_taken] => 0.077
 )
 
 ```
