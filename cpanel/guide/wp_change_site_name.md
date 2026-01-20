@@ -16,8 +16,8 @@ curl -d "insid=26_12345" -d "softurl=https://example.com/test" -d "site_name=My 
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			      '&api=serialize'.
-            '&act=wordpress';
+			  '&api=serialize'.
+			  '&act=wordpress';
 
 $post = array('insid' => '26_12345',
               'softurl' => 'https://example.com/test',
