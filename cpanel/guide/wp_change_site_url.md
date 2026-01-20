@@ -17,7 +17,7 @@ curl -d "insid=26_12345" -d "softurl=https://example.com/test" -d "site_name=My 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
 			'&api=serialize'.
-                        '&act=wordpress';
+			'&act=wordpress';
 
 $post = array('insid' => '26_31793',
               'softurl' => 'https://example.com/test',
@@ -28,7 +28,7 @@ $post = array('insid' => '26_31793',
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 // Turn off the server and peer verification (TrustManager Concept).
