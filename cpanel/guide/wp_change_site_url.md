@@ -63,31 +63,64 @@ if(!empty($res['done'])){
 ```
 ### Expected response
 ```php
-[wordpressins] => Array
+Array
+(
+    [title] => Softaculous - Powered by Softaculous
+    [done] => 1
+    [insid] => 26_12345
+    [settings] => Array
         (
-            
-            [26_12345] => Array
-                (
-                    [sid] => 26
-                    [ver] => 6.9
-                    [itime] => 1766062062
-                    [softpath] => /home/user/public_html/wp
-                    [softurl] => http://domain.com/wp
-                    [admin_folder] => wp-admin/
-                    [site_name] => myblog
-                    [softdomain] => domain.com
-                    [softdb] => wp143
-                    [softdbuser] => wp143
-                    [softdbhost] => localhost
-                    [softdbpass] => ******
-                    [dbcreated] => 1
-                    [dbprefix] => wphh_
-                    [fileindex] => Array
-                    [insid] => 26_12345
-                    [script_name] => WordPress
-                )
+            [sid] => 26
+            [ver] => 6.9
+            [itime] => 1768896820
+            [softpath] => /home/user/public_html
+            [softurl] => https://domain.com
+            [adminurl] => wp-admin/
+            [admin_username] => admin
+            [admin_email] => admin@domain.com
+            [softdomain] => domain.com
+            [softdb] => wp922
+            [softdbuser] => wp922
+            [softdbhost] => localhost
+            [softdbpass] => *******
+            [dbprefix] => wp7f_
+            [dbcreated] => 1
+            [fileindex] => Array()
+            [site_name] => My Blog Test
+            [insid] => 26_12345
+            [script_name] => WordPress
+        )
 
+    [userins] => Array
+        (
+            [sid] => 26
+            [ver] => 6.9
+            [itime] => 1768896820
+            [softpath] => /home/user/public_html
+            [softurl] => https://domain.com
+            [adminurl] => wp-admin/
+            [admin_username] => admin
+            [admin_email] => admin@domain.com
+            [softdomain] => domain.com
+            [softdb] => script_wp922
+            [softdbuser] => wp922
+            [softdbhost] => localhost
+            [softdbpass] => ******
+            [dbprefix] => wp7f_
+            [dbcreated] => 1
+            [fileindex] => Array()
+            [site_name] => My Blog Test
+            [insid] => 26_12345
+            [script_name] => WordPress
+        )
+    [scripts_admin_url] => wp-admin/
+    [notes] => 
+    [users_list] => 
+    [user_roles] => 
+    [timenow] => 1768897207
+    [time_taken] => 0.113
 )
+
 ```
 
 ### Required Parameters
