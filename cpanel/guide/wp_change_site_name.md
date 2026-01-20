@@ -1,4 +1,4 @@
-## Change Site Name using Softaculous API Guide
+## Change site name using Softaculous API Guide
 This guide explains how to change site name using Softaculous API.
 
 ### via cURL
