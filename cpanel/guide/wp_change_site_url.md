@@ -87,27 +87,6 @@ if(!empty($res['done'])){
                     [script_name] => WordPress
                 )
 
-            [26_45678] => Array
-                (
-                    [sid] => 26
-                    [ver] => 6.9
-                    [itime] => 1766062062
-                    [softpath] => /home/user/public_html/wp2
-                    [softurl] => http://domain.com/wp2
-                    [admin_folder] => wp-admin/
-                    [site_name] => myblog
-                    [softdomain] => domain.com
-                    [softdb] => wp456
-                    [softdbuser] => wp456
-                    [softdbhost] => localhost
-                    [softdbpass] => ******
-                    [dbcreated] => 1
-                    [dbprefix] => wphh_
-                    [fileindex] => Array
-                    [insid] => 26_45678
-                    [script_name] => WordPress
-                )
-
 )
 ```
 
@@ -117,7 +96,7 @@ if(!empty($res['done'])){
 |----------|----------|----------|
 | Authentication  | -   | You can use the Enduser Authenticating methods. |
 | act  | wordpress  | The value should be “wordpress” to perform the action of changing the Site URL in WordPress. |
-| POST |
+| **POST** |
 | insid  | 26_12345  | The installation ID for which you want to change the Site URL. |
 | softurl  | https://example.com/test  | The value is the name of the URL. |
 | site_name  | My Blog Test | The value is the blog or site name. |
