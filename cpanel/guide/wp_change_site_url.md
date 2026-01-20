@@ -19,7 +19,7 @@ $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index
 			'&api=serialize'.
 			'&act=wordpress';
 
-$post = array('insid' => '26_31793',
+$post = array('insid' => '26_12345',
               'softurl' => 'https://example.com/test',
               'site_name' => 'My Blog Test',
               'save_info' => '1'
