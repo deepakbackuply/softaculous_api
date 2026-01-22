@@ -16,8 +16,8 @@ curl -d "insid=26_12345" -d "type=plugins" -d "list=1" "https://user:password@do
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			  '&api=serialize'.
-        '&act=wordpress';
+				'&api=serialize'.
+				'&act=wordpress';
 
 $post = array('insid' => '26_12345',
               'type' => 'plugins',
@@ -90,27 +90,32 @@ Array
             [script_name] => WordPress
         )
 
-    [userins] => Array
+   	[plugins_list] => Array
         (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1768896820
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => script_wp922
-            [softdbuser] => wp922
-            [softdbhost] => localhost
-            [softdbpass] => ******
-            [dbprefix] => wp7f_
-            [dbcreated] => 1
-            [fileindex] => Array()
-            [site_name] => My Blog Test
-            [insid] => 26_12345
-            [script_name] => WordPress
+            [akismet/akismet.php] => Array
+                (
+                    [Plugin Name] => Akismet Anti-spam: Spam Protection
+                    [Plugin URI] => https://akismet.com/
+                    [Description] => Used by millions, Akismet is quite possibly the best way in the world to protect your blog from spam. Akismet Anti-spam keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key.
+                    [Version] => 5.6
+                    [Author] => Automattic - Anti-spam Team
+                    [Name] => Akismet Anti-spam: Spam Protection
+                    [slug] => akismet
+                    [activated] => 0
+                )
+
+            [hello.php] => Array
+                (
+                    [Plugin Name] => Hello Dolly
+                    [Plugin URI] => http://wordpress.org/plugins/hello-dolly/
+                    [Description] => This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from Hello, Dolly in the upper right of your admin screen on every page.
+                    [Version] => 1.7.2
+                    [Author] => Matt Mullenweg
+                    [Name] => Hello Dolly
+                    [slug] => .
+                    [activated] => 0
+                )
+
         )
     [scripts_admin_url] => wp-admin/
     [notes] => 
