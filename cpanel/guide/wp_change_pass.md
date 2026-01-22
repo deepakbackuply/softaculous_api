@@ -16,8 +16,8 @@ curl -d "insid=26_12345" -d "admin_username=admin" -d "admin_password=new_passwo
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			      '&api=serialize'.
-            '&act=wordpress';
+				'&api=serialize'.
+           		'&act=wordpress';
 
 $post = array('insid' => '26_12345',
               'admin_username' => 'admin',
@@ -83,29 +83,6 @@ Array
             [softdbuser] => wp922
             [softdbhost] => localhost
             [softdbpass] => *******
-            [dbprefix] => wp7f_
-            [dbcreated] => 1
-            [fileindex] => Array()
-            [site_name] => My Blog Test
-            [insid] => 26_12345
-            [script_name] => WordPress
-        )
-
-    [userins] => Array
-        (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1768896820
-            [softpath] => /home/user/public_html
-            [softurl] => https://domain.com
-            [adminurl] => wp-admin/
-            [admin_username] => admin
-            [admin_email] => admin@domain.com
-            [softdomain] => domain.com
-            [softdb] => script_wp922
-            [softdbuser] => wp922
-            [softdbhost] => localhost
-            [softdbpass] => ******
             [dbprefix] => wp7f_
             [dbcreated] => 1
             [fileindex] => Array()
