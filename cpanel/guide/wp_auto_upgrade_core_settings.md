@@ -86,38 +86,6 @@ Array
             [insid] => 26_12345
             [script_name] => WordPress
         )
-
-    [userins] => Array
-        (
-            [sid] => 26
-            [ver] => 6.9
-            [itime] => 1766062062
-            [softpath] => /home/user/public_html/wp
-            [softurl] => http://domain.com/wp
-            [admin_folder] => wp-admin/
-            [site_name] => myblog
-            [softdomain] => domain.com
-            [softdb] => wp456
-            [softdbuser] => wp456
-            [softdbhost] => localhost
-            [softdbpass] => *******
-            [dbcreated] => 1
-            [dbprefix] => wphh_
-            [fileindex] => Array()
-            [insid] => 26_45678
-            [script_name] => WordPress
-        )
-
-    [featured_plugins_list] => Array
-        (
-            
-        )
-
-    [wordpressins] => Array
-        (
-            
-        )
-
     [scripts_admin_url] => wp-admin/
     [notes] => 
     [users_list] => 
