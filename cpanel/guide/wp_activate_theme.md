@@ -16,10 +16,10 @@ curl -d "insid=26_12345" -d "type=themes" -d "slug=twentytwenty/style.css" -d "a
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			      '&api=serialize'.
+			'&api=serialize'.
             '&act=wordpress';
 
-$post = array('insid' => '26_31793',
+$post = array('insid' => '26_12345',
               'type' => 'themes',
               'slug' => 'twentytwenty/style.css',
               'activate' => '1'
@@ -90,12 +90,9 @@ Array
             [insid] => 26_12345
             [script_name] => WordPress
             [autopass] => fyc9sivdqui9f5wwevnz1lp
-            [plugins_to_activate] => a:1:{s:19:"akismet/akismet.php";s:19:"akismet/akismet.php";}
+            [active_theme] => twentytwenty
         )
     [scripts_admin_url] => wp-admin/
-    [notes] => 
-    [users_list] => 
-    [user_roles] => 
     [timenow] => 1768897207
     [time_taken] => 0.113
 )
