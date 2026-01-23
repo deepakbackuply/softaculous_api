@@ -93,9 +93,6 @@ Array
         )
 
     [scripts_admin_url] => wp-admin/
-    [notes] => 
-    [users_list] => 
-    [user_roles] => 
     [timenow] => 1767273289
     [time_taken] => 0.077
 )
