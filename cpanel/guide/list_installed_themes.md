@@ -90,30 +90,32 @@ Array
             [script_name] => WordPress
         )
 
-   	[plugins_list] => Array
+   	[themes_list] => Array
         (
-            [akismet/akismet.php] => Array
+            [twentytwentyfive/style.css] => Array
                 (
-                    [Plugin Name] => Akismet Anti-spam: Spam Protection
-                    [Plugin URI] => https://akismet.com/
-                    [Description] => Used by millions, Akismet is quite possibly the best way in the world to protect your blog from spam. Akismet Anti-spam keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key.
-                    [Version] => 5.6
-                    [Author] => Automattic - Anti-spam Team
-                    [Name] => Akismet Anti-spam: Spam Protection
-                    [slug] => akismet
+                    [Theme Name] => Twenty Twenty-Five
+                    [Theme URI] => https://wordpress.org/themes/twentytwentyfive/
+                    [Description] => Twenty Twenty-Five emphasizes simplicity and adaptability. 
+                    [Version] => 1.4
+                    [Author] => the WordPress team
+                    [Author URI] => https://wordpress.org
+                    [Name] => Twenty Twenty-Five
+                    [slug] => twentytwentyfive
                     [activated] => 0
                 )
 
-            [hello.php] => Array
+            [swp-dental-clinic/style.css] => Array
                 (
-                    [Plugin Name] => Hello Dolly
-                    [Plugin URI] => http://wordpress.org/plugins/hello-dolly/
-                    [Description] => This is not just a plugin, it symbolizes the hope and enthusiasm of an entire generation summed up in two words sung most famously by Louis Armstrong: Hello, Dolly. When activated you will randomly see a lyric from Hello, Dolly in the upper right of your admin screen on every page.
-                    [Version] => 1.7.2
-                    [Author] => Matt Mullenweg
-                    [Name] => Hello Dolly
-                    [slug] => .
-                    [activated] => 0
+                    [Theme Name] => SWP Dental Clinic
+                    [Theme URI] => https://scintillawpthemes.com/product/free-dental-clinic-wordpress-theme/
+                    [Description] => The SWPDental Clinic Theme is a clean, modern, and professional WordPress theme designed specifically for dental clinics, dentists, and healthcare professionals.
+                    [Version] => 1.0
+                    [Author] => ScintillawpThemes
+                    [Author URI] => https://scintillawpthemes.com/
+                    [Name] => SWP Dental Clinic
+                    [slug] => swp-dental-clinic
+                    [activated] => 1
                 )
 
         )
