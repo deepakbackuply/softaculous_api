@@ -93,9 +93,6 @@ Array
             [plugins_to_deactivate] => a:1:{s:19:"akismet/akismet.php";s:19:"akismet/akismet.php";}
         )
     [scripts_admin_url] => wp-admin/
-    [notes] => 
-    [users_list] => 
-    [user_roles] => 
     [timenow] => 1768897207
     [time_taken] => 0.113
 )
