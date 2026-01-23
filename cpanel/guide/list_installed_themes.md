@@ -44,19 +44,8 @@ $resp = curl_exec($ch);
  
 // The response will hold a string as per the API response method. In this case its PHP Serialize
 $res = unserialize($resp);
- 
-// Done ?
-if(!empty($res['done'])){
 
-	print_r($res);
-
-// Error
-}else{
-
-	echo 'Some error occured';
-	print_r($res['error']);
-
-}
+print_r($res); 
 
 ?>
 ```
