@@ -102,9 +102,6 @@ Array
             [plugins_to_activate] => a:1:{s:23:"loginizer/loginizer.php";s:23:"loginizer/loginizer.php";}
         )
     [scripts_admin_url] => wp-admin/
-    [notes] => 
-    [users_list] => 
-    [user_roles] => 
     [timenow] => 1768897207
     [time_taken] => 0.113
 )
