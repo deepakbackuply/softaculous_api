@@ -1,4 +1,4 @@
-## Upload and install plugin using Softaculous API Guide
+## Upload & install plugin using Softaculous API Guide
 This guide explains how to upload and install plugins using Softaculous API.
 
 ### via cURL
@@ -19,7 +19,7 @@ $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index
                 '&upload=1';
 
 // Plugin zip file
-$file_name_with_full_path = 'loginizer.1.6.7.zip';
+$file_name_with_full_path = 'loginizer.2.0.4.zip';
 
 // php 5.5+
 if (function_exists('curl_file_create')) { 
@@ -98,6 +98,8 @@ Array
             [site_name] => My Blog Test
             [insid] => 26_12345
             [script_name] => WordPress
+			[autopass] => dhmi0zi7dduus5pyglwkcff3qi
+            [plugins_to_activate] => a:1:{s:23:"loginizer/loginizer.php";s:23:"loginizer/loginizer.php";}
         )
     [scripts_admin_url] => wp-admin/
     [notes] => 
