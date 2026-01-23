@@ -14,7 +14,7 @@ curl -d "insid=26_31793" -d "auto_upgrade_plugins=1" -d "auto_upgrade_themes=1" 
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			            '&api=serialize'.
+				  '&api=serialize'.
                   '&act=wordpress';
 
 $post = array('insid' => '26_12345',
@@ -86,9 +86,6 @@ Array
             [eu_auto_upgrade] => 1
         )
     [scripts_admin_url] => wp-admin/
-    [notes] => 
-    [users_list] => 
-    [user_roles] => 
     [timenow] => 1766405057
     [time_taken] => 0.111
 )
