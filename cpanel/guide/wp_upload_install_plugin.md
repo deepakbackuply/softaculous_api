@@ -14,9 +14,9 @@ curl -i -X POST -H "Content-Type: multipart/form-data" -F "custom_file=@/path/to
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			            '&api=serialize'.
-                  '&act=wordpress'.
-                  '&upload=1';
+				'&api=serialize'.
+				'&act=wordpress'.
+                '&upload=1';
 
 // Plugin zip file
 $file_name_with_full_path = 'loginizer.1.6.7.zip';
