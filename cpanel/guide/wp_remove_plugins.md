@@ -14,7 +14,7 @@ curl -d "insid=26_31793" -d "type=plugins" -d "slug=akismet/akismet.php" -d "del
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			          '&api=serialize'.
+				'&api=serialize'.
                 '&act=wordpress';
 
 $post = array('insid' => '26_12345',
@@ -89,9 +89,6 @@ Array
             [script_name] => WordPress
         )
     [scripts_admin_url] => wp-admin/
-    [notes] => 
-    [users_list] => 
-    [user_roles] => 
     [timenow] => 1768897207
     [time_taken] => 0.113
 )
