@@ -107,6 +107,6 @@ Array
 | act  | wordpress  | The value should be “wordpress” to load WordPress Manager. |
 | **POST** |
 | insid  | 26_12345  | The installation ID for which you want to activate the theme. |
-| type  | plugins  | The value should be “themes” |
+| type  | themes  | The value should be “themes” |
 | slug  | twentytwenty/style.css | The value is the theme file path. <br> Path format – <themename>/style.css |
 | activate | 1 | This shall activate the theme |
