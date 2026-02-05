@@ -16,8 +16,8 @@ curl -d "insid=26_12345" -d "type=themes" -d "slug=twentytwenty/style.css" -d "d
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			        '&api=serialize'.
-              '&act=wordpress';
+			'&api=serialize'.
+			'&act=wordpress';
 
 $post = array('insid' => '26_12345',
               'type' => 'themes',
@@ -107,6 +107,6 @@ Array
 | act  | wordpress  | The value should be “wordpress” to load WordPress Manager. |
 | **POST** |
 | insid  | 26_12345  | The installation ID for which you want to deactivate the theme. |
-| type  | theme  | The value should be “themes” |
+| type  | themes  | The value should be “themes” |
 | slug  | twentytwenty/style.css | The value is the theme file path. <br> Path format – <themename>/style.css |
 | deactivate | 1 | This shall activate the theme <br> Note: Atleast one active theme is required |
