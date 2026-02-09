@@ -14,8 +14,8 @@ curl -d "insid=26_12345" -d "type=themes" -d "slug=twentytwenty" -d "install=1" 
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			        '&api=serialize'.
-              '&act=wordpress';
+				'&api=serialize'.
+              	'&act=wordpress';
 
 $post = array('insid' => '26_12345',
               'type' => 'themes',
