@@ -14,11 +14,11 @@ curl -d "insids[]=26_12345" -d "secure_options[change_admin_username]=1" -d "sec
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-              '&api=serialize'.
-              '&act=wordpress';
+		              '&api=serialize'.
+		              '&act=wordpress';
 
 $post = array('insids' => array('26_31793'),
-              'secure_options'=> array(
+              		'secure_options'=> array(
         			'change_admin_username' => 1 ,
         			'no_file_dir_access' => 1 ,
         			'disable_xml_rpc' => 1 ,
@@ -32,7 +32,7 @@ $post = array('insids' => array('26_31793'),
         			'no_script_concat' => 1 ,
         			'block_sensitive_files' => 1 ,
         			'enable_bot_protection' => 1 ),
-              'save_security_measures' => '1'
+              		'save_security_measures' => '1'
 );
 
 // Set the curl parameters.
@@ -76,6 +76,7 @@ Array
 (
     [title] => Softaculous - Powered by Softaculous
     [done] => 1
+	[featured_plugins_list] => Array()
     [insid] => 26_12345
     [settings] => Array
         (
@@ -98,8 +99,6 @@ Array
             [site_name] => My Blog Test
             [insid] => 26_12345
             [script_name] => WordPress
-			      [autopass] => dhmi0zi7dduus5pyglwkcff3qi
-            [active_theme] => twentytwenty
         )
     [scripts_admin_url] => wp-admin/
     [timenow] => 1768897207
