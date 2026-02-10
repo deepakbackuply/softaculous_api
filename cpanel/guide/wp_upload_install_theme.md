@@ -14,18 +14,18 @@ curl -i -X POST -H "Content-Type: multipart/form-data" -F "custom_file=@/path/to
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			        '&api=serialize'.
-              '&act=wordpress'.
-              '&upload=1';
+				 '&api=serialize'.
+             	 '&act=wordpress'.
+             	 '&upload=1';
 
 // Theme zip file
 $file_name_with_full_path = 'twentytwenty.1.8.zip';
 
 // php 5.5+
-if (function_exists('curl_file_create')) { 
+if(function_exists('curl_file_create')){ 
   $cFile = curl_file_create($file_name_with_full_path);
-} else { 
-  $cFile = '@' . realpath($file_name_with_full_path);
+}else{ 
+  $cFile = '@'.realpath($file_name_with_full_path);
 }
 
 $post = array('insid' => '26_12345',
@@ -99,7 +99,7 @@ Array
             [insid] => 26_12345
             [script_name] => WordPress
 			[autopass] => dhmi0zi7dduus5pyglwkcff3qi
-            [plugins_to_activate] => a:1:{s:23:"loginizer/loginizer.php";s:23:"loginizer/loginizer.php";}
+            [active_theme] => twentytwenty
         )
     [scripts_admin_url] => wp-admin/
     [timenow] => 1768897207
