@@ -63,42 +63,12 @@ if(!empty($res)){
 ```php
 Array
 (
-    [543] => Array
-        (
-            [543_12345] => Array
-                (
-                    [sid] => 543
-                    [ver] => 11.2.10
-                    [itime] => 1766039576
-                    [softpath] => /home/user/public_html/moodle
-                    [softurl] => https://domain.com/moodle
-                    [adminurl] => user/login
-                    [softdomain] => domain.com
-                    [softdb] => mood530
-                    [softdbuser] => mood530
-                    [softdbhost] => localhost
-                    [softdbpass] => ********
-                    [dbprefix] => drvt_
-                    [dbcreated] => 1
-                    [cron_time] => 43,5,*,*,*
-                    [cron_command] => d2dldCAtTyAtICkZXYvbnVsbA==
-                    [fileindex] => Array()
-                    [admin_username] => admin
-                    [admin_email] => admin@script.nuftp.com
-                    [site_name] => My Drupal
-                    [insid] => 543_12345
-                    [display_softdbpass] => 7)V]1S8Mqp
-                    [script_name] => Drupal Core
-                )
-
-        )
-
     [26] => Array
         (
             [26_45678] => Array
                 (
                     [sid] => 26
-                    [ver] => 6.9
+                    [ver] => 6.7.4
                     [itime] => 1766039749
                     [softpath] => /home/user/public_html/wp
                     [softurl] => https://domain.com/wp
@@ -119,9 +89,7 @@ Array
                     [display_softdbpass] => *******
                     [script_name] => WordPress
                 )
-
         )
-
 )
 
 ```
