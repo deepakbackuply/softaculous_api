@@ -71,31 +71,7 @@ Array
                             [softdbpass] => ********
                             [dbprefix] => wp2p_
                             [dbcreated] => 1
-                            [fileindex] => Array
-                                (
-                                    [0] => index.php
-                                    [1] => license.txt
-                                    [2] => readme.html
-                                    [3] => wp-activate.php
-                                    [4] => wp-admin
-                                    [5] => wp-blog-header.php
-                                    [6] => wp-comments-post.php
-                                    [7] => wp-config-sample.php
-                                    [8] => wp-content
-                                    [9] => wp-cron.php
-                                    [10] => wp-includes
-                                    [11] => wp-links-opml.php
-                                    [12] => wp-load.php
-                                    [13] => wp-login.php
-                                    [14] => wp-mail.php
-                                    [15] => wp-settings.php
-                                    [16] => wp-signup.php
-                                    [17] => wp-trackback.php
-                                    [18] => xmlrpc.php
-                                    [19] => .htaccess
-                                    [20] => wp-config.php
-                                )
-
+                            [fileindex] => Array()
                             [site_name] => My Blog
                             [insid] => 26_12345
                             [display_softdbpass] => ********
