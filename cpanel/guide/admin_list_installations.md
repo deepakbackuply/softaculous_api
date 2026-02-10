@@ -64,7 +64,7 @@ Array
 (
     [543] => Array
         (
-            [543_61223] => Array
+            [543_12345] => Array
                 (
                     [sid] => 543
                     [ver] => 11.2.10
@@ -80,20 +80,48 @@ Array
                     [dbprefix] => drvt_
                     [dbcreated] => 1
                     [cron_time] => 43,5,*,*,*
-                    [cron_command] => d2dldCAtTyAtIC1xIC10IDEgaHR0cHM6Ly9zY3JpcHQubnVmdHAuY29tL2RydXA1FdBWFZYWGhZb2tRalpGZyA+IC9kZXYvbnVsbA==
-                    [fileindex] => Array
+                    [cron_command] => d2dldCAtTyAtICkZXYvbnVsbA==
+                    [fileindex] => Array()
                     [admin_username] => admin
                     [admin_email] => admin@script.nuftp.com
                     [site_name] => My Drupal
-                    [insid] => 543_61223
+                    [insid] => 543_12345
                     [display_softdbpass] => 7)V]1S8Mqp
                     [script_name] => Drupal Core
                 )
 
         )
 
-)
+    [26] => Array
+        (
+            [26_45678] => Array
+                (
+                    [sid] => 26
+                    [ver] => 6.9
+                    [itime] => 1766039749
+                    [softpath] => /home/user/public_html/wp
+                    [softurl] => https://domain.com/wp
+                    [adminurl] => wp-admin/
+                    [disable_wp_cron] => 
+                    [admin_username] => admin
+                    [admin_email] => admin@domain.com
+                    [softdomain] => domain.com
+                    [softdb] => wp118
+                    [softdbuser] => wp118
+                    [softdbhost] => localhost
+                    [softdbpass] => *********
+                    [dbprefix] => wphh_
+                    [dbcreated] => 1
+                    [fileindex] => Array()
+                    [site_name] => My Blog
+                    [insid] => 26_45678
+                    [display_softdbpass] => *******
+                    [script_name] => WordPress
+                )
 
+        )
+
+)
 
 ```
 
