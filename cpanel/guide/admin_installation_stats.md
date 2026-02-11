@@ -4,7 +4,7 @@ This guide explains how to fetch installation statistics using Softaculous API.
 ### via cURL
 ```php
 
-curl "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=ins_statistics&api=json"
+curl "https://user:password@domain.com:2087/cgi/softaculous/index.php?act=ins_statistics&api=json"
 
 ```
 
@@ -13,7 +13,7 @@ curl "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=ins
 ```php
 
 // URL
-$url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
+$url = 'http://user:password@admin.controlpanel.com:2087/cgi/softaculous/index.php?'.
 			'&api=serialize'.
 			'&act=ins_statistics';
 
@@ -55,38 +55,38 @@ if(!empty($res['done'])){
 ```
 ### Expected response
 ```php
+
 Array
 (
-    [543] => Array
+    [title] => Softaculous - Admin Panel
+    [ins_stats] => Array
         (
-            [543_12345] => Array
-                (
-                    [sid] => 543
-                    [ver] => 11.2.10
-                    [itime] => 1766039576
-                    [softpath] => /home/user/public_html/moodle
-                    [softurl] => https://domain.com/moodle
-                    [adminurl] => user/login
-                    [softdomain] => domain.com
-                    [softdb] => mood530
-                    [softdbuser] => mood530
-                    [softdbhost] => localhost
-                    [softdbpass] => ********
-                    [dbprefix] => drvt_
-                    [dbcreated] => 1
-                    [cron_time] => 43,5,*,*,*
-                    [cron_command] => d2dldCAtTyAtICkZXYvbnVsbA==
-                    [fileindex] => Array()
-                    [admin_username] => admin
-                    [admin_email] => admin@script.nuftp.com
-                    [site_name] => My Drupal
-                    [insid] => 543_12345
-                    [display_softdbpass] => 7)V]1S8Mqp
-                    [script_name] => Drupal Core
-                )
-
+            [total_users] => 10
+            [total_ins] => 12
         )
 
+    [scriptwise_count] => Array
+        (
+            [26] => 12
+        )
+
+    [iscripts] => Array
+        (
+            [26] => Array
+                (
+                    [name] => WordPress
+                    [softname] => wp
+                    [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
+                    [ins] => 1
+                    [cat] => blogs
+                    [type] => php
+                    [ver] => 6.9.1
+                    [pre_down] => 1
+                )
+		)
+	[sn] => Softaculous
+    [timenow] => 1770818899
+    [time_taken] => 0.001
 )
 
 ```
