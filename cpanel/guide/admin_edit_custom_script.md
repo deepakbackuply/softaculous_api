@@ -75,22 +75,39 @@ Array
         (
             [10001] => Array
                 (
-                    [name] => MyWP
-                    [softname] => wp
+                    [name] => CUSTOM SCRIPT
+                    [softname] => custom
                     [desc] => My Custom Script
                     [ins] => 1
                     [cat] => blogs
                     [type] => php
                     [ver] => 1.0
-                    [parent] => 0
+                    [parent] => 10001
                 )
-
         )
-
-    [timenow] => 1776085249
-    [time_taken] => 0.007
+    [custom_catwise] => Array
+        (
+            [php] => Array
+                (
+                    [blogs] => Array
+                        (
+                            [10001] => Array
+                                (
+                                    [name] => CUSTOM SCRIPT
+                                    [softname] => custom
+                                    [desc] => My Custom Script
+                                    [ins] => 1
+                                    [cat] => blogs
+                                    [type] => php
+                                    [ver] => 1.0
+                                    [parent] => 0
+                                )
+                        )
+                )
+        )
+    [timenow] => 1776086170
+    [time_taken] => 0.005
 )
-
 ```
 
 ### Required Parameters
