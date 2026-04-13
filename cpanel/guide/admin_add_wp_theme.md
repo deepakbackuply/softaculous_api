@@ -15,11 +15,11 @@ curl -d "add_plugins_themes_data_slugs[]=popularfx" -d "add_plugins_themes_data_
 
 //The URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
-			      '&api=serialize'.
+			'&api=serialize'.
             '&sets_name=SET-NAME_admin'.
             '&themes=1'.
             '&add_plugins_themes_data=1'.
-			      '&act=manage_sets';
+			'&act=manage_sets';
 
 $post = array('add_plugins_themes_data_slugs' => array('popularfx'), //Slug name
               'add_plugins_themes_data_names' => array('Popularfx') //Theme name
