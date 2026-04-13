@@ -71,28 +71,48 @@ Array
 (
     [title] => Softaculous - Admin Panel
     [done] => 1
-    [_cpplan] => Array
+    [unserplan] => Array
         (
-
-            [default] => Array
+            [name] => plan1
+            [disable_autoupgrade] => 0
+            [max_ins_script] => 
+            [max_backup_script] => 
+            [max_clone_script] => 
+            [max_staging_script] => 
+            [sets] => Array
                 (
-                    [original_key] => default
                 )
 
-            [plan1] => Array
+            [scripts] => Array
                 (
-                    [original_key] => plan1
+                    [26] => 26
+                    [11] => 11
+                )
+
+        )
+
+    [acl] => Array
+        (
+            [users] => Array
+                (
+                    [abc] => plan1
                 )
         )
 
     [_users] => Array
         (
-            
-            [usertest] => Array
+            [user1] => Array
                 (
-                    [original_key] => usertest
+                    [original_key] => user1
                 )
+        )
 
+    [_cpplan] => Array
+        (
+            [Package] => Array
+                (
+                    [original_key] => Package
+                )
         )
 
     [allcatwise] => Array
@@ -111,25 +131,30 @@ Array
                                     [type] => php
                                     [ver] => 6.9.4
                                 )
-
-                        )
-                   
+							[11] => Array
+								(
+									[name] => Pubvana
+									[softname] => openb
+									[desc] => Kick-ass Blog application built using the CodeIgniter PHP Framework
+									[ins] => 1
+									[cat] => blogs
+									[type] => php
+									[ver] => 1.0.4
+								)
+						)
                 )
-
-           
         )
 
     [_resellers] => Array
         (
-            [abc] => Array
+            [alex] => Array
                 (
-                    [original_key] => abc
+                    [original_key] => alex
                 )
-
         )
 
-    [timenow] => 1774594575
-    [time_taken] => 0.001
+    [timenow] => 1776067137
+    [time_taken] => 0.002
 )
 
 ```
