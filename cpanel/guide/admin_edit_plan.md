@@ -12,6 +12,8 @@ curl -d "saveplan=1" -d "planname=1" -d "cpplan_CPPlanName" -d "resellers_abc=1"
 
 ```php
 
+<?php
+
 // URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
 			'&api=serialize'.
