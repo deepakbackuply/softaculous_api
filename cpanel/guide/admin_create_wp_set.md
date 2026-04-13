@@ -64,10 +64,17 @@ print_r($res['error']);
 Array
 (
     [title] => Softaculous - Admin Panel
-    [done] => 1
-    [allcatwise] => Array
-    [timenow] => 1776073370
-    [time_taken] => 15.97
+    [done] => Set added
+    [sets] => Array
+        (
+            [PLUGIN SET_admin] => Array
+                (
+                )
+
+        )
+
+    [timenow] => 1776076471
+    [time_taken] => 0.001
 )
 
 ```
