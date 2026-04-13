@@ -64,90 +64,20 @@ Array
 (
     [title] => Softaculous - Admin Panel
     [done] => 1
-    [unserplan] => Array
+    [plans] => Array
         (
-            [name] => plan1
-            [disable_autoupgrade] => 0
-            [max_ins_script] => 
-            [max_backup_script] => 
-            [max_clone_script] => 
-            [max_staging_script] => 
-            [sets] => Array
+            [/usr/local/softaculous/conf/userplan.plan] => Array
                 (
-                )
-
-            [scripts] => Array
-                (
-                    [26] => 26
-                    [11] => 11
+                    [level] => 1
+                    [dir] => 0
+                    [name] => userplan.plan
+                    [path] => /usr/local/softaculous/conf/
                 )
 
         )
 
-    [acl] => Array
-        (
-            [users] => Array
-                (
-                    [abc] => plan1
-                )
-        )
-
-    [_users] => Array
-        (
-            [user1] => Array
-                (
-                    [original_key] => user1
-                )
-        )
-
-    [_cpplan] => Array
-        (
-            [Package] => Array
-                (
-                    [original_key] => Package
-                )
-        )
-
-    [allcatwise] => Array
-        (
-            [php] => Array
-                (
-                    [blogs] => Array
-                        (
-                            [26] => Array
-                                (
-                                    [name] => WordPress
-                                    [softname] => wp
-                                    [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
-                                    [ins] => 1
-                                    [cat] => blogs
-                                    [type] => php
-                                    [ver] => 6.9.4
-                                )
-							[11] => Array
-								(
-									[name] => Pubvana
-									[softname] => openb
-									[desc] => Kick-ass Blog application built using the CodeIgniter PHP Framework
-									[ins] => 1
-									[cat] => blogs
-									[type] => php
-									[ver] => 1.0.4
-								)
-						)
-                )
-        )
-
-    [_resellers] => Array
-        (
-            [alex] => Array
-                (
-                    [original_key] => alex
-                )
-        )
-
-    [timenow] => 1776067137
-    [time_taken] => 0.002
+    [timenow] => 1776072100
+    [time_taken] => 0.001
 )
 
 ```
