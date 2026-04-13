@@ -1,4 +1,4 @@
-## Installation ACL plan using Softaculous API Guide
+## Add ACL plan using Softaculous API Guide
 This guide explains how to add ACL plan using Softaculous API.
 
 ### via cURL
