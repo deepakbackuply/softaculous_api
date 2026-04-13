@@ -1,0 +1,147 @@
+## Edit ACL plan using Softaculous API Guide
+This guide explains how to edit ACL plan using Softaculous API.
+
+### via cURL
+```php
+
+curl -d "saveplan=1" -d "planname=1" -d "cpplan_CPPlanName" -d "resellers_abc=1" -d "users_xyz=1" -d "scripts_26=1" -d "scripts_413=1" "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=addplans&api=json"
+
+```
+
+### via PHP script
+
+```php
+
+// URL
+$url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
+  			'&api=serialize'.
+  			'&act=addplans';
+
+$post = array('saveplan' => '1',
+      	'planname' => 'plan1',
+      	'resellers_abc' => '1',
+      	'users_xyz' => '1',
+        'cpplan_CPPlanName' => '1',
+      	'scripts_26' => '1', // Add WordPress
+      	'scripts_413' => '1' // Add Joomla
+        );
+
+// Set the curl parameters.
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+
+// Turn off the server and peer verification (TrustManager Concept).
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, FALSE);
+curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, FALSE);
+
+if(!empty($post)){
+	curl_setopt($ch, CURLOPT_POST, 1);
+	curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+}
+ 
+// Get response from the server.
+$resp = curl_exec($ch);
+ 
+// The response will hold a string as per the API response method. In this case its PHP Serialize
+$res = unserialize($resp);
+ 
+// Done ?
+if(!empty($res['done'])){
+
+	print_r($res);
+
+// Error
+}else{
+
+	echo 'Some error occured';
+	print_r($res['error']);
+
+}
+
+?>
+```
+### Expected response
+```php
+
+Array
+(
+    [title] => Softaculous - Admin Panel
+    [done] => 1
+    [_cpplan] => Array
+        (
+
+            [default] => Array
+                (
+                    [original_key] => default
+                )
+
+            [plan1] => Array
+                (
+                    [original_key] => plan1
+                )
+        )
+
+    [_users] => Array
+        (
+            
+            [usertest] => Array
+                (
+                    [original_key] => usertest
+                )
+
+        )
+
+    [allcatwise] => Array
+        (
+            [php] => Array
+                (
+                    [blogs] => Array
+                        (
+                            [26] => Array
+                                (
+                                    [name] => WordPress
+                                    [softname] => wp
+                                    [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
+                                    [ins] => 1
+                                    [cat] => blogs
+                                    [type] => php
+                                    [ver] => 6.9.4
+                                )
+
+                        )
+                   
+                )
+
+           
+        )
+
+    [_resellers] => Array
+        (
+            [abc] => Array
+                (
+                    [original_key] => abc
+                )
+
+        )
+
+    [timenow] => 1774594575
+    [time_taken] => 0.001
+)
+
+```
+
+### Required Parameters
+
+| Key | Value | Description |
+|----------|----------|----------|
+| Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
+| act    | addplans   |	This will trigger the add plan function |
+| **POST** |
+| saveplan | 1  |	This will trigger the add plan function |
+| planname  | plan1   |	Plan name for the new plan being created |
+| resellers_abc  | 1   |	(Optional) Use this only if you want to add a reseller to the plan. resellers_ is the prefix for adding a reseller and abc is the name of the reseller (that should already exist). Similarly pass a separate key for each reseller you want to add to the plan. |
+| users_xyz | 1   |	(Optional) Use this only if you want to add a user to the plan. users_ is the prefix for adding a user and xyz is the name of the user (that should already exist). Similarly pass a separate key for each user you want to add to the plan. |
+| scripts_26  | 1   |	Use this to pass the scripts to be added to the plan. scripts_ is the prefix for adding a script and 26 is the id of the script to be added. Similarly pass a separate key for each script you want to add to the plan. Get Script ids |
+| cpplan_CPPlanName  | 1   |	Use this to pass the control panel plan(s). cpplan_ is the prefix followed by the control panel plan name. For Example: cpplan_SoftRestriction. |
