@@ -4,7 +4,8 @@ This guide explains how to delete custom script using Softaculous API.
 ### via cURL
 ```php
 
-curl -d "csname=Custom Script" -d "softname=custom" -d "desc=My Custom Script" -d "ver=1.0" -d "cat=blogs" -d "parent=10002" -d "edit_submit=1" "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=customscripts&sact=edit&sid=10001&api=json"
+curl "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=customscripts&remid=10001&api=json"
+
 ```
 ### via PHP script
 
@@ -14,19 +15,9 @@ curl -d "csname=Custom Script" -d "softname=custom" -d "desc=My Custom Script" -
 
 // URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
-              '&api=serialize'.
-              '&act=customscripts'.
-              '&sact=edit'.
-              '&sid=10001';
-
-$post = array('csname' => 'CUSTOM SCRIPT', //Name of your custom script
-              'softname' => 'custom', //Name of the custom script folder
-              'desc' => 'My Custom Script', //Description of custom script
-              'ver' => '1.0', //Version of custom script
-              'cat' => 'blogs', //Category
-              'parent' => '10002', //Parent sid
-              'edit_submit' => '1'
-           );
+      			'&api=serialize'.
+      			'&act=customscripts'.
+            '&remid=10001';
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -115,14 +106,5 @@ Array
 | Key | Value | Description |
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
-| act  | customscripts   |	The value should be “customscripts” to perform the action of editing a custom script. |
-| sact  | edit |	The value should be “edit” to edit the custom script. |
-| sid  | 10001 |	Here 10001 is the sid or script id of your custom script. The sid can be fetch from List Custom Scripts |
-| **POST** |
-| csname | CUSTOM-SCRIPT-NAME | The value must be name of your custom script |
-| softname | custom-script | The value must be folder name of the custom script package |
-| desc | Description | The value must be the description of your custom script |
-| ver | 1.0 | The value must be the version of your custom script |
-| cat | Category | The value must be the category of your custom script. For example, Blogs, Ecommerce etc. |
-| parent | 10002 | (OPTIONAL) – The value must be sid of your parent script, in case if you want to set your custom script as child. The parent sid can be fetch from List Custom Scripts |
-| edit_submit | 1 | This will trigger the action of editing the custom script |
+| act  | customscripts   |	The value should be “customscripts” to perform the action of deleting a custom script. |
+| remid  | 10001 |	The value should be sid of the custom script you want to delete. You can fetch the sid from List Custom Scripts |
