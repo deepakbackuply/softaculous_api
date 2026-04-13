@@ -16,8 +16,8 @@ curl "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=man
 //The URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
     			'&api=serialize'.
-          '&set_name=SET-NAME_admin'.
-          '&default_value=1'.
+		          '&set_name=SET-NAME_admin'.
+		          '&default_value=1'.
     			'&act=manage_sets';
 
 // Set the curl parameters.
