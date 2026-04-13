@@ -68,27 +68,29 @@ print_r($res['error']);
 Array
 (
     [title] => Softaculous - Admin Panel
-    [done] => Preference saved successfully
-    [sets] => Array
+    [done] => 1
+    [cscripts] => Array
         (
-            [sets_admin] => Array
+            [10001] => Array
                 (
-                    [plugins] => Array
-                        (
-                            [loco-translate] => Loco Translate
-                        )
-
-                    [themes] => Array
-                        (
-                        )
-
-                    [default_value] => 1
+                    [name] => MyWP
+                    [softname] => wp
+                    [desc] => My Custom Script
+                    [ins] => 1
+                    [cat] => blogs
+                    [type] => php
+                    [ver] => 1.0
+                    [parent] => 0
                 )
 
         )
 
-    [timenow] => 1776083757
-    [time_taken] => 0.000
+    [custom_catwise] => Array
+        (
+        )
+
+    [timenow] => 1776085249
+    [time_taken] => 0.007
 )
 
 ```
