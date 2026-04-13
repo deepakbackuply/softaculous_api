@@ -4,7 +4,7 @@ This guide explains how to edit ACL plan using Softaculous API.
 ### via cURL
 ```php
 
-curl -d "saveplan=1" -d "planname=1" -d "cpplan_CPPlanName" -d "resellers_abc=1" -d "users_xyz=1" -d "scripts_26=1" -d "scripts_413=1" "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=addplans&api=json"
+curl -d "saveplan=1" -d "planname=1" -d "cpplan_CPPlanName" -d "resellers_abc=1" -d "users_xyz=1" -d "scripts_543=1" -d "scripts_72=1" "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=editplans&plan=plan1&api=json"
 
 ```
 
@@ -14,17 +14,19 @@ curl -d "saveplan=1" -d "planname=1" -d "cpplan_CPPlanName" -d "resellers_abc=1"
 
 // URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
-  			'&api=serialize'.
-  			'&act=addplans';
+			'&api=serialize'.
+			'&act=editplans'.
+			'&plan=plan1';
+
 
 $post = array('saveplan' => '1',
-      	'planname' => 'plan1',
-      	'resellers_abc' => '1',
-      	'users_xyz' => '1',
-        'cpplan_CPPlanName' => '1',
-      	'scripts_26' => '1', // Add WordPress
-      	'scripts_413' => '1' // Add Joomla
-        );
+	'planname' => 'plan1',
+	'resellers_abc' => '1',
+	'users_xyz' => '1',
+	'cpplan_CPPlanName' => '1',
+	'scripts_543' => '1', // Add Drupal
+	'scripts_72' => '1' // Add PrestaShop
+);
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -137,11 +139,12 @@ Array
 | Key | Value | Description |
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
-| act    | addplans   |	This will trigger the add plan function |
+| act    | editplans   |	This will trigger the edit plan function |
+| plan   | plan1   | This will be the plan name of the plan you want to edit |
 | **POST** |
-| saveplan | 1  |	This will trigger the add plan function |
+| saveplan | 1  |	This will trigger the edit plan function |
 | planname  | plan1   |	Plan name for the new plan being created |
-| resellers_abc  | 1   |	(Optional) Use this only if you want to add a reseller to the plan. resellers_ is the prefix for adding a reseller and abc is the name of the reseller (that should already exist). Similarly pass a separate key for each reseller you want to add to the plan. |
-| users_xyz | 1   |	(Optional) Use this only if you want to add a user to the plan. users_ is the prefix for adding a user and xyz is the name of the user (that should already exist). Similarly pass a separate key for each user you want to add to the plan. |
-| scripts_26  | 1   |	Use this to pass the scripts to be added to the plan. scripts_ is the prefix for adding a script and 26 is the id of the script to be added. Similarly pass a separate key for each script you want to add to the plan. Get Script ids |
+| resellers_abc  | 1   |	(Optional) Use this only if you want to assign a reseller to the plan. resellers_ is the prefix for adding a reseller and abc is the name of the reseller (that should already exist). Similarly pass a separate key for each reseller you want to assign to the plan. |
+| users_xyz | 1   |	(Optional) Use this only if you want to assign a user to the plan. users_ is the prefix for assigning a user and xyz is the name of the user (that should already exist). Similarly pass a separate key for each user you want to assign to the plan. |
+| scripts_26  | 1   |	Use this to pass the scripts to be assigned to the plan. scripts_ is the prefix for assigning a script and 26 is the id of the script to be assigned. Similarly pass a separate key for each script you want to assign to the plan. Get Script ids |
 | cpplan_CPPlanName  | 1   |	Use this to pass the control panel plan(s). cpplan_ is the prefix followed by the control panel plan name. For Example: cpplan_SoftRestriction. |
