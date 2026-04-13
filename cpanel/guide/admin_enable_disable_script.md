@@ -69,7 +69,69 @@ if(!empty($res['done'])){
 ### Expected response
 ```php
 
-output here
+Array
+(
+    [title] => Softaculous - Admin Panel
+    [done] => 1
+    [allcatwise] => Array
+        (
+            [php] => Array
+                (
+                    [blogs] => Array
+                        (
+                            [26] => Array
+                                (
+                                    [sid] => 26
+                                    [parent] => 0
+                                    [name] => WordPress
+                                    [softname] => wp
+                                    [fullname] => WordPress
+                                    [type] => php
+                                    [views] => 1195573
+                                    [ratings] => 4.705
+                                    [votes] => 27355
+                                    [reviews] => 686
+                                    [space] => 77681630
+                                    [support] => http://www.wordpress.org/
+                                    [version] => 6.9.4
+                                    [category] => blogs
+                                    [logo] => logo.gif
+                                    [screenshot] => screenshot.jpg
+                                    [description] => WordPress is web software you can use to create a beautiful website or blog.
+                                    [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
+                                    [approved] => 1
+                                    [ins] => 0
+                                    [mod] => 258
+                                    [mod_files] => 0
+                                    [pd] => 1
+                                    [auto_upgrade] => 1
+                                    [release_date] => 11-03-2026
+                                    [admin_url] => wp-admin/
+                                    [php_min] => 7.2.24
+                                    [php_max] => 
+                                    [db] => mysql
+                                    [cron] => 0
+                                    [lang] => 
+                                    [adname] => admin
+                                    [adpass] => pass
+                                    [eudemo_notes] => 
+                                    [demo] => demos2.softaculous.com
+                                    [urlname] => WordPress
+                                    [screenshots] => Array()
+                                    [ver] => 6.9.4
+                                    [cat] => blogs
+                                    [force_scripts] => 1
+                                    [branches] => Array()
+                                    [cur_ver] => 6.9.4
+                                )
+	
+							)
+				)
+		)
+
+    [timenow] => 1776073370
+    [time_taken] => 15.97
+)
 
 ```
 
@@ -78,12 +140,7 @@ output here
 | Key | Value | Description |
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
-| act    | editplans   |	This will trigger the edit plan function |
-| plan   | plan1   | This will be the plan name of the plan you want to edit |
+| act    | softwares   |		This will trigger the enable/disable script function |
 | **POST** |
-| saveplan | 1  |	This will trigger the edit plan function |
-| planname  | plan1   |	Plan name for the new plan being created |
-| resellers_abc  | 1   |	(Optional) Use this only if you want to assign a reseller to the plan. resellers_ is the prefix for adding a reseller and abc is the name of the reseller (that should already exist). Similarly pass a separate key for each reseller you want to assign to the plan. |
-| users_xyz | 1   |	(Optional) Use this only if you want to assign a user to the plan. users_ is the prefix for assigning a user and xyz is the name of the user (that should already exist). Similarly pass a separate key for each user you want to assign to the plan. |
-| scripts_26  | 1   |	Use this to pass the scripts to be assigned to the plan. scripts_ is the prefix for assigning a script and 26 is the id of the script to be assigned. Similarly pass a separate key for each script you want to assign to the plan. Get Script ids |
-| cpplan_CPPlanName  | 1   |	Use this to pass the control panel plan(s). cpplan_ is the prefix followed by the control panel plan name. For Example: cpplan_SoftRestriction. |
+| updatesoft | Update Settings  |	This will trigger the submit function for enabling/disabling the scripts |
+| soft_26  | 1   |	Use it to Enable Script from Admin Panel. soft_ is the prefix for enabling a script and 26 is the id of the script to be enabled. Similarly pass a separate key for each script you want to enable. Get Script ids |
