@@ -16,8 +16,8 @@ curl "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=man
 //The URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
     			'&api=serialize'.
-		          '&set_name=SET-NAME_admin'.
-		          '&default_value=1'.
+				'&set_name=SET-NAME_admin'.
+				'&default_value=1'.
     			'&act=manage_sets';
 
 // Set the curl parameters.
@@ -62,26 +62,27 @@ if(!empty($res['done'])){
 Array
 (
     [title] => Softaculous - Admin Panel
-    [done] => Plugins(s) and themes(s) removed
+    [done] => Preference saved successfully
     [sets] => Array
         (
             [sets_admin] => Array
                 (
                     [plugins] => Array
                         (
+                            [loco-translate] => Loco Translate
                         )
 
                     [themes] => Array
                         (
-                            [popularfx] => PopularFX
                         )
 
+                    [default_value] => 1
                 )
 
         )
 
-    [timenow] => 1776081961
-    [time_taken] => 0.001
+    [timenow] => 1776083757
+    [time_taken] => 0.000
 )
 
 ```
