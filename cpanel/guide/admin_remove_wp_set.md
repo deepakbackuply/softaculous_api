@@ -14,11 +14,11 @@ curl -d "sets[]=SET-NAME_admin" "https://user:password@domain.com:2087/url/to/so
 
 //The URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
-			    '&api=serialize'.
-          '&remove_sets=1'.
-			    '&act=manage_sets';
+			'&api=serialize'.
+			'&remove_sets=1'.
+			'&act=manage_sets';
 
-$post = array('sets' => array('SET-NAME_admin'), //Set name
+$post = array('sets' => array('SET-NAME_admin')); //Set name
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -62,23 +62,13 @@ if(!empty($res['done'])){
 Array
 (
     [title] => Softaculous - Admin Panel
-    [done] => Plugins(s) and themes(s) added
+    [done] => Set(s) removed successfully
     [sets] => Array
         (
-            [sets_admin] => Array
-                (
-
-                    [themes] => Array
-                        (
-                            [popularfx] => Popularfx
-                        )
-
-                )
-
         )
 
-    [timenow] => 1776078589
-    [time_taken] => 0.001
+    [timenow] => 1776080656
+    [time_taken] => 0.000
 )
 
 ```
