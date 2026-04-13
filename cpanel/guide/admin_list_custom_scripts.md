@@ -60,7 +60,6 @@ print_r($res['error']);
 Array
 (
     [title] => Softaculous - Admin Panel
-    [done] => 1
     [cscripts] => Array
         (
             [10001] => Array
@@ -72,7 +71,18 @@ Array
                     [cat] => blogs
                     [type] => php
                     [ver] => 1.0
-                    [parent] => 10001
+                    [parent] => 0
+                )
+            [10002] => Array
+                (
+                    [name] => CUSTOM SCRIPT 2
+                    [softname] => custom2
+                    [desc] => My Custom Script 2
+                    [ins] => 1
+                    [cat] => blogs
+                    [type] => php
+                    [ver] => 1.0
+                    [parent] => 0
                 )
         )
     [custom_catwise] => Array
@@ -92,12 +102,26 @@ Array
                                     [ver] => 1.0
                                     [parent] => 0
                                 )
+
+                            [10002] => Array
+                                (
+                                    [name] => CUSTOM SCRIPT 2
+                                    [softname] => custom2
+                                    [desc] => My Custom Script 2
+                                    [ins] => 1
+                                    [cat] => blogs
+                                    [type] => php
+                                    [ver] => 1.0
+                                    [parent] => 0
+                                )
                         )
                 )
         )
-    [timenow] => 1776086170
-    [time_taken] => 0.005
+
+    [timenow] => 1776088449
+    [time_taken] => 0.001
 )
+
 ```
 
 ### Required Parameters
