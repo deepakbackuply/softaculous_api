@@ -1,4 +1,4 @@
-## Add theme into admin set Softaculous API Guide
+## Add theme to admin set Softaculous API Guide
 This guide explains how to add theme into the admin set using Softaculous API.
 
 ### via cURL
@@ -72,17 +72,18 @@ Array
         (
             [sets_admin] => Array
                 (
-                    [plugins] => Array
+
+                    [themes] => Array
                         (
-                            [loginizer] => Loginizer
+                            [popularfx] => Popularfx
                         )
 
                 )
 
         )
 
-    [timenow] => 1776077896
-    [time_taken] => 0.000
+    [timenow] => 1776078589
+    [time_taken] => 0.001
 )
 
 ```
