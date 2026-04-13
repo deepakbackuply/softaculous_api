@@ -23,7 +23,7 @@ $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 // Turn off the server and peer verification (TrustManager Concept).
@@ -157,12 +157,5 @@ Array
 | Key | Value | Description |
 |----------|----------|----------|
 | Authentication    | -   | You can use the Enduser Authenticating or Admin Authentication methods.   |
-| act    | editplans   |	This will trigger the edit plan function |
-| plan   | plan1   | This will be the plan name of the plan you want to edit |
-| **POST** |
-| saveplan | 1  |	This will trigger the edit plan function |
-| planname  | plan1   |	Plan name for the new plan being created |
-| resellers_abc  | 1   |	(Optional) Use this only if you want to assign a reseller to the plan. resellers_ is the prefix for adding a reseller and abc is the name of the reseller (that should already exist). Similarly pass a separate key for each reseller you want to assign to the plan. |
-| users_xyz | 1   |	(Optional) Use this only if you want to assign a user to the plan. users_ is the prefix for assigning a user and xyz is the name of the user (that should already exist). Similarly pass a separate key for each user you want to assign to the plan. |
-| scripts_26  | 1   |	Use this to pass the scripts to be assigned to the plan. scripts_ is the prefix for assigning a script and 26 is the id of the script to be assigned. Similarly pass a separate key for each script you want to assign to the plan. Get Script ids |
-| cpplan_CPPlanName  | 1   |	Use this to pass the control panel plan(s). cpplan_ is the prefix followed by the control panel plan name. For Example: cpplan_SoftRestriction. |
+| act    | plans   |	This is the default plans page act |
+| delete   | plan1   | This will be the plan name of the plan you want to delete |
