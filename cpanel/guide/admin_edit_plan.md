@@ -22,13 +22,13 @@ $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
 
 
 $post = array('saveplan' => '1',
-	'planname' => 'plan1',
-	'resellers_abc' => '1',
-	'users_xyz' => '1',
-	'cpplan_CPPlanName' => '1',
-	'scripts_543' => '1', // Add Drupal
-	'scripts_72' => '1' // Add PrestaShop
-);
+			  'planname' => 'plan1',
+			  'resellers_abc' => '1',
+			  'users_xyz' => '1',
+			  'cpplan_CPPlanName' => '1',
+			  'scripts_543' => '1', // Add Drupal
+			  'scripts_72' => '1' // Add PrestaShop
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
