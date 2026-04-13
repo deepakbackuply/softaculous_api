@@ -15,11 +15,11 @@ curl "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=man
 
 //The URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
-			'&api=serialize'.
-      '&set_name=SET-NAME_admin'.
-      '&plugins=1'.
-      '&plugins_themes_to_remove=loginizer'.
-      '&act=manage_sets';
+			  '&api=serialize'.
+		      '&set_name=SET-NAME_admin'.
+		      '&plugins=1'.
+		      '&plugins_themes_to_remove=loginizer'.
+		      '&act=manage_sets';
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -63,13 +63,26 @@ print_r($res['error']);
 Array
 (
     [title] => Softaculous - Admin Panel
-    [done] => Set(s) removed successfully
+    [done] => Plugins(s) and themes(s) removed
     [sets] => Array
         (
+            [sets_admin] => Array
+                (
+                    [plugins] => Array
+                        (
+                        )
+
+                    [themes] => Array
+                        (
+                            [popularfx] => PopularFX
+                        )
+
+                )
+
         )
 
-    [timenow] => 1776080656
-    [time_taken] => 0.000
+    [timenow] => 1776081961
+    [time_taken] => 0.001
 )
 
 ```
