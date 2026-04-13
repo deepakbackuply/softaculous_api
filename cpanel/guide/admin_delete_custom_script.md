@@ -15,8 +15,8 @@ curl "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=cus
 
 // URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
-      			'&api=serialize'.
-      			'&act=customscripts'.
+            '&api=serialize'.
+            '&act=customscripts'.
             '&remid=10001';
 
 // Set the curl parameters.
@@ -64,41 +64,16 @@ Array
     [done] => 1
     [cscripts] => Array
         (
-            [10001] => Array
-                (
-                    [name] => CUSTOM SCRIPT
-                    [softname] => custom
-                    [desc] => My Custom Script
-                    [ins] => 1
-                    [cat] => blogs
-                    [type] => php
-                    [ver] => 1.0
-                    [parent] => 10001
-                )
         )
+
     [custom_catwise] => Array
         (
-            [php] => Array
-                (
-                    [blogs] => Array
-                        (
-                            [10001] => Array
-                                (
-                                    [name] => CUSTOM SCRIPT
-                                    [softname] => custom
-                                    [desc] => My Custom Script
-                                    [ins] => 1
-                                    [cat] => blogs
-                                    [type] => php
-                                    [ver] => 1.0
-                                    [parent] => 0
-                                )
-                        )
-                )
         )
-    [timenow] => 1776086170
+
+    [timenow] => 1776087082
     [time_taken] => 0.005
 )
+
 ```
 
 ### Required Parameters
