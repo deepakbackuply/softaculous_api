@@ -16,9 +16,9 @@ curl "https://user:password@domain.com:2087/url/to/softaculous/index.php?act=man
 //The URL
 $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php'.
       			'&api=serialize'.
-            '&set_name=SET-NAME_admin'.
-            '&themes=1'.
-            '&plugins_themes_to_remove=popularfx'.
+	            '&set_name=SET-NAME_admin'.
+	            '&themes=1'.
+	            '&plugins_themes_to_remove=popularfx'.
       			'&act=manage_sets';
 
 // Set the curl parameters.
@@ -71,14 +71,11 @@ Array
                     [plugins] => Array
                         (
                         )
-
                     [themes] => Array
                         (
                             [popularfx] => PopularFX
                         )
-
                 )
-
         )
 
     [timenow] => 1776081961
