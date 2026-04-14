@@ -78,11 +78,6 @@ Array
                 (
                     [original_key] => default
                 )
-
-            [plan1] => Array
-                (
-                    [original_key] => plan1
-                )
         )
 
     [_users] => Array
@@ -119,15 +114,7 @@ Array
            
         )
 
-    [_resellers] => Array
-        (
-            [abc] => Array
-                (
-                    [original_key] => abc
-                )
-
-        )
-
+    [_resellers] => Array()
     [timenow] => 1774594575
     [time_taken] => 0.001
 )
