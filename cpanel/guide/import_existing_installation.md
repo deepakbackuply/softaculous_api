@@ -13,9 +13,9 @@ curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" "https:
 
 // The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-         '&api=serialize'.
-         '&act=import'.
-         '&soft=26';
+	         '&api=serialize'.
+	         '&act=import'.
+	         '&soft=26';
 
 $post = array('softsubmit' => 1,
              'softdomain' => 'example.com',
