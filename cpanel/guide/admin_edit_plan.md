@@ -81,18 +81,12 @@ Array
             [max_backup_script] => 
             [max_clone_script] => 
             [max_staging_script] => 
-            [sets] => Array
-                (
-                )
-
             [scripts] => Array
                 (
                     [26] => 26
                     [11] => 11
                 )
-
         )
-
     [acl] => Array
         (
             [users] => Array
@@ -146,15 +140,6 @@ Array
 						)
                 )
         )
-
-    [_resellers] => Array
-        (
-            [alex] => Array
-                (
-                    [original_key] => alex
-                )
-        )
-
     [timenow] => 1776067137
     [time_taken] => 0.002
 )
