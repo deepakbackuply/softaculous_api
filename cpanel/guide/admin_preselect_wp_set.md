@@ -72,10 +72,7 @@ Array
                             [loco-translate] => Loco Translate
                         )
 
-                    [themes] => Array
-                        (
-                        )
-
+                    [themes] => Array()
                     [default_value] => 1
                 )
 
