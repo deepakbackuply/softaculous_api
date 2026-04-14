@@ -90,12 +90,12 @@ Your installation URL : https://domain.com
             [softdbpass] => ******
             [dbprefix] => wphh_
             [dbcreated] => 1
-            [fileindex] => Array()....
+            [fileindex] => Array()
         )
 
     [templatefile] => 
     [insid] => 26_94698
-    [software] => Array()...
+    [software] => Array()
     [soft] => 26
     [error] => 
     [timenow] => 1766058134
