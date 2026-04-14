@@ -60,7 +60,44 @@ Array
     [email] => admin@example.com
     [timezone] => 0
     [language] => english
-    [user] => Array()....
+    [user] => Array
+        (
+            [ins_email] => 1
+            [rem_email] => 0
+            [editdetail_email] => 0
+            [backup_email] => 0
+            [disable_template_email] => 1
+            [disable_restore_email] => 1
+            [disable_restore_template_email] => 1
+            [disable_clone_email] => 1
+            [disable_staging_email] => 1
+            [disable_import_email] => 1
+            [disable_all_notify_update] => 1
+            [email_password_user] => 0
+            [timezone] => 0
+            [email] => admin@example.com
+            [pfxapi_key] => 0
+            [eula_accept] => 
+            [custom_demo_domain] => 
+            [custom_demo_launcher] => 
+            [demo_expires] => 
+            [wp_fp_modal] => 1
+            [color_theme] => Array()
+            [user_defined_color] => 0
+            [disable_suggestions] => 0
+            [disable_softai_notice] => 0
+            [arrange_domain] => 0
+            [default_backup_location] => 0
+            [off_backup_au] => 0
+            [saved_email] => 1
+            [backup_dir] => /home/user/softaculous_backups
+            [template_dir] => /home/user/softaculous_templates
+            [livedir] => /home/user/.softaculous/tmp
+            [ins] => Array()
+        )
+
+    [timenow] => 1776151330
+    [time_taken] => 0.121
 )
    
 ```
