@@ -63,10 +63,7 @@ Array
 (
     [title] => Softaculous - Admin Panel
     [done] => Set(s) removed successfully
-    [sets] => Array
-        (
-        )
-
+    [sets] => Array()
     [timenow] => 1776080656
     [time_taken] => 0.000
 )
