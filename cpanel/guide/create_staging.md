@@ -88,8 +88,14 @@ Array
             [softdbpass] => *********
             [dbcreated] => 1
             [dbprefix] => wpod_
-            [fileindex] => Array ............
-
+            [fileindex] => Array()
+		)
+	[dbtype] => mysql
+	[__settings] => Array()
+	[protocols] => Array()
+	[timenow] => 1776150124
+	[time_taken] => 29.22
+)
 ```
 
 ### Required Parameters
