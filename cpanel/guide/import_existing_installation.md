@@ -19,7 +19,8 @@ $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index
 
 $post = array('softsubmit' => 1,
              'softdomain' => 'example.com',
-             'softdirectory' => 'wp');
+             'softdirectory' => 'wp'
+            );
 
 // Set the curl parameters.
 $ch = curl_init();
