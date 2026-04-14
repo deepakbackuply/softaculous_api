@@ -22,7 +22,7 @@ $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index
 $post = array('insid' => '26_12345',
               'type' => 'themes',
               'list' => '1'
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
