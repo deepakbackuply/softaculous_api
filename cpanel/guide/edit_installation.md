@@ -89,7 +89,7 @@ Array
 
                     [admin_pass] => Array
                         (
-                            [tag] => password123
+                            [tag] => password
                             [head] => Admin Password
                             [exp] => New password. Leave blank if you do not want to reset the password
                             [handle] => 
@@ -110,8 +110,20 @@ Array
                             [minlen] => 
                         )
 
-                ).................
+                )
 
+            [Install Plugins] => Array()
+               
+        )
+
+    [insid] => 26_12345
+    [userins] => Array()
+    [scripts_admin_url] => wp-admin/
+    [theme_package] => 
+    [notes] => 
+    [timenow] => 1776152155
+    [time_taken] => 0.168
+)
 
 ```
 
