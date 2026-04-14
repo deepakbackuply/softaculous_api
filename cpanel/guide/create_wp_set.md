@@ -67,9 +67,7 @@ Array
     [done] => Set added
     [sets] => Array
         (
-            [SET-NAME] => Array
-                (
-                )
+            [SET-NAME] => Array()
         )
 
     [timenow] => 1766125266
