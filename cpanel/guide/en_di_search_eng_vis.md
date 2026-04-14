@@ -14,7 +14,7 @@ curl -d "insid=26_12345" -d "blog_public=1" -d "save=1" "https://user:password@d
 
 //The URL
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
-			              '&api=serialize'.
+					'&api=serialize'.
                     '&act=wordpress';
 
 $post = array('insid' => '26_31793',
@@ -113,16 +113,8 @@ Array
             [auto_upgrade_themes] => 1
         )
 
-    [featured_plugins_list] => Array
-        (
-            
-        )
-
-    [wordpressins] => Array
-        (
-            
-        )
-
+    [featured_plugins_list] => Array()
+    [wordpressins] => Array()
     [scripts_admin_url] => wp-admin/
     [notes] => 
     [users_list] => 
