@@ -20,12 +20,12 @@ $url = 'http://admin.controlpanel.com:PORT/url/to/softaculous/index.php?'.
 
 $post = array('set_input' => 'SET-NAME', //Name of your set
               'add_sets' => '1'
-);
+			 );
 
 // Set the curl parameters.
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
-curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, $time);
+curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 5);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 
 // Turn off the server and peer verification (TrustManager Concept).
@@ -67,10 +67,7 @@ Array
     [done] => Set added
     [sets] => Array
         (
-            [PLUGIN SET_admin] => Array
-                (
-                )
-
+            [PLUGIN SET_admin] => Array()
         )
 
     [timenow] => 1776076471
