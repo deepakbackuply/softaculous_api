@@ -63,7 +63,7 @@ Array
     [title] => Softaculous - Admin Panel
     [done] => 1
     [cscripts] => Array()
-    [custom_catwise] => Array
+    [custom_catwise] => Array()
     [timenow] => 1776087082
     [time_taken] => 0.005
 )
