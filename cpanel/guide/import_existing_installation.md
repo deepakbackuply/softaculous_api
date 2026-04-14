@@ -53,10 +53,55 @@ Array
     [title] => Softaculous - Powered by Softaculous
     [done_msg] => Import has been pushed in background
     [insid] => 
-    [done] => cMEBlvDzEN2zPjowzZT6fzeLWm1
+    [done] => 7wnEApjQ9MFm23T7m0kyTNieqLI8ombW
     [info] => Array
-         (
-            [overview] => ...............  
+        (
+            [overview] => WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
+            [demo] => http://www.softaculous.com/demos/WordPress
+            [ratings] => http://www.softaculous.com/softwares/blogs/WordPress
+            [support] => http://www.wordpress.org/
+            [spacereq] => 
+        )
+
+    [software] => Array
+        (
+            [name] => WordPress
+            [softname] => wp
+            [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
+            [ins] => 1
+            [cat] => blogs
+            [type] => php
+            [ver] => 6.9.4
+            [pre_down] => 1
+            [path] => /var/softaculous/wp
+            [spacereq] => 
+            [adminurl] => wp-admin/
+        )
+
+    [protocols] => Array()
+    [__settings] => Array
+        (
+            [sid] => 26
+            [ver] => 6.9.4
+            [itime] => 1776153855
+            [softpath] => /home/user/public_html
+            [softurl] => http://domain.com
+            [softdomain] => domain.com
+            [site_name] => My Blog
+            [softdb] => wp123
+            [softdbuser] => wp123
+            [softdbhost] => localhost
+            [softdbpass] => *******
+            [dbcreated] => 1
+            [dbprefix] => wp90_
+            [import_src] => local
+            [insid] => 26_12345
+			[fileindex] => Array()
+        )
+
+    [timenow] => 1776153855
+    [time_taken] => 0.692
+)
 
 ```
 
