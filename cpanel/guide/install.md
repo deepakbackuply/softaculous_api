@@ -9,6 +9,7 @@ curl -d "softsubmit=1" -d "softdomain=example.com" -d "softdirectory=wp" -d "sof
 ### via PHP script
 
 ```php
+
 <?php
 
 $url = 'https://user:password@domain.com:2083/frontend/jupiter/softaculous/index.live.php?'.
@@ -69,25 +70,45 @@ if(!empty($res['done'])){
 ```php
 Array
 (
-    [title] => Softaculous 
+    [title] => Softaculous - Powered by Softaculous
     [done] => 1
     [info] => Array
         (
             [overview] => WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
-            [install] => 
-            [features] => WordPress powers more than 23% of the web - a figure that rises every day. Everything from simple websites, to blogs, to complex portals and enterprise websites, and even applications, are built with WordPress.
             [demo] => http://www.softaculous.com/demos/WordPress
             [ratings] => http://www.softaculous.com/softwares/blogs/WordPress
             [support] => http://www.wordpress.org/
-            [release_date] => 30-09-2025
-            [mod] => 254
+            [release_date] => 11-03-2026
+            [mod] => 258
             [mod_files] => 
             [import] => 1
         )
 
     [settings] => Array
         (
-            [Database Settings] => Array ...........
+            [Database Settings] => Array()
+            [Site Settings] => Array()
+            [Admin Account] => Array()
+            [Select Plugins] => Array()
+            [Extended Settings] => Array()
+
+        )
+
+    [dbtype] => mysql
+    [__settings] => Array()
+    [software] => Array()
+    [installations] => Array()
+    [notes] => 
+    [cron] => 
+    [datadir] => 
+    [overwrite_option] => 
+    [protocols] => Array()
+    [nopackage] => 0
+    [theme_package] => 
+    [insid] => 26_94674
+    [timenow] => 1776154375
+    [time_taken] => 27.71
+)
 
 ```
 
