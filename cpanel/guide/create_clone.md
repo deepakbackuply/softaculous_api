@@ -90,7 +90,11 @@ Array
             [dbprefix] => wp9b_
             [dbcreated] => 1
             [fileindex] => Array()
-		)     
+		)
+	[soft] => 26
+    [error] => 
+    [timenow] => 1766043190
+    [time_taken] => 0.088    
 
 ```
 
