@@ -68,9 +68,7 @@ Array
         (
             [sets_admin] => Array
                 (
-                    [plugins] => Array
-                        (
-                        )
+                    [plugins] => Array()
                     [themes] => Array
                         (
                             [popularfx] => PopularFX
