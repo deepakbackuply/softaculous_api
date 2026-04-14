@@ -91,10 +91,11 @@ Array
             [dbcreated] => 1
             [fileindex] => Array()
 		)
-	[soft] => 26
-    [error] => 
-    [timenow] => 1766043190
-    [time_taken] => 0.088    
+	[dbtype] => mysql
+    [__settings] => Array()
+    [protocols] => Array()
+	[timenow] => 1776150124
+    [time_taken] => 29.22
 
 ```
 
