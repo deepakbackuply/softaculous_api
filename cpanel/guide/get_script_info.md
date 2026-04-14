@@ -62,17 +62,64 @@ Array
     [title] => Softaculous - Powered by Softaculous
     [info] => Array
         (
-            [overview] => WordPress is web software you can use to create a beautiful website or blog.
-            [install] => 
-            [features] => WordPress powers more than 23% of the web - a figure that rises every day. Everything from simple websites
+            [overview] => WordPress is web software you can use to create a beautiful website or blog. We like to say that WordPress is both free and priceless at the same time.
             [demo] => http://www.softaculous.com/demos/WordPress
             [ratings] => http://www.softaculous.com/softwares/blogs/WordPress
             [support] => http://www.wordpress.org/
-            [release_date] => 02-12-2025
-            [mod] => 255
-            [mod_files] => 1
+            [release_date] => 11-03-2026
+            [mod] => 258
+            [mod_files] => 
             [import] => 1
-        ) ...........
+        )
+    [settings] => Array()
+    [dbtype] => mysql
+    [__settings] => Array
+        (
+            [adminurl] => wp-admin/
+        )
+
+    [software] => Array
+        (
+            [name] => WordPress
+            [softname] => wp
+            [desc] => WordPress is a state-of-the-art publishing platform with a focus on aesthetics, web standards, and usability.
+            [ins] => 1
+            [cat] => blogs
+            [type] => php
+            [ver] => 6.9.4
+            [pre_down] => 1
+            [path] => /var/softaculous/wp
+            [has_theme] => WordPress
+            [update_plugins] => 1
+            [update_themes] => 1
+            [verify_dom] => 0
+            [has_minor] => 1
+            [idn_dir] => 1
+            [spacereq] => 77681630
+            [branch] => Array()
+            [adminurl] => wp-admin/
+        )
+
+    [installations] => Array()
+    [notes] => 
+    [cron] => 
+    [datadir] => 
+    [overwrite_option] => 
+    [protocols] => Array
+        (
+            [1] => http://
+            [2] => http://www.
+            [3] => https://
+            [4] => https://www.
+        )
+
+    [nopackage] => 0
+    [theme_package] => 
+    [insid] => 
+    [timenow] => 1776152897
+    [time_taken] => 0.419
+)
+
 ```
 
 ### Required Parameters
