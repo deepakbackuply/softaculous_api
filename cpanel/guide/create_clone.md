@@ -22,7 +22,7 @@ $post = array('softsubmit' => '1',
               'softdomain' => 'example.com', // Must be a valid Domain
               'softdirectory' => 'wp', // Keep empty to install in Web Root
               'softdb' => 'wpdb'
-);
+			);
 
 // Set the curl parameters.
 $ch = curl_init();
@@ -89,7 +89,8 @@ Array
             [softdbpass] => **********
             [dbprefix] => wp9b_
             [dbcreated] => 1
-            [fileindex] => Array ..................      
+            [fileindex] => Array()
+		)     
 
 ```
 
